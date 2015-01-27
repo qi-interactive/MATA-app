@@ -1,9 +1,7 @@
 <phpunit>
-<filter>
-  <blacklist>
-    <exclude>
-      <directory>/home/ec2-user/.composer/vendor/composer/</directory>
-    </exclude>
-  </blacklist>
-</filter>
+ <filter>
+    <whitelist addUncoveredFilesFromWhitelist="true">
+      <directory suffix=".php">.</directory>
+    </whitelist>
+  </filter>
 </phpunit>
