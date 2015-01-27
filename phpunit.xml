@@ -2,7 +2,7 @@
 <filter>
   <blacklist>
     <exclude>
-      <directory suffix=".php">/home/ec2-user/.composer</directory>
+      <directory>/home/ec2-user/.composer</directory>
       <file>*</file>
     </exclude>
   </blacklist>
