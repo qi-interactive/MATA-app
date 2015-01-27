@@ -2,8 +2,7 @@
 <filter>
   <blacklist>
     <exclude>
-      <directory>/home/ec2-user/.composer</directory>
-      <file>*</file>
+      <directory>/home/ec2-user/.composer/vendor/composer/</directory>
     </exclude>
   </blacklist>
 </filter>
