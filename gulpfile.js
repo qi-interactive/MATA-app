@@ -18,14 +18,13 @@ var userFolder;
 
 gulp.task('copy-all-files', function() {
 
-	// web/.htaccess does not copy
-	gulp.src(['!node_modules/**', '**'])
+	gulp.src(['!node_modules/**', '**/.htaccess', '**'])
 	.pipe(gulp.dest(getUserHome() + "/Sites/" + projectName))
 
 })
 
 gulp.task('copy:all', function(callback) {
-	runSequence('copy-all-files', 'execute-install');
+	runSequence('copy-all-files');
 });
 
 // gulp.task('execute-install', function() {
@@ -83,7 +82,7 @@ gulp.task('watch', function() {
 
 
 function getUserHome() {
-  return process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE;
+	return process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE;
 }
 
 
