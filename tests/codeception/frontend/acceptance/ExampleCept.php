@@ -1,0 +1,10 @@
+<?php use tests\codeception\frontend\AcceptanceTester;
+$I = new AcceptanceTester($scenario);
+$I->wantTo('go from home page to about page');
+$I->amOnPage('/frontend/web/');
+$I->amOnUrl('http://yii-application-test.localhost/frontend/web/');
+$I->see('Congratulations');
+$I->seeLink('About', '/frontend/web/site/about');
+$I->click('About');
+$I->amOnPage('/frontend/web/site/about');
+$I->amOnUrl('http://yii-application-test.localhost/frontend/web/site/about/');
