@@ -2,4 +2,4 @@ Options +FollowSymlinks
 RewriteEngine on
 
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)$ /mata/web/index.php [L,NC]
+RewriteRule ^(.*)$ /mata/index.php [L,NC]
