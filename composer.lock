@@ -713,12 +713,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/MATA-Framework.git",
-                "reference": "48ff09517ba772c6abbe65671bbddf270fcf70d4"
+                "reference": "fdfc1171a7e973a9eabdf8f2dacb3e331bfe0858"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/MATA-Framework/zipball/48ff09517ba772c6abbe65671bbddf270fcf70d4",
-                "reference": "48ff09517ba772c6abbe65671bbddf270fcf70d4",
+                "url": "https://api.github.com/repos/qi-interactive/MATA-Framework/zipball/fdfc1171a7e973a9eabdf8f2dacb3e331bfe0858",
+                "reference": "fdfc1171a7e973a9eabdf8f2dacb3e331bfe0858",
                 "shasum": ""
             },
             "require": {
@@ -743,7 +743,7 @@
                 "framework",
                 "mata"
             ],
-            "time": "2015-02-11 23:05:13"
+            "time": "2015-02-17 21:11:43"
         },
         {
             "name": "mata/mata-module-menu",
@@ -751,12 +751,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/MATA-module-menu.git",
-                "reference": "51ea508e31f08d19cc996e7556590fde9f28b349"
+                "reference": "9104bc04303463fc5415f9d6bf63acfa0ed380e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/MATA-module-menu/zipball/51ea508e31f08d19cc996e7556590fde9f28b349",
-                "reference": "51ea508e31f08d19cc996e7556590fde9f28b349",
+                "url": "https://api.github.com/repos/qi-interactive/MATA-module-menu/zipball/9104bc04303463fc5415f9d6bf63acfa0ed380e2",
+                "reference": "9104bc04303463fc5415f9d6bf63acfa0ed380e2",
                 "shasum": ""
             },
             "require": {
@@ -786,7 +786,7 @@
                 "navigation",
                 "yii2"
             ],
-            "time": "2015-02-13 17:06:52"
+            "time": "2015-02-16 15:34:29"
         },
         {
             "name": "mata/mata-user",
@@ -2050,12 +2050,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "b84eefce16dfd4580d52b4e30b6b8ec12a8f7075"
+                "reference": "3845f262337eba3be2470c74cff6e4db3b271a42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/b84eefce16dfd4580d52b4e30b6b8ec12a8f7075",
-                "reference": "b84eefce16dfd4580d52b4e30b6b8ec12a8f7075",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/3845f262337eba3be2470c74cff6e4db3b271a42",
+                "reference": "3845f262337eba3be2470c74cff6e4db3b271a42",
                 "shasum": ""
             },
             "require": {
@@ -2131,7 +2131,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-02-14 15:36:19"
+            "time": "2015-02-17 10:01:06"
         },
         {
             "name": "yiisoft/yii2-authclient",
