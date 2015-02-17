@@ -2,4 +2,4 @@ build:
     tests:
         override:
             -
-            	command: codecept -c tests/
+                command: codecept -c tests/
