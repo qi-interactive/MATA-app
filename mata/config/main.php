@@ -11,11 +11,22 @@ return [
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'mata\controllers',
     'bootstrap' => ['log'],
-    'modules' => [],
+    'modules' => [
+    'user' => [
+           'class' => 'mata\user\Module',
+       ],
+    'moduleMenu' => [
+           'class' => 'mata\modulemenu\Module',
+           'runBootstrap' => false
+       ]
+    ],
     'components' => [
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
+        ],
+        'assetManager' => [
+            'linkAssets' => true
         ],
         'urlManager' => [
           'enablePrettyUrl' => true,

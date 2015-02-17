@@ -33,5 +33,4 @@ tests/_output/*
 
 node_modules/
 
-composer.lock
 mata/assets/*

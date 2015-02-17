@@ -15,13 +15,17 @@ use yii\web\AssetBundle;
  */
 class AppAsset extends AssetBundle
 {
-    public $basePath = '@webroot';
-    public $baseUrl = '@web';
+    public $sourcePath = '@mata/web';
+
     public $css = [
         'css/site.css',
+        'css/layout/navigation.css'
     ];
     public $js = [
+        'js/lib/modernizr/modernizr.js',
+        'js/layout/main.js'
     ];
+
     public $depends = [
         'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset',
