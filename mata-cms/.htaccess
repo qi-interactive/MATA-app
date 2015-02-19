@@ -1,0 +1,5 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ /mata-cms/index.php [L,NC]

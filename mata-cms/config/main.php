@@ -7,17 +7,26 @@ $params = array_merge(
 );
 
 return [
-    'id' => 'app-frontend',
+    'id' => 'app-mata',
     'basePath' => dirname(__DIR__),
+    'controllerNamespace' => 'matacms\controllers',
     'bootstrap' => ['log'],
-    'controllerNamespace' => 'frontend\controllers',
+    'modules' => [
+    'user' => [
+           'class' => 'mata\user\Module',
+       ],
+    'moduleMenu' => [
+           'class' => 'mata\modulemenu\Module',
+           'runBootstrap' => true
+       ]
+    ],
     'components' => [
-        'request' => [
-            'baseUrl' => '',
-        ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
+        ],
+        'assetManager' => [
+            'linkAssets' => true
         ],
         'urlManager' => [
           'enablePrettyUrl' => true,
@@ -32,9 +41,9 @@ return [
                 ],
             ],
         ],
-        'errorHandler' => [
-            'errorAction' => 'site/error',
-        ],
+        // 'errorHandler' => [
+        //     'errorAction' => '/mata/site/error',
+        // ],
     ],
     'params' => $params,
 ];
