@@ -12,12 +12,6 @@ $menuItems = [];
 foreach ($modules as $moduleEntry) {
 	$module = MataModuleHelper::getModuleByClass($moduleEntry->Location . "Module");
 
-	if ($module == null) {
-		echo $moduleEntry->Location;
-		exit;
-	}
-
-
 	if (!$module->canShowInNavigation())
 		continue;
 
@@ -28,8 +22,10 @@ foreach ($modules as $moduleEntry) {
 		echo $asset->sourcePath . $module->mataConfig->icon;
 	}
 
+	$link = is_array($module->getNavigation()) ? "#" : $module->getNavigation();
+
 	$menuItems[] = sprintf("<li><a title='%s' href='%s'>%s%s</a></li>", 
-		$module->getDescription(), $module->id, file_get_contents($asset->sourcePath . $module->mataConfig->icon), $module->getName());
+		$module->getDescription(), $link, file_get_contents($asset->sourcePath . $module->mataConfig->icon), $module->getName());
 
 }
 

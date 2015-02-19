@@ -1,4 +1,4 @@
-<!-- RESET -->
+/*<!-- RESET -->*/
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -50,9 +50,9 @@ table {
 }
 
 
-<!-- END RESET -->
+/*<!-- END RESET -->*/
 
-<!-- CODY STYLE -->
+/*<!-- CODY STYLE -->*/
 
 
 /* -------------------------------- 
@@ -616,4 +616,30 @@ main.nav-is-visible {
 }
 
 
-<!-- END CODY STYLE --> 
+/*<!-- END CODY STYLE --> */
+
+
+
+/*<!-- start custom --> */
+
+body {
+  overflow: hidden;
+}
+body.theme-simple main {
+  height: 100%;
+}
+body.theme-simple #container {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+}
+
+body.theme-simple #container iframe#mata-content {
+
+  width: 100%;
+  height: 100%;
+  border: none;
+
+}
+
+/*<!-- end custom -->*/

@@ -1,3 +1,18 @@
+var mata = {};
+mata.simpleTheme = {
+	iframe: $("#mata-content")
+};
+
+mata.simpleTheme.events = {
+	IFRAME_LOADED: "st-IFRAME_LAODED"
+}
+
+
+
+$(window).resize(function() {
+	$("#container").height($(this).height() - $(".cd-header").height())
+}).resize();
+
 jQuery(document).ready(function($){
 	//toggle 3d navigation
 	$('.cd-3d-nav-trigger').on('click', function(){

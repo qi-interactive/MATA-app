@@ -15,11 +15,11 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body>
+<body class="theme-simple">
     <?php $this->beginBody() ?>
         <?php echo $this->render("_navigation"); ?>
 
-        <div class="container">
+        <div id="container">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>

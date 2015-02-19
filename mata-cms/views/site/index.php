@@ -47,11 +47,10 @@ $this->title = 'My MATA Application';
 </style>
 
 
-
-
-</div>
-
 <main>
+
+<iframe id="mata-content"></iframe>
+<!-- 
     <h1>3D Rotating Navigation</h1>
     <a class="cd-article-btn" href="http://codyhouse.co/?p=468">
         <span>
@@ -71,9 +70,11 @@ $this->title = 'My MATA Application';
     <br/><br/><br/><br/>
     <a onclick="simulateLoader()" class="cd-article-btn" href="#">
         Simulate loading
-    </a>
+    </a> -->
     <!-- all your content here -->
 </main>
+
+
 
 <script src="./3D Rotating Navigation   CodyHouse_files/jquery-2.1.1.js"></script>
 <script src="./3D Rotating Navigation   CodyHouse_files/main.js"></script> <!-- Resource jQuery -->
@@ -88,43 +89,46 @@ $this->title = 'My MATA Application';
     //  $(this).removeClass("hovered")
     // })
 
-    function simulateLoader() {
-        $("#progress-bar").width("0%").removeClass("success")
+
+
+
+function simulateLoader() {
+    $("#progress-bar").width("0%").removeClass("success")
+
+    setTimeout(function() {
+
+        $("#progress-bar").css("opacity", 1)
 
         setTimeout(function() {
+            $("#progress-bar").width("30%")
+        }, 100)
 
-            $("#progress-bar").css("opacity", 1)
+        setTimeout(function() {
+            $("#progress-bar").width("40%");
+        }, 300)
+
+        setTimeout(function() {
+            $("#progress-bar").width("60%");
+        }, 500)
+
+        setTimeout(function() {
+            $("#progress-bar").width("80%");
+        }, 1000)
+
+        setTimeout(function() {
+            $("#progress-bar").width("100%")
 
             setTimeout(function() {
-                $("#progress-bar").width("30%")
-            }, 100)
+                $("#progress-bar").addClass("success")
+            }, 150)
 
             setTimeout(function() {
-                $("#progress-bar").width("40%");
-            }, 300)
+                $("#progress-bar").css("opacity", 0)
+            }, 900)
 
-            setTimeout(function() {
-                $("#progress-bar").width("60%");
-            }, 500)
+        }, 1200)
+    }, 400)
 
-            setTimeout(function() {
-                $("#progress-bar").width("80%");
-            }, 1000)
-
-            setTimeout(function() {
-                $("#progress-bar").width("100%")
-
-                setTimeout(function() {
-                    $("#progress-bar").addClass("success")
-                }, 150)
-
-                setTimeout(function() {
-                    $("#progress-bar").css("opacity", 0)
-                }, 900)
-                
-            }, 1200)
-        }, 400)
-
-    }
+}
 
 </script>
