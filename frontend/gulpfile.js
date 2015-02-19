@@ -3,6 +3,7 @@ watch = require('gulp-watch'),
 livereload = require('gulp-livereload'),
 less = require('gulp-less'),
 path = require('path'),
+rename = require("gulp-rename"),
 plumber = require('gulp-plumber'),
 gutil = require('gulp-util'),
 lessPluginCleanCSS = require('less-plugin-clean-css');
@@ -18,6 +19,15 @@ var options = {
 } 
 
 gulp.task('less', function() {
+
+	gulp.src(['widgets/**/assets/less/*.less'])
+	.pipe(plumber(handleError))
+	.pipe(rename(function(filepath) {
+		filepath.dirname = "widgets/" + path.dirname(path.dirname(filepath.dirname));
+	}))
+	.pipe(gulp.dest("./web/css")).
+	pipe(livereload())
+
 	gulp.src(['assets/less/**/*.less', '!assets/less/inuit.css/**/*', '!assets/less/vars.less'])
 	.pipe(plumber(handleError))
 	.pipe(less({

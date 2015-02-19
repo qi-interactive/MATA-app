@@ -7,6 +7,7 @@
     "gulp-util" : "*",
     "gulp-plumber" : "*",
     "less-plugin-clean-css" : "*",
-    "gulp-sourcemaps" : "*"
+    "gulp-sourcemaps" : "*",
+    "gulp-rename" : "*"
   }
 }
