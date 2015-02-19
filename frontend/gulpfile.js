@@ -25,8 +25,8 @@ gulp.task('less', function() {
 	.pipe(rename(function(filepath) {
 		filepath.dirname = "widgets/" + path.dirname(path.dirname(filepath.dirname));
 	}))
-	.pipe(gulp.dest("./web/css")).
-	pipe(livereload())
+	.pipe(gulp.dest("./web/css"))
+	.pipe(livereload());
 
 	gulp.src(['assets/less/**/*.less', '!assets/less/inuit.css/**/*', '!assets/less/vars.less'])
 	.pipe(plumber(handleError))
@@ -34,15 +34,15 @@ gulp.task('less', function() {
 		paths: [ path.join(__dirname, 'less', 'less/inuit.css', 'less/vars.less') ],
 		plugins: [cleanCSS]
 	}))
-	.pipe(gulp.dest("./web/css")).
-	pipe(livereload())
+	.pipe(gulp.dest("./web/css"))
+	.pipe(livereload());
 })
 
 gulp.task('watch', function() {
 
 	livereload.listen();
 
-	watch(['**/assets/less/*.less', 'assets/less/**/*.less', '!assets/less/inuit.css/*.less'], {
+	watch(['**/assets/less/*.less', '!assets/less/inuit.css/*.less'], {
 		name: "Watcher",
 		verbose: true
 	}, function() {
