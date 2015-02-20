@@ -47,9 +47,7 @@ $this->title = 'My MATA Application';
 </style>
 
 
-<main>
-
-<iframe id="mata-content"></iframe>
+<iframe src="site/welcome" id="mata-content"></iframe>
 <!-- 
     <h1>3D Rotating Navigation</h1>
     <a class="cd-article-btn" href="http://codyhouse.co/?p=468">
@@ -72,7 +70,6 @@ $this->title = 'My MATA Application';
         Simulate loading
     </a> -->
     <!-- all your content here -->
-</main>
 
 
 

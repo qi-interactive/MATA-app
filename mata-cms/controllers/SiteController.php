@@ -16,7 +16,16 @@ class SiteController extends Controller {
         return $this->render('index');
     }
 
-    public function actionError() {
-    	echo 1;
+    public function actionWelcome() {
+    	$this->layout = "@matacms/views/layouts/module";
+        return $this->render("welcome");
+    }
+
+    public function actions() {
+        return [
+            'error' => [
+                'class' => 'yii\web\ErrorAction',
+            ],
+        ];
     }
 }

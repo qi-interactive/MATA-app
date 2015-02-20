@@ -10,6 +10,7 @@ return [
     'id' => 'app-mata',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'matacms\controllers',
+    'name' => "MATA CMS",
     'bootstrap' => ['log'],
     'modules' => [
     'user' => [

@@ -17,14 +17,13 @@ AppAsset::register($this);
 </head>
 <body class="theme-simple">
     <?php $this->beginBody() ?>
-        <?php echo $this->render("_navigation"); ?>
+    <?php echo $this->render("_navigation"); ?>
 
-        <div id="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= $content ?>
-        </div>
+    <div id="container">
+        <main>
+            <?= $content ?>
+        </main>
+    </div>
 
  <!--    <footer class="footer">
         <div class="container">
