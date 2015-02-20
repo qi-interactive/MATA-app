@@ -4,10 +4,8 @@ mata.simpleTheme = {
 };
 
 mata.simpleTheme.events = {
-	IFRAME_LOADED: "st-IFRAME_LAODED"
+	IFRAME_LOADED: "st-IFRAME_LOADED"
 }
-
-
 
 $(window).resize(function() {
 	$("#container").height($(this).height() - $(".cd-header").height())

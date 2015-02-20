@@ -7,7 +7,6 @@ mata.simpleTheme.navigator.handleLink = function() {
 	return false;
 }
 
-
 $(window).ready(function() {
 	$("#w0 a").on("click", mata.simpleTheme.navigator.handleLink);
 
@@ -17,10 +16,8 @@ $(window).ready(function() {
 
 })
 
-
 mata.simpleTheme.navigator.navigate = function(href) {
 	window.history.pushState(null, "", href)
 	mata.simpleTheme.ajaxLoader.run();
 	mata.simpleTheme.iframe.attr("src", href);
 }
-
