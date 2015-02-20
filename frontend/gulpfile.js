@@ -22,6 +22,9 @@ gulp.task('less', function() {
 
 	gulp.src(['widgets/**/assets/less/*.less'])
 	.pipe(plumber(handleError))
+	.pipe(less({
+		plugins: [cleanCSS]
+	}))
 	.pipe(rename(function(filepath) {
 		filepath.dirname = "widgets/" + path.dirname(path.dirname(filepath.dirname));
 	}))
