@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7002fbc3585cbea7eb935214f5c9ead3",
+    "hash": "f72bc6d463b1c173462af0a0d5eac559",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -502,12 +502,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "80c1424e6522a3303d320b611647fa6fbc29a8e4"
+                "reference": "74f58bbda974d0820183d228f120c2f3258bf7f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/80c1424e6522a3303d320b611647fa6fbc29a8e4",
-                "reference": "80c1424e6522a3303d320b611647fa6fbc29a8e4",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/74f58bbda974d0820183d228f120c2f3258bf7f6",
+                "reference": "74f58bbda974d0820183d228f120c2f3258bf7f6",
                 "shasum": ""
             },
             "require": {
@@ -546,7 +546,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2015-02-12 21:08:01"
+            "time": "2015-02-19 08:29:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -706,6 +706,45 @@
                 "stream"
             ],
             "time": "2015-01-22 00:01:34"
+        },
+        {
+            "name": "mata/mata-content-block",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/qi-interactive/mata-content-block.git",
+                "reference": "d828c50244102ddd64bee311de0ba2df0bb2dd85"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/qi-interactive/mata-content-block/zipball/d828c50244102ddd64bee311de0ba2df0bb2dd85",
+                "reference": "d828c50244102ddd64bee311de0ba2df0bb2dd85",
+                "shasum": ""
+            },
+            "require": {
+                "codeception/codeception": "*",
+                "yiisoft/yii2-codeception": "*",
+                "yiisoft/yii2-faker": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "mata\\contentblock\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Manages blocks of HTML code for MATA",
+            "keywords": [
+                "html",
+                "mata",
+                "mata-content-block",
+                "wysiwyg",
+                "yii2"
+            ],
+            "time": "2015-02-22 07:49:54"
         },
         {
             "name": "mata/mata-framework",
@@ -2050,12 +2089,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "3845f262337eba3be2470c74cff6e4db3b271a42"
+                "reference": "ae22def7095f93698d89530dd207945320c6e89b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/3845f262337eba3be2470c74cff6e4db3b271a42",
-                "reference": "3845f262337eba3be2470c74cff6e4db3b271a42",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/ae22def7095f93698d89530dd207945320c6e89b",
+                "reference": "ae22def7095f93698d89530dd207945320c6e89b",
                 "shasum": ""
             },
             "require": {
@@ -2131,7 +2170,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-02-17 10:01:06"
+            "time": "2015-02-20 03:46:49"
         },
         {
             "name": "yiisoft/yii2-authclient",
@@ -2187,12 +2226,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-bootstrap.git",
-                "reference": "d6daff0dc635c87659754b16107843501355eae3"
+                "reference": "af70660f3cb523d4833f785b93625b7b40f261cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/d6daff0dc635c87659754b16107843501355eae3",
-                "reference": "d6daff0dc635c87659754b16107843501355eae3",
+                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/af70660f3cb523d4833f785b93625b7b40f261cb",
+                "reference": "af70660f3cb523d4833f785b93625b7b40f261cb",
                 "shasum": ""
             },
             "require": {
@@ -2225,7 +2264,7 @@
                 "bootstrap",
                 "yii2"
             ],
-            "time": "2015-01-20 08:53:09"
+            "time": "2015-02-18 16:24:06"
         },
         {
             "name": "yiisoft/yii2-codeception",
@@ -2579,7 +2618,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "mata/mata-framework": 20
+        "mata/mata-framework": 20,
+        "mata/mata-content-block": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

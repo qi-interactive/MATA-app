@@ -13,13 +13,16 @@ return [
     'name' => "MATA CMS",
     'bootstrap' => ['log'],
     'modules' => [
-    'user' => [
+        'user' => [
            'class' => 'mata\user\Module',
        ],
-    'moduleMenu' => [
+        'moduleMenu' => [
            'class' => 'mata\modulemenu\Module',
            'runBootstrap' => true
-       ]
+       ],
+       'contentBlock' => [
+              'class' => 'mata\contentblock\Module'
+          ]
     ],
     'components' => [
         'user' => [

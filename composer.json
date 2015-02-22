@@ -13,7 +13,8 @@
         "yiisoft/yii2-swiftmailer": "*",
         "mata/mata-framework": "dev-development",
         "mata/mata-module-menu" : "*",
-        "mata/mata-user": "*"
+        "mata/mata-user": "*",
+        "mata/mata-content-block": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

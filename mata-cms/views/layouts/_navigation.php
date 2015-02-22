@@ -4,6 +4,7 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use mata\modulemenu\models\Module as ModuleModel;
 use mata\helpers\MataModuleHelper;
+use yii\web\HttpException;
 
 $modules = ModuleModel::find()->all();
 
@@ -11,6 +12,9 @@ $menuItems = [];
 
 foreach ($modules as $moduleEntry) {
 	$module = MataModuleHelper::getModuleByClass($moduleEntry->Location . "Module");
+
+	if ($module == null)
+		throw new HttpException(500, sprintf("Module %s for namespace %s is null. Have you added it to Yii module config?", $moduleEntry->Name, $moduleEntry->Location));
 
 	if (!$module->canShowInNavigation())
 		continue;
