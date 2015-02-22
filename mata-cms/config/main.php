@@ -25,9 +25,6 @@ return [
           ]
     ],
     'components' => [
-      'request' => [
-        'class' => 'mata\web\Request'
-      ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
