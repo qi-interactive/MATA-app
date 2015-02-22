@@ -15,6 +15,25 @@ ModuleAsset::register($this);
 	<title><?= Html::encode($this->title) ?></title>
 	<?php $this->head() ?>
 </head>
+
+<script>
+
+/**
+ * Hitting any link directly will cause the layout not to show. 
+ * Detect it, and if we are not in an iFrame redirect to layout.
+ */
+ if (inIframe() == false)
+ 	window.location.href = "/mata-cms/#" + window.location.pathname;
+
+ function inIframe () {
+ 	try {
+ 		return window.self !== window.top;
+ 	} catch (e) {
+ 		return true;
+ 	}
+ }
+</script>
+
 <body>
 	<?php $this->beginBody() ?>
 
