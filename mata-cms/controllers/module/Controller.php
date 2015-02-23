@@ -6,18 +6,26 @@ use Yii;
 use yii\web\Controller as BaseController;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use matacms\filters\NotificationFilter;
+use matacms\base\MessageEvent;
 
 abstract class Controller extends BaseController {
 
+	const EVENT_MODEL_CREATED = "EVENT_MODEL_CREATED";
+	const EVENT_MODEL_UPDATED = "EVENT_MODEL_UPDATED";
+	const EVENT_MODEL_DELETED = "EVENT_MODEL_DELETED";
 
 	public function behaviors() {
 		return [
 		'verbs' => [
-		'class' => VerbFilter::className(),
-		'actions' => [
-		'delete' => ['post'],
-		],
-		],
+			'class' => VerbFilter::className(),
+			'actions' => [
+				'delete' => ['post'],
+				],
+			],
+		'notifications' => [
+			'class' => NotificationFilter::className(),
+		]
 		];
 	}
 
@@ -32,6 +40,7 @@ abstract class Controller extends BaseController {
 		$model = new $model;
 
 		if ($model->load(Yii::$app->request->post()) && $model->save()) {
+			$this->trigger(self::EVENT_MODEL_CREATED, new MessageEvent($model->getLabel()));
 			return $this->redirect(['view', 'id' => $model->Id]);
 		} else {
 			return $this->render('create', [
@@ -44,6 +53,7 @@ abstract class Controller extends BaseController {
 		$model = $this->findModel($id);
 
 		if ($model->load(Yii::$app->request->post()) && $model->save()) {
+			$this->trigger(self::EVENT_MODEL_UPDATED, new MessageEvent($model->getLabel()));
 			return $this->redirect(['view', 'id' => $model->Id]);
 		} else {
 			return $this->render('update', [
@@ -54,6 +64,7 @@ abstract class Controller extends BaseController {
 
 	public function actionDelete($id) {
 		$this->findModel($id)->delete();
+		$this->trigger(self::EVENT_MODEL_DELETED);
 		return $this->redirect(['index']);
 	}
 
@@ -89,3 +100,4 @@ abstract class Controller extends BaseController {
 	protected abstract function getSearchModel();
 
 }
+
