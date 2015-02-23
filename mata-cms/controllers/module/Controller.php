@@ -21,11 +21,11 @@ abstract class Controller extends BaseController {
 			'class' => VerbFilter::className(),
 			'actions' => [
 				'delete' => ['post'],
-				],
 			],
+		],
 		'notifications' => [
 			'class' => NotificationFilter::className(),
-		]
+			]
 		];
 	}
 
@@ -63,8 +63,12 @@ abstract class Controller extends BaseController {
 	}
 
 	public function actionDelete($id) {
-		$this->findModel($id)->delete();
-		$this->trigger(self::EVENT_MODEL_DELETED);
+
+		$model = $this->findModel($id);
+		$label = $model->getLabel();
+		$model->delete();
+
+		$this->trigger(self::EVENT_MODEL_DELETED, new MessageEvent($label));
 		return $this->redirect(['index']);
 	}
 

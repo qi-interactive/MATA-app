@@ -22,6 +22,7 @@ class NotificationFilter extends Behavior {
 		
 		$this->observe($event, Controller::EVENT_MODEL_CREATED, "%s has been <strong>created</strong>.");
 		$this->observe($event, Controller::EVENT_MODEL_UPDATED, "%s has been <strong>updated</strong>.");
+		$this->observe($event, Controller::EVENT_MODEL_DELETED, "%s has been <strong>deleted</strong>.");
 
 		Event::on(View::className(), View::EVENT_BEGIN_BODY, function ($event) {
 			foreach(\Yii::$app->session->getAllFlashes(true) as $key => $message) {
