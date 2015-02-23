@@ -29,19 +29,13 @@ abstract class Controller extends BaseController {
 		];
 	}
 
-	public function actionView($id) {
-		return $this->render('view', [
-			'model' => $this->findModel($id),
-			]);
-	}
-
 	public function actionCreate() {
 		$model = $this->getModel();
 		$model = new $model;
 
 		if ($model->load(Yii::$app->request->post()) && $model->save()) {
 			$this->trigger(self::EVENT_MODEL_CREATED, new MessageEvent($model->getLabel()));
-			return $this->redirect(['view', 'id' => $model->Id]);
+			return $this->redirect(['index', 'id' => $model->Id]);
 		} else {
 			return $this->render('create', [
 				'model' => $model,
@@ -54,7 +48,7 @@ abstract class Controller extends BaseController {
 
 		if ($model->load(Yii::$app->request->post()) && $model->save()) {
 			$this->trigger(self::EVENT_MODEL_UPDATED, new MessageEvent($model->getLabel()));
-			return $this->redirect(['view', 'id' => $model->Id]);
+			return $this->redirect(['index', 'id' => $model->Id]);
 		} else {
 			return $this->render('update', [
 				'model' => $model,

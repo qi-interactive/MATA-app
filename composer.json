@@ -14,7 +14,8 @@
         "mata/mata-framework": "dev-development",
         "mata/mata-module-menu" : "*",
         "mata/mata-user": "*",
-        "mata/mata-content-block": "dev-master"
+        "mata/mata-content-block": "dev-master",
+        "asofter/yii2-imperavi-redactor": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
