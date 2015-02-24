@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "95b0002dc54b293274ef47e1e01621d0",
+    "hash": "daaaef3f2105a6e0385af57ae332de0b",
     "packages": [
         {
             "name": "asofter/yii2-imperavi-redactor",
@@ -764,15 +764,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/mata-content-block.git",
-                "reference": "d828c50244102ddd64bee311de0ba2df0bb2dd85"
+                "reference": "6858784689694931929a44f125072a43e14b7b5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/mata-content-block/zipball/d828c50244102ddd64bee311de0ba2df0bb2dd85",
-                "reference": "d828c50244102ddd64bee311de0ba2df0bb2dd85",
+                "url": "https://api.github.com/repos/qi-interactive/mata-content-block/zipball/6858784689694931929a44f125072a43e14b7b5f",
+                "reference": "6858784689694931929a44f125072a43e14b7b5f",
                 "shasum": ""
             },
             "require": {
+                "asofter/yii2-imperavi-redactor": "dev-master",
                 "codeception/codeception": "*",
                 "yiisoft/yii2-codeception": "*",
                 "yiisoft/yii2-faker": "*"
@@ -795,7 +796,45 @@
                 "wysiwyg",
                 "yii2"
             ],
-            "time": "2015-02-22 07:49:54"
+            "time": "2015-02-23 18:24:21"
+        },
+        {
+            "name": "mata/mata-form",
+            "version": "dev-development",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/qi-interactive/mata-form.git",
+                "reference": "5f7eb814d3e142b867a4b0495aaff0a1d3d60fe5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/qi-interactive/mata-form/zipball/5f7eb814d3e142b867a4b0495aaff0a1d3d60fe5",
+                "reference": "5f7eb814d3e142b867a4b0495aaff0a1d3d60fe5",
+                "shasum": ""
+            },
+            "require": {
+                "codeception/codeception": "*",
+                "yiisoft/yii2-codeception": "*",
+                "yiisoft/yii2-faker": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "mata\\form\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Manages forms for MATA",
+            "keywords": [
+                "form",
+                "mata",
+                "mata-form",
+                "yii2"
+            ],
+            "time": "2015-02-24 16:51:49"
         },
         {
             "name": "mata/mata-framework",
@@ -1829,12 +1868,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "be6d274e452bc6e3016d7d2d725b1e59a58982bb"
+                "reference": "f9ee7f03c1af5e6cf59e2270ac3b8ed7f47e2158"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/be6d274e452bc6e3016d7d2d725b1e59a58982bb",
-                "reference": "be6d274e452bc6e3016d7d2d725b1e59a58982bb",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/f9ee7f03c1af5e6cf59e2270ac3b8ed7f47e2158",
+                "reference": "f9ee7f03c1af5e6cf59e2270ac3b8ed7f47e2158",
                 "shasum": ""
             },
             "require": {
@@ -1878,7 +1917,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2015-02-21 13:05:27"
+            "time": "2015-02-24 12:09:34"
         },
         {
             "name": "symfony/css-selector",
@@ -2153,12 +2192,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "b266268d4b7a071b8d51eb4a2e4e47562fa20a88"
+                "reference": "95e90798565849c1c0ea5f67f8840429c93d03b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/b266268d4b7a071b8d51eb4a2e4e47562fa20a88",
-                "reference": "b266268d4b7a071b8d51eb4a2e4e47562fa20a88",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/95e90798565849c1c0ea5f67f8840429c93d03b8",
+                "reference": "95e90798565849c1c0ea5f67f8840429c93d03b8",
                 "shasum": ""
             },
             "require": {
@@ -2168,7 +2207,6 @@
                 "bower-asset/yii2-pjax": ">=2.0.1",
                 "cebe/markdown": "~1.0.0",
                 "ext-mbstring": "*",
-                "ext-mcrypt": "*",
                 "ezyang/htmlpurifier": "4.6.*",
                 "lib-pcre": "*",
                 "php": ">=5.4.0",
@@ -2234,7 +2272,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-02-23 00:33:23"
+            "time": "2015-02-24 16:20:28"
         },
         {
             "name": "yiisoft/yii2-authclient",
@@ -2290,12 +2328,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-bootstrap.git",
-                "reference": "8dc09656611a08a2a406238958601970bf1dde3e"
+                "reference": "478254d388ca6c4aac730327fe9fa9a0563731d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/8dc09656611a08a2a406238958601970bf1dde3e",
-                "reference": "8dc09656611a08a2a406238958601970bf1dde3e",
+                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/478254d388ca6c4aac730327fe9fa9a0563731d2",
+                "reference": "478254d388ca6c4aac730327fe9fa9a0563731d2",
                 "shasum": ""
             },
             "require": {
@@ -2328,7 +2366,7 @@
                 "bootstrap",
                 "yii2"
             ],
-            "time": "2015-02-22 20:59:30"
+            "time": "2015-02-24 14:00:57"
         },
         {
             "name": "yiisoft/yii2-codeception",
@@ -2381,12 +2419,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-composer.git",
-                "reference": "26a71acea7f1386f7129165233add6d4eb781c00"
+                "reference": "12e9db0629b51aebc3f0e63f234499a558249de3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/26a71acea7f1386f7129165233add6d4eb781c00",
-                "reference": "26a71acea7f1386f7129165233add6d4eb781c00",
+                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/12e9db0629b51aebc3f0e63f234499a558249de3",
+                "reference": "12e9db0629b51aebc3f0e63f234499a558249de3",
                 "shasum": ""
             },
             "require": {
@@ -2420,7 +2458,7 @@
                 "extension installer",
                 "yii2"
             ],
-            "time": "2015-02-22 20:59:30"
+            "time": "2015-02-24 11:03:41"
         },
         {
             "name": "yiisoft/yii2-faker",
@@ -2547,39 +2585,6 @@
             "extra": {
                 "bower-asset-main": "dist/typeahead.bundle.js"
             }
-        },
-        {
-            "name": "mata/mata-notification",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/qi-interactive/mata-notification.git",
-                "reference": "9b18ce7f371268761668f0ca703dc1e22217849e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/mata-notification/zipball/9b18ce7f371268761668f0ca703dc1e22217849e",
-                "reference": "9b18ce7f371268761668f0ca703dc1e22217849e",
-                "shasum": ""
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "mata\\notification\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Displays notifications for flash messages",
-            "keywords": [
-                "alert",
-                "mata",
-                "mata-notifications",
-                "yii2"
-            ],
-            "time": "2015-02-23 15:05:59"
         },
         {
             "name": "phpspec/php-diff",
@@ -2717,6 +2722,7 @@
     "stability-flags": {
         "mata/mata-framework": 20,
         "mata/mata-content-block": 20,
+        "mata/mata-form": 20,
         "asofter/yii2-imperavi-redactor": 20
     },
     "prefer-stable": false,

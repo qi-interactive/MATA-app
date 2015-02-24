@@ -29,8 +29,8 @@ return [
     'Development' => [
         'path' => 'dev',
         'setWritable' => [
-            'mata/runtime',
-            'mata/web/assets',
+            'mata-cms/runtime',
+            'mata-cms/web/assets',
             'frontend/runtime',
             'frontend/web/assets',
         ],
@@ -38,15 +38,15 @@ return [
             'yii',
         ],
         'setCookieValidationKey' => [
-            'mata/config/main-local.php',
+            'mata-cms/config/main-local.php',
             'frontend/config/main-local.php',
         ],
     ],
     'Production' => [
         'path' => 'prod',
         'setWritable' => [
-            'mata/runtime',
-            'mata/web/assets',
+            'mata-cms/runtime',
+            'mata-cms/web/assets',
             'frontend/runtime',
             'frontend/web/assets',
         ],
@@ -54,7 +54,7 @@ return [
             'yii',
         ],
         'setCookieValidationKey' => [
-            'mata/config/main-local.php',
+            'mata-cms/config/main-local.php',
             'frontend/config/main-local.php',
         ],
     ],

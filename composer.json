@@ -15,6 +15,7 @@
         "mata/mata-module-menu" : "*",
         "mata/mata-user": "*",
         "mata/mata-content-block": "dev-master",
+        "mata/mata-form": "dev-development",
         "asofter/yii2-imperavi-redactor": "dev-master"
     },
     "require-dev": {
