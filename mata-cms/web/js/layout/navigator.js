@@ -17,7 +17,7 @@ $(window).ready(function() {
 	/**
 	 * Check if there is a deep link into iFrame. Cause by inIframe (module layout file)
 	 */
-	 if (window.location.hash != null)
+	 if (window.location.hash.length > 0)
 	 	mata.simpleTheme.navigator.navigate(window.location.hash.replace("#", ""))
 
 })

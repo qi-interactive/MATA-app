@@ -9,7 +9,6 @@ use yii\web\HttpException;
 $modules = ModuleModel::find()->all();
 
 $menuItems = [];
-
 foreach ($modules as $moduleEntry) {
 	$module = MataModuleHelper::getModuleByClass($moduleEntry->Location . "Module");
 
@@ -26,15 +25,34 @@ foreach ($modules as $moduleEntry) {
 		echo $asset->sourcePath . $module->mataConfig->icon;
 	}
 
-	$link = is_array($module->getNavigation()) ? "#" : $module->getNavigation();
 
-	$menuItems[] = sprintf("<li><a title='%s' href='%s'>%s%s</a></li>", 
-		$module->getDescription(), $link, file_get_contents($asset->sourcePath . $module->mataConfig->icon), $module->getName());
+	if (is_array($module->getNavigation())) {
 
+		$subNav = [];
+
+		foreach ($module->getNavigation() as $subNavLabel => $subNavLink) {
+			$subNav[] = [
+			'label' => $subNavLabel,
+			'url' => $subNavLink
+			];
+		}
+
+		$menuItems[] = [
+		'label' => $module->getName(),
+		'items' => $subNav
+		];
+
+	} else {
+
+		$menuItems[] = sprintf("<li><a title='%s' href='%s'>%s%s</a></li>", 
+			$module->getDescription(), $module->getNavigation(), file_get_contents($asset->sourcePath . $module->mataConfig->icon), $module->getName());
+	}
+	
 }
 
 if (empty($menuItems))
 	return;
+
 
 ?>
 
@@ -56,17 +74,25 @@ if (empty($menuItems))
 		width: 58px;
 		height: 58px;
 	}
+
+	.dropdown-menu {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		background: red;
+		display: block;
+	}
 </style>
 
 <header class="cd-header">
-    <div id="progress-bar"></div>
-    <div id="header-content-container">
-        
-        <a href="#" class="cd-3d-nav-trigger">
-            Menu
-            <span></span>
-        </a>
-    </div>
+	<div id="progress-bar"></div>
+	<div id="header-content-container">
+
+		<a href="#" class="cd-3d-nav-trigger">
+			Menu
+			<span></span>
+		</a>
+	</div>
 </header> <!-- .cd-header -->
 
 

@@ -8,6 +8,7 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use matacms\filters\NotificationFilter;
 use matacms\base\MessageEvent;
+use yii\filters\AccessControl;
 
 abstract class Controller extends BaseController {
 
@@ -22,6 +23,16 @@ abstract class Controller extends BaseController {
 			'actions' => [
 				'delete' => ['post'],
 			],
+		],
+		'access' => [
+		    'class' => AccessControl::className(),
+		    // 'only' => ['logout', 'signup'],
+		    'rules' => [
+		    	[
+	               'allow' => true,
+	               'roles' => ['@'],
+	           ],
+		    ],
 		],
 		'notifications' => [
 			'class' => NotificationFilter::className(),

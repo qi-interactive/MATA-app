@@ -25,10 +25,6 @@ return [
           ]
     ],
     'components' => [
-        'user' => [
-            'identityClass' => 'common\models\User',
-            'enableAutoLogin' => true,
-        ],
         'assetManager' => [
             'linkAssets' => true
         ],
