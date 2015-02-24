@@ -2,7 +2,7 @@
 
 namespace matacms\db;
 
-use mata\behaviors\HistoryBehavior;
+use mata\arhistory\behaviors\HistoryBehavior;
 
 class ActiveRecord extends \yii\db\ActiveRecord {
 

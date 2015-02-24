@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "daaaef3f2105a6e0385af57ae332de0b",
+    "hash": "dca67f328c3dfe30e8edcd5fdb9b7464",
     "packages": [
         {
             "name": "asofter/yii2-imperavi-redactor",
@@ -759,6 +759,44 @@
             "time": "2015-01-22 00:01:34"
         },
         {
+            "name": "mata/mata-ar-history",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/qi-interactive/mata-ar-history.git",
+                "reference": "9c824996544d5eff27b662ceb4e4ae35c2f42aef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/qi-interactive/mata-ar-history/zipball/9c824996544d5eff27b662ceb4e4ae35c2f42aef",
+                "reference": "9c824996544d5eff27b662ceb4e4ae35c2f42aef",
+                "shasum": ""
+            },
+            "require": {
+                "codeception/codeception": "*",
+                "yiisoft/yii2-codeception": "*",
+                "yiisoft/yii2-faker": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "mata\\arhistory\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Takes ownership of versioning of AR models",
+            "keywords": [
+                "mata",
+                "mata-ar-history",
+                "versions",
+                "yii2"
+            ],
+            "time": "2015-02-24 21:23:08"
+        },
+        {
             "name": "mata/mata-content-block",
             "version": "dev-master",
             "source": {
@@ -842,12 +880,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/MATA-Framework.git",
-                "reference": "4683fea4a73f8862645692d0060047ff7faeaa64"
+                "reference": "f77db935b9458042177af8d1998632e61763172f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/MATA-Framework/zipball/4683fea4a73f8862645692d0060047ff7faeaa64",
-                "reference": "4683fea4a73f8862645692d0060047ff7faeaa64",
+                "url": "https://api.github.com/repos/qi-interactive/MATA-Framework/zipball/f77db935b9458042177af8d1998632e61763172f",
+                "reference": "f77db935b9458042177af8d1998632e61763172f",
                 "shasum": ""
             },
             "require": {
@@ -872,7 +910,7 @@
                 "framework",
                 "mata"
             ],
-            "time": "2015-02-22 11:00:04"
+            "time": "2015-02-24 21:27:00"
         },
         {
             "name": "mata/mata-module-menu",
@@ -2192,12 +2230,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "95e90798565849c1c0ea5f67f8840429c93d03b8"
+                "reference": "0919b13b89f3c6118b48d3da837ef0a1e86b556e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/95e90798565849c1c0ea5f67f8840429c93d03b8",
-                "reference": "95e90798565849c1c0ea5f67f8840429c93d03b8",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/0919b13b89f3c6118b48d3da837ef0a1e86b556e",
+                "reference": "0919b13b89f3c6118b48d3da837ef0a1e86b556e",
                 "shasum": ""
             },
             "require": {
@@ -2272,7 +2310,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-02-24 16:20:28"
+            "time": "2015-02-24 19:51:47"
         },
         {
             "name": "yiisoft/yii2-authclient",
@@ -2328,12 +2366,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-bootstrap.git",
-                "reference": "478254d388ca6c4aac730327fe9fa9a0563731d2"
+                "reference": "8310e2245b9314e1d481931aaa8e15448e1d7249"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/478254d388ca6c4aac730327fe9fa9a0563731d2",
-                "reference": "478254d388ca6c4aac730327fe9fa9a0563731d2",
+                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/8310e2245b9314e1d481931aaa8e15448e1d7249",
+                "reference": "8310e2245b9314e1d481931aaa8e15448e1d7249",
                 "shasum": ""
             },
             "require": {
@@ -2366,7 +2404,7 @@
                 "bootstrap",
                 "yii2"
             ],
-            "time": "2015-02-24 14:00:57"
+            "time": "2015-02-24 19:58:47"
         },
         {
             "name": "yiisoft/yii2-codeception",
@@ -2720,6 +2758,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "mata/mata-ar-history": 20,
         "mata/mata-framework": 20,
         "mata/mata-content-block": 20,
         "mata/mata-form": 20,
