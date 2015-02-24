@@ -20,9 +20,12 @@ return [
            'class' => 'mata\modulemenu\Module',
            'runBootstrap' => true
        ],
-       'contentBlock' => [
-              'class' => 'mata\contentblock\Module'
-          ]
+        'contentBlock' => [
+            'class' => 'mata\contentblock\Module'
+        ],
+        'form' => [
+            'class' => 'mata\form\Module'
+        ]
     ],
     'components' => [
         'assetManager' => [
