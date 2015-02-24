@@ -2,7 +2,15 @@
 
 namespace matacms\db;
 
+use mata\behaviors\HistoryBehavior;
+
 class ActiveRecord extends \yii\db\ActiveRecord {
+
+	public function behaviors() {
+		return [
+			HistoryBehavior::className()
+		];
+	}
 
 	public function getLabel() {
 		
