@@ -17,14 +17,25 @@ jQuery(document).ready(function($){
 		toggle3dBlock(!$('.cd-header').hasClass('nav-is-visible'));
 	});
 
+	$('#subnav-overlay a').on('click', function(){
+		toggle3dBlock(false)
+	})
+
 	//select a new item from the 3d navigation
 	$('.cd-3d-nav a').on('mouseover', function(){
 		var selected = $(this);
 		selected.parent('li').addClass('cd-selected').siblings('li').removeClass('cd-selected');
 		updateSelectedNav();
 	});
-	$('.cd-3d-nav a').on('click', function(){
-		updateSelectedNav('close');
+	$('.cd-3d-nav a').on('click', function(e) {
+		if ($(this).attr("data-subnav") != null) {
+			showSubnav($(this).attr("data-subnav"))
+			e.stopPropagation();
+			return false;
+		} else {
+			updateSelectedNav('close');
+		}
+		
 	})
 
 	$(window).on('resize', function(){
@@ -36,6 +47,25 @@ jQuery(document).ready(function($){
 		$('.cd-header').toggleClass('nav-is-visible', addOrRemove);
 		$('main').toggleClass('nav-is-visible', addOrRemove);
 		$('.cd-3d-nav-container').toggleClass('nav-is-visible', addOrRemove);
+
+		if (addOrRemove == false)
+			hideSubnav();
+	}
+
+	function showSubnav(subnavId) {
+		var overlay = $("#subnav-overlay");
+		
+		overlay.find("> div").hide();
+		overlay.css({
+			height: $(window).height() - $("nav").height(),
+			top: $("nav").height()
+		}).fadeIn();
+
+		$("#subnav-" + subnavId).fadeIn();
+	}
+
+	function hideSubnav() {
+		$("#subnav-overlay").fadeOut().find("> div").fadeOut();
 	}
 
 	//this function update the .cd-marker position
@@ -50,6 +80,8 @@ jQuery(document).ready(function($){
 		});
 		
 		if( type == 'close') {
+
+			hideSubnav();
 			$('.cd-marker').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
 				toggle3dBlock(false);
 			});
