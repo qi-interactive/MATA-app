@@ -15,10 +15,6 @@ return [
         'request' => [
             'baseUrl' => '',
         ],
-        'user' => [
-            'identityClass' => 'common\models\User',
-            'enableAutoLogin' => true,
-        ],
         'urlManager' => [
           'enablePrettyUrl' => true,
           'showScriptName' => false,

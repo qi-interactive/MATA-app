@@ -3,14 +3,13 @@ namespace matacms\controllers;
 
 use Yii;
 use yii\filters\AccessControl;
-use yii\web\Controller;
 use common\models\LoginForm;
-use yii\filters\VerbFilter;
+use matacms\controllers\base\AuthenticatedController;
 
 /**
  * Site controller
  */
-class SiteController extends Controller {
+class SiteController extends AuthenticatedController {
 
     public function actionIndex() {
         return $this->render('index');

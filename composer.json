@@ -17,7 +17,9 @@
         "mata/mata-user": "*",
         "mata/mata-content-block": "dev-master",
         "mata/mata-form": "dev-development",
-        "asofter/yii2-imperavi-redactor": "dev-master"
+        "asofter/yii2-imperavi-redactor": "dev-master",
+        "matacms/matacms-cache": "dev-development",
+        "mata/mata-key-value": "dev-development"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

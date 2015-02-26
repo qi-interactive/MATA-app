@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "dca67f328c3dfe30e8edcd5fdb9b7464",
+    "hash": "b571c122839d916bdc81dc0562c97cbf",
     "packages": [
         {
             "name": "asofter/yii2-imperavi-redactor",
@@ -913,6 +913,44 @@
             "time": "2015-02-24 21:27:00"
         },
         {
+            "name": "mata/mata-key-value",
+            "version": "dev-development",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/qi-interactive/mata-key-value.git",
+                "reference": "03b5a416a1aa9861482e5e1d7ef680305cc64a1f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/qi-interactive/mata-key-value/zipball/03b5a416a1aa9861482e5e1d7ef680305cc64a1f",
+                "reference": "03b5a416a1aa9861482e5e1d7ef680305cc64a1f",
+                "shasum": ""
+            },
+            "require": {
+                "codeception/codeception": "*",
+                "yiisoft/yii2-codeception": "*",
+                "yiisoft/yii2-faker": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "mata\\keyvalue\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Generic Key-Value store",
+            "keywords": [
+                "mata",
+                "mata-key-value",
+                "store",
+                "yii2"
+            ],
+            "time": "2015-02-26 12:22:16"
+        },
+        {
             "name": "mata/mata-module-menu",
             "version": "dev-master",
             "source": {
@@ -1004,6 +1042,48 @@
                 "yii2"
             ],
             "time": "2015-02-20 09:32:36"
+        },
+        {
+            "name": "matacms/matacms-cache",
+            "version": "dev-development",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/qi-interactive/matacms-cache.git",
+                "reference": "f005befbde31fd3aadd4b2149d77aa6f978118e1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/qi-interactive/matacms-cache/zipball/f005befbde31fd3aadd4b2149d77aa6f978118e1",
+                "reference": "f005befbde31fd3aadd4b2149d77aa6f978118e1",
+                "shasum": ""
+            },
+            "require": {
+                "asofter/yii2-imperavi-redactor": "dev-master",
+                "codeception/codeception": "*",
+                "yiisoft/yii2-codeception": "*",
+                "yiisoft/yii2-faker": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "matacms\\cache\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "matacms\\cache\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Manages cache for MATA CMS",
+            "keywords": [
+                "cache",
+                "mata",
+                "mata-cms-cache",
+                "yii2"
+            ],
+            "time": "2015-02-26 12:09:33"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -2762,7 +2842,9 @@
         "mata/mata-framework": 20,
         "mata/mata-content-block": 20,
         "mata/mata-form": 20,
-        "asofter/yii2-imperavi-redactor": 20
+        "asofter/yii2-imperavi-redactor": 20,
+        "matacms/matacms-cache": 20,
+        "mata/mata-key-value": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
