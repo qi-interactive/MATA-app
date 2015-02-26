@@ -19,7 +19,7 @@ echo Html::a("Versions", "history?documentId=" . HistoryBehavior::getDocumentId(
 
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <?= $this->render('_form', [
+    <?= $this->render(\Yii::$app->controller->findView("_form"), [
         'model' => $model,
     ]) ?>
 
