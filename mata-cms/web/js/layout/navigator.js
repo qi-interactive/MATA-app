@@ -23,8 +23,15 @@ $(window).ready(function() {
 })
 
 mata.simpleTheme.navigator.navigate = function(href) {
-	window.history.pushState(null, "", href)
+	mata.simpleTheme.navigator.updateURL(href)
 	mata.simpleTheme.ajaxLoader.run();
 	mata.simpleTheme.iframe.attr("src", href);
 }
 
+mata.simpleTheme.navigator.updateURL = function(href) {
+	window.history.pushState(null, "", href)
+}
+
+$(window).on('popstate', function(e) {
+	mata.simpleTheme.iframe.attr("src", window.location.href)
+})

@@ -1086,6 +1086,79 @@
             "time": "2015-02-26 14:26:30"
         },
         {
+            "name": "matacms/matacms-settings",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/qi-interactive/matacms-settings.git",
+                "reference": "2a4d1262ffd251aa8cfef053edd33ad17a277f66"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/qi-interactive/matacms-settings/zipball/2a4d1262ffd251aa8cfef053edd33ad17a277f66",
+                "reference": "2a4d1262ffd251aa8cfef053edd33ad17a277f66",
+                "shasum": ""
+            },
+            "require": {
+                "codeception/codeception": "*",
+                "mata/mata-key-value": "*",
+                "yiisoft/yii2-codeception": "*",
+                "yiisoft/yii2-faker": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "matacms\\settings\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Manages settings for MATA CMS",
+            "keywords": [
+                "mata",
+                "mata-cms-settings",
+                "yii2"
+            ],
+            "time": "2015-02-26 21:26:52"
+        },
+        {
+            "name": "matacms/matacms-simple-theme",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/qi-interactive/matacms-simple-theme.git",
+                "reference": "cfb239bcf86f547fba7c7fe53466c0384c0b458e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/qi-interactive/matacms-simple-theme/zipball/cfb239bcf86f547fba7c7fe53466c0384c0b458e",
+                "reference": "cfb239bcf86f547fba7c7fe53466c0384c0b458e",
+                "shasum": ""
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "matacms\\theme\\simple\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Basic theme for MATA CMS",
+            "keywords": [
+                "cms",
+                "mata",
+                "mata-simple-theme",
+                "matacms",
+                "theme",
+                "yii2"
+            ],
+            "time": "2015-02-26 20:37:37"
+        },
+        {
             "name": "phpunit/php-code-coverage",
             "version": "dev-master",
             "source": {
@@ -2844,7 +2917,9 @@
         "mata/mata-form": 20,
         "asofter/yii2-imperavi-redactor": 20,
         "matacms/matacms-cache": 20,
-        "mata/mata-key-value": 20
+        "mata/mata-key-value": 20,
+        "matacms/matacms-simple-theme": 20,
+        "matacms/matacms-settings": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

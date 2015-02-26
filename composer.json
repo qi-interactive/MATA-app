@@ -19,7 +19,9 @@
         "mata/mata-form": "dev-development",
         "asofter/yii2-imperavi-redactor": "dev-master",
         "matacms/matacms-cache": "dev-development",
-        "mata/mata-key-value": "dev-development"
+        "mata/mata-key-value": "dev-development",
+        "matacms/matacms-simple-theme": "dev-master",
+        "matacms/matacms-settings": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

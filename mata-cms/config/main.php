@@ -15,10 +15,17 @@ return [
     'modules' => [
         'user' => [
            'class' => 'mata\user\Module',
+           'controllerMap' => [
+                'security' => 'matacms\controllers\user\SecurityController'
+            ],
        ],
         'moduleMenu' => [
            'class' => 'mata\modulemenu\Module',
-           'runBootstrap' => true
+           'runBootstrap' => true,
+           'moduleFolders' => ['@vendor/mata', "@vendor/matacms"]
+       ],
+        'settings' => [
+           'class' => 'matacms\settings\Module'
        ],
         'contentBlock' => [
             'class' => 'mata\contentblock\Module'
@@ -38,6 +45,14 @@ return [
           'enablePrettyUrl' => true,
           'showScriptName' => false,
         ],
+        'view' => [
+              'theme' => [
+                  'pathMap' => [
+                        '@matacms/views' => '@vendor/matacms/matacms-simple-theme',
+                        '@mata/user/views/security' => '@matacms/views/user/security'
+                  ],
+              ],
+          ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [

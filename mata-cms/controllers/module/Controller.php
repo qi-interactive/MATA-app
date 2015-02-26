@@ -19,14 +19,23 @@ abstract class Controller extends AuthenticatedController {
 	public function behaviors() {
 		return [
 		'verbs' => [
-			'class' => VerbFilter::className(),
-			'actions' => [
-				'delete' => ['post'],
-			],
+		'class' => VerbFilter::className(),
+		'actions' => [
+		'delete' => ['post'],
+		],
 		],
 		'notifications' => [
-			'class' => NotificationFilter::className(),
-			]
+		'class' => NotificationFilter::className(),
+		]
+		];
+	}
+
+	public function actions() {
+		return [
+		'history' => [
+		'class' => 'mata\arhistory\actions\HistoryAction',
+		'view' => '@matacms/views/history/history'
+		]
 		];
 	}
 
@@ -38,7 +47,7 @@ abstract class Controller extends AuthenticatedController {
 			$this->trigger(self::EVENT_MODEL_CREATED, new MessageEvent($model->getLabel()));
 			return $this->redirect(['index', 'id' => $model->Id]);
 		} else {
-			return $this->render('create', [
+			return $this->render($this->findView(), [
 				'model' => $model,
 				]);
 		}
@@ -51,7 +60,8 @@ abstract class Controller extends AuthenticatedController {
 			$this->trigger(self::EVENT_MODEL_UPDATED, new MessageEvent($model->getLabel()));
 			return $this->redirect(['index', 'id' => $model->Id]);
 		} else {
-			return $this->render('update', [
+
+			return $this->render($this->findView(), [
 				'model' => $model,
 				]);
 		}
@@ -67,6 +77,15 @@ abstract class Controller extends AuthenticatedController {
 		return $this->redirect(['index']);
 	}
 
+	public function findView($view = null) {
+
+		$view =  $view ?: $this->action->id;
+
+		$moduleViewFile = Yii::$app->controller->module->getViewPath() . "/" . $this->id . "/" . $view;
+		return file_exists($moduleViewFile . ".php") ? "@" . substr($moduleViewFile, stripos($moduleViewFile, "vendor")) : "@matacms/views/module/" . $view;
+
+	}
+
 	/**
 	 * Lists all ContentBlock models.
 	 * @return mixed
@@ -77,7 +96,8 @@ abstract class Controller extends AuthenticatedController {
 		$searchModel = new $searchModel();
 		$dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
-		return $this->render('index', [
+		
+		return $this->render($this->findView(), [
 			'searchModel' => $searchModel,
 			'dataProvider' => $dataProvider,
 			]);
