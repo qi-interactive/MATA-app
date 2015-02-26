@@ -3,8 +3,11 @@
 namespace matacms\db;
 
 use mata\arhistory\behaviors\HistoryBehavior;
+use yii\base\InvalidConfigException;
 
 class ActiveRecord extends \yii\db\ActiveRecord {
+
+	private $attributeLabels;
 
 	public function behaviors() {
 		return [
@@ -22,5 +25,86 @@ class ActiveRecord extends \yii\db\ActiveRecord {
 
 		return $this->getPrimaryKey();
 	}
+
+	public function getTableName() {
+		return static::tableName();
+	}
+
+	public function getAttributeLabels($attribute = null)
+    {
+    	if($this->attributeLabels == null)
+    		$this->attributeLabels = $this->attributeLabels();
+        return $this->attributeLabels;
+    }
+
+	public function setAttributeLabel($attribute, $label)
+    {
+    	$attributeLabels = $this->attributeLabels();
+        $this->attributeLabels[$attribute] = $label;
+    }
+
+    /**
+     * Returns the text label for the specified attribute.
+     * If the attribute looks like `relatedModel.attribute`, then the attribute will be received from the related model.
+     * @param string $attribute the attribute name
+     * @return string the attribute label
+     * @see generateAttributeLabel()
+     * @see attributeLabels()
+     */
+    public function getAttributeLabel($attribute)
+    {
+        $labels = $this->getAttributeLabels();
+        if (isset($labels[$attribute])) {
+            return ($labels[$attribute]);
+        } elseif (strpos($attribute, '.')) {
+            $attributeParts = explode('.', $attribute);
+            $neededAttribute = array_pop($attributeParts);
+
+            $relatedModel = $this;
+            foreach ($attributeParts as $relationName) {
+                if (isset($this->_related[$relationName]) && $this->_related[$relationName] instanceof self) {
+                    $relatedModel = $this->_related[$relationName];
+                } else {
+                    try {
+                        $relation = $relatedModel->getRelation($relationName);
+                    } catch (InvalidParamException $e) {
+                        return $this->generateAttributeLabel($attribute);
+                    }
+                    $relatedModel = new $relation->modelClass;
+                }
+            }
+
+            $labels = $relatedModel->attributeLabels();
+            if (isset($labels[$neededAttribute])) {
+                return $labels[$neededAttribute];
+            }
+        }
+
+        return $this->generateAttributeLabel($attribute);
+    }
+
+    public function getInstanceTableSchema()
+    {
+        $schema = static::getDb()->getSchema()->getTableSchema($this->getTableName());
+        if ($schema !== null) {
+            return $schema;
+        } else {
+            throw new InvalidConfigException("The table does not exist: " . $this->getTableName());
+        }
+    }
+
+    public function autoCompleteData() {
+        // $db = $this->db;
+        // if ($db !== null) {
+        //     return [
+        //         'ReferencedTable' => function () use ($db) {
+        //             return $this->findFormTableNames();
+        //         },
+        //     ];
+        // } else {
+        //     return [];
+        // }
+        return [];
+    }
 
 }
