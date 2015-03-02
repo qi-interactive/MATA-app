@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel mata\contentblock\models\ContentBlockSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Content Blocks';
+$this->title = \Yii::$app->controller->id;
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="content-block-index">
@@ -19,19 +19,20 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a(sprintf('Create %s', \Yii::$app->controller->id), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
-    <?= GridView::widget([
+    <?php
+
+    $columns = [];
+    $columns[] = ['class' => 'yii\grid\SerialColumn'];
+
+    foreach ($searchModel->safeAttributes() as $attribute)
+        $columns[] = $attribute;
+
+    $columns[] = ['class' => 'yii\grid\ActionColumn'];
+
+    echo GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
-        'columns' => [
-        ['class' => 'yii\grid\SerialColumn'],
-
-        'Id',
-        'Title:ntext',
-        'Text:ntext',
-        'Region',
-
-        ['class' => 'yii\grid\ActionColumn'],
-        ],
+        'columns' => $columns,
         ]); ?>
 
     </div>

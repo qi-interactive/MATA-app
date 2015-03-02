@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 use mata\arhistory\behaviors\HistoryBehavior;
 
-$this->title = 'Update Content Block: ' . ' ' . $model->getLabel();
+$this->title = 'Update ' . get_class($model) . ': ' . ' ' . $model->getLabel();
 $this->params['breadcrumbs'][] = ['label' => 'Content Blocks', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->Title, 'url' => ['view', 'id' => $model->Id]];
 $this->params['breadcrumbs'][] = 'Update';

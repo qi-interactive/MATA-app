@@ -1,3 +1,8 @@
-This form will be generated dynamically using DynamicActiveForm
+<?php
 
-// TODO @Michal to fill in
+use mata\widgets\DynamicForm;
+
+echo DynamicForm::widget([
+	'model' => $model,
+	]);
+	?>
