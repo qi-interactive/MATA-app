@@ -86,17 +86,12 @@ abstract class Controller extends AuthenticatedController {
 
 	}
 
-	/**
-	 * Lists all ContentBlock models.
-	 * @return mixed
-	 */
 	public function actionIndex() {
 
 		$searchModel = $this->getSearchModel();
 		$searchModel = new $searchModel();
 		$dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
-		
 		return $this->render($this->findView(), [
 			'searchModel' => $searchModel,
 			'dataProvider' => $dataProvider,

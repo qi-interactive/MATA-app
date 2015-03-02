@@ -25,6 +25,11 @@ class ActiveField extends \yii\widgets\ActiveField {
 
 	public function wysiwyg($options = []) {
 		$options = array_merge($this->inputOptions, $options);
+
+        $options = array_merge([
+            "s3" => "/mata-cms/media/redactor/s3",
+            ], $options);
+
 		$this->adjustLabelFor($options);
 		$this->parts['{input}'] = \yii\imperavi\Widget::widget([
 			'model' => $this->model,
