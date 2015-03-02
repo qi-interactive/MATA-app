@@ -15,13 +15,15 @@
         "mata/mata-framework": "dev-development",
         "mata/mata-module-menu" : "*",
         "mata/mata-user": "*",
-        "mata/mata-content-block": "dev-master",
         "mata/mata-form": "dev-development",
         "asofter/yii2-imperavi-redactor": "dev-master",
         "matacms/matacms-cache": "dev-development",
+        "matacms/matacms-content-block": "dev-master",
         "mata/mata-key-value": "dev-development",
         "matacms/matacms-simple-theme": "dev-master",
-        "matacms/matacms-settings": "dev-master"
+        "matacms/matacms-settings": "dev-master",
+        "matacms/matacms-post": "dev-master",
+        "mata/mata-media": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
