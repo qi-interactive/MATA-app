@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "165261fca295f0bc0fec9e0d3541834c",
+    "hash": "88afe8933b41a26017594165cddb9a8f",
     "packages": [
         {
             "name": "asofter/yii2-imperavi-redactor",
@@ -795,6 +795,47 @@
                 "yii2"
             ],
             "time": "2015-02-26 22:35:19"
+        },
+        {
+            "name": "mata/mata-category",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/qi-interactive/mata-category.git",
+                "reference": "e58017fab5894599b26f7e56a60ac25790aaf828"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/qi-interactive/mata-category/zipball/e58017fab5894599b26f7e56a60ac25790aaf828",
+                "reference": "e58017fab5894599b26f7e56a60ac25790aaf828",
+                "shasum": ""
+            },
+            "require": {
+                "codeception/codeception": "*",
+                "yiisoft/yii2-codeception": "*",
+                "yiisoft/yii2-faker": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "mata\\category\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "mata\\category\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Manages categories for AR models",
+            "keywords": [
+                "category",
+                "mata",
+                "mata-category",
+                "yii2"
+            ],
+            "time": "2015-03-03 17:55:35"
         },
         {
             "name": "mata/mata-form",
@@ -3002,7 +3043,8 @@
         "matacms/matacms-simple-theme": 20,
         "matacms/matacms-settings": 20,
         "matacms/matacms-post": 20,
-        "mata/mata-media": 20
+        "mata/mata-media": 20,
+        "mata/mata-category": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

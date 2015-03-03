@@ -23,7 +23,8 @@
         "matacms/matacms-simple-theme": "dev-master",
         "matacms/matacms-settings": "dev-master",
         "matacms/matacms-post": "dev-master",
-        "mata/mata-media": "dev-master"
+        "mata/mata-media": "dev-master",
+        "mata/mata-category": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
