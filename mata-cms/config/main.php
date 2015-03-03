@@ -44,6 +44,9 @@ return [
         ],
         'form' => [
             'class' => 'mata\form\Module'
+        ],
+        'category' => [
+            'class' => 'mata\category\Module'
         ]
     ],
     'components' => [
