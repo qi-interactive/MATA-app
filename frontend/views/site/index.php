@@ -1,10 +1,16 @@
 <?php
 
-use mata\contentblock\clients\ContentBlockClient;
+use matacms\contentblock\clients\ContentBlockClient;
+use mata\form\clients\FormClient;
+use mata\helpers\MataDynamicModelHelper;
 
 $this->title = 'My Yii Application';
 
 $cb = new ContentBlockClient();
+
+$form = new FormClient();
+
+echo $form->renderForm(MataDynamicModelHelper::generateFromTableName('form_contact'));
 
 ?>
 <div class="site-index">

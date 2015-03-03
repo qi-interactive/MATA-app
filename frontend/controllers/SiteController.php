@@ -30,6 +30,12 @@ class SiteController extends Controller {
                 'class' => 'yii\captcha\CaptchaAction',
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
+            'processForm' => [
+                'class' => 'mata\form\actions\ProcessFormAction',
+                'model' => self::getModel(),
+                'notify' => ['michal@qi-interactive.com'],
+                // 'redirect' => ['site/index']
+            ]
         ];
     }
 
@@ -63,20 +69,8 @@ class SiteController extends Controller {
 
     public function actionContact()
     {
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
-                Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
-            } else {
-                Yii::$app->session->setFlash('error', 'There was an error sending email.');
-            }
 
-            return $this->refresh();
-        } else {
-            return $this->render('contact', [
-                'model' => $model,
-            ]);
-        }
+        return $this->render('contact');
     }
 
     public function actionAbout()
@@ -135,5 +129,10 @@ class SiteController extends Controller {
         return $this->render('resetPassword', [
             'model' => $model,
         ]);
+    }
+
+
+    public static function getModel() {
+        return new \mata\db\DynamicActiveRecord('form_contact');
     }
 }
