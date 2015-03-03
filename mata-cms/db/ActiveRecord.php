@@ -36,8 +36,7 @@ class ActiveRecord extends \yii\db\ActiveRecord {
 	}
 
     // WHAT IS THIS FUNCTION? How is it different from attributeLabels()? 
-	public function getAttributeLabels($attribute = null)
-    {
+	public function getAttributeLabels($attribute = null) {
     	if($this->attributeLabels == null)
     		$this->attributeLabels = $this->attributeLabels();
         return $this->attributeLabels;

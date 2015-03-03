@@ -3,16 +3,19 @@
 namespace matacms\widgets;
 
 use yii\helpers\Json;
+use yii\base\Event;
+use mata\base\MessageEvent;
 
 class ActiveField extends \yii\widgets\ActiveField {
 
 	public $model;
 
+    const EVENT_INIT_DONE = "matacms\widgets\ActiveField::EVENT_INIT_DONE";
+
 	/**
      * @inheritdoc
      */
-    public function init()
-    {
+    public function init() {
         $autoCompleteData = $this->model->autoCompleteData();
         if (isset($autoCompleteData[$this->attribute])) {
             if (is_callable($autoCompleteData[$this->attribute])) {
@@ -21,6 +24,8 @@ class ActiveField extends \yii\widgets\ActiveField {
                 $this->autoComplete($autoCompleteData[$this->attribute]);
             }
         }
+
+        Event::trigger(self::className(), self::EVENT_INIT_DONE, new MessageEvent($this));
     }
 
 	public function wysiwyg($options = []) {

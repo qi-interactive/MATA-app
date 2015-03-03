@@ -27,7 +27,14 @@ $this->params['breadcrumbs'][] = $this->title;
     foreach ($searchModel->safeAttributes() as $attribute)
         $columns[] = $attribute;
 
+
+
+// print_r(current($dataProvider->getModels())->getRelatedRecords());
+    // $columns[] = "value.Value";
+
     $columns[] = ['class' => 'yii\grid\ActionColumn'];
+
+
 
     echo GridView::widget([
         'dataProvider' => $dataProvider,
