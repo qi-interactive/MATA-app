@@ -22,13 +22,25 @@ return [
         'moduleMenu' => [
            'class' => 'mata\modulemenu\Module',
            'runBootstrap' => true,
-           'moduleFolders' => ['@vendor/mata', "@vendor/matacms"]
+           'moduleFolders' => ['@vendor/mata', "@vendor/matacms", "@matacms/modules"]
        ],
         'settings' => [
            'class' => 'matacms\settings\Module'
        ],
+        'media' => [
+           'class' => 'mata\media\Module'
+       ],
+        'post' => [
+           'class' => 'matacms\post\Module'
+       ],
+        'news' => [
+          'class' => 'matacms\modules\news\Module'
+       ],
+        'lab' => [
+          'class' => 'matacms\modules\lab\Module'
+       ],
         'contentBlock' => [
-            'class' => 'mata\contentblock\Module'
+            'class' => 'matacms\contentblock\Module'
         ],
         'form' => [
             'class' => 'mata\form\Module'
@@ -50,6 +62,7 @@ return [
                   'pathMap' => [
                         '@matacms/views' => '@vendor/matacms/matacms-simple-theme',
                         '@mata/user/views/security' => '@matacms/views/user/security'
+
                   ],
               ],
           ],

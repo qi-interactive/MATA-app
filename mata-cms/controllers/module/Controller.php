@@ -45,7 +45,8 @@ abstract class Controller extends AuthenticatedController {
 
 		if ($model->load(Yii::$app->request->post()) && $model->save()) {
 			$this->trigger(self::EVENT_MODEL_CREATED, new MessageEvent($model->getLabel()));
-			return $this->redirect(['index', 'id' => $model->Id]);
+
+			return $this->redirect(['index', current($model->getTableSchema()->primaryKey) => $model->getPrimaryKey()]);
 		} else {
 			return $this->render($this->findView(), [
 				'model' => $model,
@@ -58,7 +59,7 @@ abstract class Controller extends AuthenticatedController {
 
 		if ($model->load(Yii::$app->request->post()) && $model->save()) {
 			$this->trigger(self::EVENT_MODEL_UPDATED, new MessageEvent($model->getLabel()));
-			return $this->redirect(['index', 'id' => $model->Id]);
+			return $this->redirect(['index', current($model->getTableSchema()->primaryKey) => $model->getPrimaryKey()]);
 		} else {
 
 			return $this->render($this->findView(), [
@@ -80,7 +81,6 @@ abstract class Controller extends AuthenticatedController {
 	public function findView($view = null) {
 
 		$view =  $view ?: $this->action->id;
-
 		$moduleViewFile = Yii::$app->controller->module->getViewPath() . "/" . $this->id . "/" . $view;
 		return file_exists($moduleViewFile . ".php") ? "@" . substr($moduleViewFile, stripos($moduleViewFile, "vendor")) : "@matacms/views/module/" . $view;
 
@@ -99,11 +99,11 @@ abstract class Controller extends AuthenticatedController {
 	}
 
 
-	protected function findModel($id) {
+	protected function findModel($pk) {
 
 		$model = $this->getModel();
 
-		if (($model = $model::findOne($id)) !== null) {
+		if (($model = $model::findOne($pk)) !== null) {
 			return $model;
 		} else {
 			throw new NotFoundHttpException('The requested page does not exist.');

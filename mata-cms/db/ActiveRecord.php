@@ -9,6 +9,11 @@ class ActiveRecord extends \yii\db\ActiveRecord {
 
 	private $attributeLabels;
 
+    /**
+     * This needs to be defined in the base class, otherwise __get will not access the property.
+     */ 
+    private $_related = [];
+
 	public function behaviors() {
 		return [
 			HistoryBehavior::className()
@@ -30,6 +35,7 @@ class ActiveRecord extends \yii\db\ActiveRecord {
 		return static::tableName();
 	}
 
+    // WHAT IS THIS FUNCTION? How is it different from attributeLabels()? 
 	public function getAttributeLabels($attribute = null)
     {
     	if($this->attributeLabels == null)

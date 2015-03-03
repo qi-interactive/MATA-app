@@ -802,12 +802,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/mata-form.git",
-                "reference": "20f85daef85e32dc849d7cf8c59c95ce8f823a25"
+                "reference": "f78b7c09c795d9f8013a407b2ce020726d00db47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/mata-form/zipball/20f85daef85e32dc849d7cf8c59c95ce8f823a25",
-                "reference": "20f85daef85e32dc849d7cf8c59c95ce8f823a25",
+                "url": "https://api.github.com/repos/qi-interactive/mata-form/zipball/f78b7c09c795d9f8013a407b2ce020726d00db47",
+                "reference": "f78b7c09c795d9f8013a407b2ce020726d00db47",
                 "shasum": ""
             },
             "require": {
@@ -832,7 +832,7 @@
                 "mata-form",
                 "yii2"
             ],
-            "time": "2015-02-26 14:25:20"
+            "time": "2015-03-02 17:07:41"
         },
         {
             "name": "mata/mata-framework",
