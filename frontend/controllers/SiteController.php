@@ -34,6 +34,10 @@ class SiteController extends Controller {
                 'class' => 'mata\form\actions\ProcessFormAction',
                 'model' => self::getModel(),
                 'notify' => ['michal@qi-interactive.com'],
+                // 'mailChimpOptions' => [
+                //     'listId' => '123',
+                //     'modelEmailAttributeName' => 'Email'
+                // ],
                 // 'redirect' => ['site/index']
             ]
         ];
