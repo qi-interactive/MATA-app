@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "88afe8933b41a26017594165cddb9a8f",
+    "hash": "56f7174967f2561e79e1e327f41c9f68",
     "packages": [
         {
             "name": "asofter/yii2-imperavi-redactor",
@@ -889,17 +889,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/mata-form.git",
-                "reference": "04eba5bdfa6213cd14bd3fc25b26953a8dfb639b"
+                "reference": "6d3c59c9494351e15a5ea494170377263aa36ead"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/mata-form/zipball/04eba5bdfa6213cd14bd3fc25b26953a8dfb639b",
-                "reference": "04eba5bdfa6213cd14bd3fc25b26953a8dfb639b",
+                "url": "https://api.github.com/repos/qi-interactive/mata-form/zipball/6d3c59c9494351e15a5ea494170377263aa36ead",
+                "reference": "6d3c59c9494351e15a5ea494170377263aa36ead",
                 "shasum": ""
             },
             "require": {
                 "codeception/codeception": "*",
-                "sammaye/yii2-mailchimp": "*",
+                "mailchimp/mailchimp": "*",
                 "yiisoft/yii2-codeception": "*",
                 "yiisoft/yii2-faker": "*"
             },
@@ -920,7 +920,7 @@
                 "mata-form",
                 "yii2"
             ],
-            "time": "2015-03-04 10:13:48"
+            "time": "2015-03-05 09:27:51"
         },
         {
             "name": "mata/mata-framework",
@@ -928,12 +928,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/MATA-Framework.git",
-                "reference": "1e76d7233e083c98d5baddb7cb276fd6109b7b38"
+                "reference": "ab6a1476e217e7fa58e167e93c18c4d7d74794b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/MATA-Framework/zipball/1e76d7233e083c98d5baddb7cb276fd6109b7b38",
-                "reference": "1e76d7233e083c98d5baddb7cb276fd6109b7b38",
+                "url": "https://api.github.com/repos/qi-interactive/MATA-Framework/zipball/ab6a1476e217e7fa58e167e93c18c4d7d74794b3",
+                "reference": "ab6a1476e217e7fa58e167e93c18c4d7d74794b3",
                 "shasum": ""
             },
             "require": {
@@ -958,7 +958,7 @@
                 "framework",
                 "mata"
             ],
-            "time": "2015-03-03 22:24:26"
+            "time": "2015-03-05 09:29:58"
         },
         {
             "name": "mata/mata-key-value",
@@ -1741,50 +1741,6 @@
             ],
             "description": "A lightweight implementation of CommonJS Promises/A for PHP",
             "time": "2014-12-30 13:32:42"
-        },
-        {
-            "name": "sammaye/yii2-mailchimp",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Sammaye/yii2-mailchimp.git",
-                "reference": "429e12a7d5c418063cc9bf9e301c18251a256207"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Sammaye/yii2-mailchimp/zipball/429e12a7d5c418063cc9bf9e301c18251a256207",
-                "reference": "429e12a7d5c418063cc9bf9e301c18251a256207",
-                "shasum": ""
-            },
-            "require": {
-                "mailchimp/mailchimp": "*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "sammaye\\mailchimp\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Sammaye",
-                    "homepage": "http://sammaye.wordpress.com"
-                }
-            ],
-            "description": "MailChimp plugin for the Yii2 framework",
-            "keywords": [
-                "Yii2 Extension",
-                "extension",
-                "mailchimp",
-                "sammaye",
-                "yii2",
-                "yii2-extension"
-            ],
-            "time": "2015-01-28 14:20:50"
         },
         {
             "name": "sebastian/comparator",
