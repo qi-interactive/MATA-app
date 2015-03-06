@@ -5,6 +5,7 @@ namespace matacms\widgets;
 use yii\helpers\Json;
 use yii\base\Event;
 use mata\base\MessageEvent;
+use yii\selectize\Selectize;
 
 class ActiveField extends \yii\widgets\ActiveField {
 
@@ -28,6 +29,11 @@ class ActiveField extends \yii\widgets\ActiveField {
         Event::trigger(self::className(), self::EVENT_INIT_DONE, new MessageEvent($this));
     }
 
+    public function adjustLabelFor($options)
+    {
+       parent::adjustLabelFor($options);
+    }
+
 	public function wysiwyg($options = []) {
 		$options = array_merge($this->inputOptions, $options);
 
@@ -44,6 +50,11 @@ class ActiveField extends \yii\widgets\ActiveField {
 
 		return $this;
 	}
+
+    public function selectize($options = []) {
+        $this->parts['{input}'] = Selectize::widget($options);
+        return $this;
+    }
 
     /**
      * Makes field auto completable

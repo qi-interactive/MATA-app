@@ -5,7 +5,7 @@ namespace matacms\db;
 use mata\arhistory\behaviors\HistoryBehavior;
 use yii\base\InvalidConfigException;
 
-class ActiveRecord extends \yii\db\ActiveRecord {
+class ActiveRecord extends \mata\db\ActiveRecord {
 
 	private $attributeLabels;
 

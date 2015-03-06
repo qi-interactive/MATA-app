@@ -36,7 +36,7 @@ class NotificationFilter extends Behavior {
 
 	private function observe($actionEvent, $eventToObserve, $messageFormat) {
 		$actionEvent->action->controller->on($eventToObserve, function(\matacms\base\MessageEvent $event) {
-			\Yii::$app->getSession()->setFlash($event->getLevel(), sprintf($event->data, $event->getMessage()));
+			\Yii::$app->getSession()->setFlash($event->getLevel(), sprintf($event->data, $event->getMessage()->getLabel()));
 		}, $messageFormat);
 	}
 }

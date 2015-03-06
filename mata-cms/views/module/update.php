@@ -12,7 +12,7 @@ $this->params['breadcrumbs'][] = 'Update';
 
 <?php 
 
-echo Html::a("Versions", "history?documentId=" . HistoryBehavior::getDocumentId($model));
+echo Html::a("Versions", "history?documentId=" . $model->getDocumentId());
 
 ?>
 <div class="content-block-update">

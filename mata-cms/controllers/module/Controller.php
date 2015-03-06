@@ -44,7 +44,7 @@ abstract class Controller extends AuthenticatedController {
 		$model = new $model;
 
 		if ($model->load(Yii::$app->request->post()) && $model->save()) {
-			$this->trigger(self::EVENT_MODEL_CREATED, new MessageEvent($model->getLabel()));
+			$this->trigger(self::EVENT_MODEL_CREATED, new MessageEvent($model));
 
 			return $this->redirect(['index', reset($model->getTableSchema()->primaryKey) => $model->getPrimaryKey()]);
 		} else {
@@ -58,7 +58,7 @@ abstract class Controller extends AuthenticatedController {
 		$model = $this->findModel($id);
 
 		if ($model->load(Yii::$app->request->post()) && $model->save()) {
-			$this->trigger(self::EVENT_MODEL_UPDATED, new MessageEvent($model->getLabel()));
+			$this->trigger(self::EVENT_MODEL_UPDATED, new MessageEvent($model));
 			return $this->redirect(['index', reset($model->getTableSchema()->primaryKey) => $model->getPrimaryKey()]);
 		} else {
 

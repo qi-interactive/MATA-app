@@ -11,10 +11,11 @@
         "yiisoft/yii2": "*",
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
-        "mata/mata-ar-history": "dev-development",
         "mata/mata-framework": "dev-development",
         "mata/mata-user": "*",
         "mata/mata-module-menu" : "*",
+        "mata/mata-user": "*",
+  	"mata/mata-ar-history": "dev-development",
         "mata/mata-form": "dev-development",
         "asofter/yii2-imperavi-redactor": "dev-master",
         "matacms/matacms-cache": "dev-development",
@@ -24,7 +25,8 @@
         "matacms/matacms-settings": "dev-master",
         "matacms/matacms-post": "dev-master",
         "mata/mata-media": "dev-master",
-        "mata/mata-category": "dev-master"
+        "mata/mata-category": "dev-master",
+        "yiidoc/yii2-selectize": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
