@@ -56,6 +56,10 @@ return [
         'cache' => [
                 'class' => 'yii\caching\FileCache',
             ],
+            'request' => [
+              "csrfParam" => "_matacmscsrf",
+              "enableCsrfCookie" => false
+            ],
         'urlManager' => [
           'enablePrettyUrl' => true,
           'showScriptName' => false,

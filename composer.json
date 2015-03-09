@@ -26,7 +26,9 @@
         "matacms/matacms-post": "dev-master",
         "mata/mata-media": "dev-master",
         "mata/mata-category": "dev-master",
-        "yiidoc/yii2-selectize": "dev-master"
+        "yiidoc/yii2-selectize": "dev-master",
+        "harrytang/yii2-fineuploader": "*",
+        "zhuravljov/yii2-datetime-widgets": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
