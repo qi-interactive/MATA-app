@@ -98,18 +98,4 @@ class ActiveRecord extends \mata\db\ActiveRecord {
         }
     }
 
-    public function autoCompleteData() {
-        // $db = $this->db;
-        // if ($db !== null) {
-        //     return [
-        //         'ReferencedTable' => function () use ($db) {
-        //             return $this->findFormTableNames();
-        //         },
-        //     ];
-        // } else {
-        //     return [];
-        // }
-        return [];
-    }
-
 }
