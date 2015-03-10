@@ -24,6 +24,7 @@
         "matacms/matacms-simple-theme": "dev-master",
         "matacms/matacms-settings": "dev-master",
         "matacms/matacms-post": "dev-master",
+        "matacms/matacms-carousel": "dev-development",
         "mata/mata-media": "dev-master",
         "mata/mata-category": "dev-master",
         "yiidoc/yii2-selectize": "dev-master",
