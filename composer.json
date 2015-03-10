@@ -28,7 +28,8 @@
         "mata/mata-category": "dev-master",
         "yiidoc/yii2-selectize": "dev-master",
         "harrytang/yii2-fineuploader": "*",
-        "zhuravljov/yii2-datetime-widgets": "dev-master"
+        "zhuravljov/yii2-datetime-widgets": "dev-master",
+        "aws/aws-sdk-php": "*"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
