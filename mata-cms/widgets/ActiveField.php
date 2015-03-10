@@ -15,101 +15,89 @@ class ActiveField extends \yii\widgets\ActiveField {
 
 	public $model;
 
-    const EVENT_INIT_DONE = "matacms\widgets\ActiveField::EVENT_INIT_DONE";
+  const EVENT_INIT_DONE = "matacms\widgets\ActiveField::EVENT_INIT_DONE";
 
-	/**
-     * @inheritdoc
-     */
-    public function init() {
-        Event::trigger(self::className(), self::EVENT_INIT_DONE, new MessageEvent($this));
-    }
+  public function init() {
+    Event::trigger(self::className(), self::EVENT_INIT_DONE, new MessageEvent($this));
+  }
 
-    public function adjustLabelFor($options) {
-       parent::adjustLabelFor($options);
-    }
+  public function wysiwyg($options = []) {
+    $options = array_merge($this->inputOptions, $options);
 
-    public function wysiwyg($options = []) {
-        $options = array_merge($this->inputOptions, $options);
+    $options = array_merge([
+      "s3" => "/mata-cms/media/redactor/s3",
+      ], $options);
 
-        $options = array_merge([
-            "s3" => "/mata-cms/media/redactor/s3",
-            ], $options);
+    $this->adjustLabelFor($options);
+    $this->parts['{input}'] = \yii\imperavi\Widget::widget([
+     'model' => $this->model,
+     'attribute' => $this->attribute,
+     'options' => $options
+     ]);
 
-        $this->adjustLabelFor($options);
-        $this->parts['{input}'] = \yii\imperavi\Widget::widget([
-            'model' => $this->model,
-            'attribute' => $this->attribute,
-            'options' => $options
-            ]);
+    return $this;
+  }
 
-        return $this;
-    } 
+  public function dateTime($options = []) {
 
-    public function dateTime($options = []) {
+    $options = ArrayHelper::merge([
+      'class' => 'form-control',
+      ], $options);
 
-        $options = ArrayHelper::merge([
-            'class' => 'form-control',
-            ], $options);
+    $clientOptions = isset($options["clientOptions"]) ? $options["clientOptions"] : [];
 
-        $clientOptions = isset($options["clientOptions"]) ? $options["clientOptions"] : [];
+    $clientOptions = ArrayHelper::merge([
+      'autoclose' => true,
+        // 'format' => 'd MM yyyy hh:ii',
+      'todayHighlight' => true,
+      'weekStart' => 1
+      ], $clientOptions);
 
-        $clientOptions = ArrayHelper::merge([
-            'autoclose' => true,
-            // 'format' => 'd MM yyyy hh:ii',
-            'todayHighlight' => true,
-            'weekStart' => 1
-            ], $clientOptions);
+    $this->parts['{input}'] = DateTimePicker::widget([
+      'model' => $this->model,
+      'attribute' => $this->attribute,
+      'options' => $options,
+      'clientOptions' => $clientOptions
+      ]);
 
-        $this->parts['{input}'] = DateTimePicker::widget([
-            'model' => $this->model,
-            'attribute' => $this->attribute,
-            'options' => $options,
-            'clientOptions' => $clientOptions
-            ]);
+    return $this;
+  }
 
-        return $this;
-    }
+  public function selectize($options = []) {
+    $this->parts['{input}'] = Selectize::widget($options);
+    return $this;
+  }
 
-    public function selectize($options = []) {
-        $this->parts['{input}'] = Selectize::widget($options);
-        return $this;
-    }
+  public function media($options = []) {
+    $this->parts['{input}'] = \mata\widgets\fineuploader\Fineuploader::widget([
+      'model' => $this->model,
+      'attribute' => $this->attribute,
+      'options' => $options
+      ]);
 
-    public function media() {
-        $this->parts['{input}'] = \harrytang\fineuploader\Fineuploader::widget([
-            'model' => $this->model,
-            'attribute' => $this->attribute,
-            'options' => $options
-            ]);
+    return $this;
+  }
 
-        return $this;
-    }
+  public function autocomplete($items, $options = [])
+  {
+    $clientOptions = ArrayHelper::merge([
+      'items' => $items,
+      'clientOptions' => ['maxItems' => 1]
+      ], $options);
 
-    /**
-     * Makes field auto completable
-     * @param array $data auto complete data (array of callables or scalars)
-     * @return static the field object itself
-     */
-    public function autocomplete($items, $options = [])
-    {
-        $clientOptions = ArrayHelper::merge([
-            'items' => $items,
-            'clientOptions' => ['maxItems' => 1]
-            ], $options);
+    $this->parts['{input}'] = Selectize::widget($clientOptions);
+    return $this;
+  }
 
-        $this->parts['{input}'] = Selectize::widget($clientOptions);
-        return $this;
-    }
+  public function multiselect($items, $options = [])
+  {
+    $clientOptions = ArrayHelper::merge([
+      'items' => $items,
+      'options' => ['multiple'=>true],
+      'clientOptions' => []
+      ], $options);
 
-    public function multiselect($items, $options = [])
-    {
-        $clientOptions = ArrayHelper::merge([
-            'items' => $items,
-            'options' => ['multiple'=>true],
-            'clientOptions' => []
-            ], $options);
-
-        $this->parts['{input}'] = Selectize::widget($clientOptions);
-        return $this;
-    }
+    $this->parts['{input}'] = Selectize::widget($clientOptions);
+    return $this;
+  }
 }

@@ -16,7 +16,6 @@ mata.theme.attachLoaderHandlers = function() {
 	});
 }
 
-
 parent.mata.simpleTheme.navigator.updateURL(window.location.href);
 
 mata.theme.attachLoaderHandlers();
