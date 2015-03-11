@@ -15,7 +15,7 @@
         "mata/mata-user": "*",
         "mata/mata-module-menu" : "*",
         "mata/mata-user": "*",
-  	"mata/mata-ar-history": "dev-development",
+        "mata/mata-ar-history": "dev-development",
         "mata/mata-form": "dev-development",
         "asofter/yii2-imperavi-redactor": "dev-master",
         "matacms/matacms-cache": "dev-development",
