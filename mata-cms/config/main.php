@@ -30,6 +30,9 @@ return [
         'media' => [
            'class' => 'mata\media\Module'
        ],
+        'deployer' => [
+           'class' => 'matacms\modules\deployer\Module'
+       ],
         'post' => [
            'class' => 'matacms\post\Module'
        ],
@@ -47,9 +50,12 @@ return [
         ],
         'category' => [
             'class' => 'mata\category\Module'
-        ],
+ ],
         'carousel' => [
             'class' => 'matacms\carousel\Module'
+],
+        'tag' => [
+            'class' => 'mata\tag\Module'
         ]
     ],
     'components' => [

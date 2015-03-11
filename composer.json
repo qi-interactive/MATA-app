@@ -30,7 +30,9 @@
         "yiidoc/yii2-selectize": "dev-master",
         "harrytang/yii2-fineuploader": "*",
         "zhuravljov/yii2-datetime-widgets": "dev-master",
-        "aws/aws-sdk-php": "*"
+        "aws/aws-sdk-php": "*",
+        "milo/github-api": "dev-master",
+        "mata/mata-tag": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
