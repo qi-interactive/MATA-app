@@ -39,9 +39,9 @@ class ActiveField extends \yii\widgets\ActiveField {
   }
 
   public function adjustLabelFor($options) {
-      if (isset($options['id']) && !isset($this->labelOptions['for'])) {
-          $this->labelOptions['for'] = $options['id'];
-      }
+    if (isset($options['id']) && !isset($this->labelOptions['for'])) {
+      $this->labelOptions['for'] = $options['id'];
+    }
   }
 
   public function dateTime($options = []) {
@@ -86,24 +86,24 @@ class ActiveField extends \yii\widgets\ActiveField {
 
   public function autocomplete($items, $options = [])
   {
-    $clientOptions = ArrayHelper::merge([
+    $options = ArrayHelper::merge([
       'items' => $items,
       'clientOptions' => ['maxItems' => 1]
       ], $options);
 
-    $this->parts['{input}'] = Selectize::widget($clientOptions);
+    $this->parts['{input}'] = Selectize::widget($options);
     return $this;
   }
 
   public function multiselect($items, $options = [])
   {
-    $clientOptions = ArrayHelper::merge([
+    $options = ArrayHelper::merge([
       'items' => $items,
       'options' => ['multiple'=>true],
       'clientOptions' => []
       ], $options);
 
-    $this->parts['{input}'] = Selectize::widget($clientOptions);
+    $this->parts['{input}'] = Selectize::widget($options);
     return $this;
   }
 }
