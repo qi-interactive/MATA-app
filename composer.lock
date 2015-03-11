@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f89abc201af98fe6f2f7bb672cc0091b",
+    "hash": "811ab7cf15d7157c899b6987c739f8c1",
     "packages": [
         {
             "name": "asofter/yii2-imperavi-redactor",
@@ -1166,6 +1166,99 @@
             "time": "2015-02-05 04:55:55"
         },
         {
+            "name": "kartik-v/yii2-krajee-base",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-krajee-base.git",
+                "reference": "b03c272b138426e59b8e96b75647a5d7ae5e7589"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/b03c272b138426e59b8e96b75647a5d7ae5e7589",
+                "reference": "b03c272b138426e59b8e96b75647a5d7ae5e7589",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2-bootstrap": "@dev"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\base\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Base library and foundation components for all Yii2 Krajee extensions.",
+            "homepage": "https://github.com/kartik-v/yii2-krajee-base",
+            "keywords": [
+                "base",
+                "extension",
+                "foundation",
+                "krajee",
+                "widget",
+                "yii2"
+            ],
+            "time": "2015-03-02 13:00:04"
+        },
+        {
+            "name": "kartik-v/yii2-sortable",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-sortable.git",
+                "reference": "3da7bc6593cc40b8283b397a987b42421f2c825f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-sortable/zipball/3da7bc6593cc40b8283b397a987b42421f2c825f",
+                "reference": "3da7bc6593cc40b8283b397a987b42421f2c825f",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-krajee-base": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\sortable\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Create sortable lists and grids using HTML5 drag and drop API for Yii 2.0.",
+            "homepage": "https://github.com/kartik-v/yii2-sortable",
+            "keywords": [
+                "bootstrap",
+                "extension",
+                "jquery",
+                "range",
+                "sortable",
+                "widget",
+                "yii2"
+            ],
+            "time": "2015-02-26 15:20:36"
+        },
+        {
             "name": "mailchimp/mailchimp",
             "version": "dev-master",
             "source": {
@@ -1335,21 +1428,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/MATA-Framework.git",
-                "reference": "af400548b9dd9e029d12667a9330ec23a35646de"
+                "reference": "a6160cff65209ee9046d6b33bbd491bd14f11121"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/MATA-Framework/zipball/af400548b9dd9e029d12667a9330ec23a35646de",
-                "reference": "af400548b9dd9e029d12667a9330ec23a35646de",
+                "url": "https://api.github.com/repos/qi-interactive/MATA-Framework/zipball/a6160cff65209ee9046d6b33bbd491bd14f11121",
+                "reference": "a6160cff65209ee9046d6b33bbd491bd14f11121",
                 "shasum": ""
             },
             "require": {
                 "codeception/codeception": "*",
+                "kartik-v/yii2-sortable": "*",
                 "php": ">=5.4.0",
                 "yiisoft/yii2": "*"
             },
             "require-dev": {
-                "kartik-v/yii2-sortable": "*",
                 "yiisoft/yii2-codeception": "*",
                 "yiisoft/yii2-faker": "*"
             },
@@ -1366,7 +1459,7 @@
                 "framework",
                 "mata"
             ],
-            "time": "2015-03-11 11:32:12"
+            "time": "2015-03-11 11:38:53"
         },
         {
             "name": "mata/mata-key-value",
