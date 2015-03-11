@@ -1335,12 +1335,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/MATA-Framework.git",
-                "reference": "af982c62dd19a0c481464a17c5108d6cb3d8f85d"
+                "reference": "af400548b9dd9e029d12667a9330ec23a35646de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/MATA-Framework/zipball/af982c62dd19a0c481464a17c5108d6cb3d8f85d",
-                "reference": "af982c62dd19a0c481464a17c5108d6cb3d8f85d",
+                "url": "https://api.github.com/repos/qi-interactive/MATA-Framework/zipball/af400548b9dd9e029d12667a9330ec23a35646de",
+                "reference": "af400548b9dd9e029d12667a9330ec23a35646de",
                 "shasum": ""
             },
             "require": {
@@ -1349,6 +1349,7 @@
                 "yiisoft/yii2": "*"
             },
             "require-dev": {
+                "kartik-v/yii2-sortable": "*",
                 "yiisoft/yii2-codeception": "*",
                 "yiisoft/yii2-faker": "*"
             },
@@ -1365,7 +1366,7 @@
                 "framework",
                 "mata"
             ],
-            "time": "2015-03-10 16:47:24"
+            "time": "2015-03-11 11:32:12"
         },
         {
             "name": "mata/mata-key-value",
@@ -1590,12 +1591,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/matacms-carousel.git",
-                "reference": "3e0d700045fe302f90863c683d0154bd5b09783b"
+                "reference": "0abafa509b1d5aef5e691f285a8f1041c97681ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/matacms-carousel/zipball/3e0d700045fe302f90863c683d0154bd5b09783b",
-                "reference": "3e0d700045fe302f90863c683d0154bd5b09783b",
+                "url": "https://api.github.com/repos/qi-interactive/matacms-carousel/zipball/0abafa509b1d5aef5e691f285a8f1041c97681ba",
+                "reference": "0abafa509b1d5aef5e691f285a8f1041c97681ba",
                 "shasum": ""
             },
             "type": "yii2-extension",
@@ -1615,7 +1616,7 @@
                 "matacms-carousel",
                 "yii2"
             ],
-            "time": "2015-03-11 10:23:43"
+            "time": "2015-03-11 11:05:47"
         },
         {
             "name": "matacms/matacms-content-block",
