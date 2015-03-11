@@ -38,6 +38,12 @@ class ActiveField extends \yii\widgets\ActiveField {
     return $this;
   }
 
+  public function adjustLabelFor($options) {
+      if (isset($options['id']) && !isset($this->labelOptions['for'])) {
+          $this->labelOptions['for'] = $options['id'];
+      }
+  }
+
   public function dateTime($options = []) {
 
     $options = ArrayHelper::merge([
