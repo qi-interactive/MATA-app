@@ -47,6 +47,9 @@ return [
         ],
         'category' => [
             'class' => 'mata\category\Module'
+        ],
+        'carousel' => [
+            'class' => 'matacms\carousel\Module'
         ]
     ],
     'components' => [

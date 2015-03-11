@@ -606,12 +606,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Codeception/Codeception.git",
-                "reference": "ac74538a89192f8142c0fd937005920935e0c0b2"
+                "reference": "86009903bdeee982790800596114467d306c3114"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/ac74538a89192f8142c0fd937005920935e0c0b2",
-                "reference": "ac74538a89192f8142c0fd937005920935e0c0b2",
+                "url": "https://api.github.com/repos/Codeception/Codeception/zipball/86009903bdeee982790800596114467d306c3114",
+                "reference": "86009903bdeee982790800596114467d306c3114",
                 "shasum": ""
             },
             "require": {
@@ -678,7 +678,7 @@
                 "functional testing",
                 "unit testing"
             ],
-            "time": "2015-03-10 13:09:25"
+            "time": "2015-03-10 23:18:15"
         },
         {
             "name": "doctrine/instantiator",
@@ -1590,12 +1590,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/matacms-carousel.git",
-                "reference": "acfa19d0547ea180ebd94eec954d036a448d1146"
+                "reference": "3e0d700045fe302f90863c683d0154bd5b09783b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/matacms-carousel/zipball/acfa19d0547ea180ebd94eec954d036a448d1146",
-                "reference": "acfa19d0547ea180ebd94eec954d036a448d1146",
+                "url": "https://api.github.com/repos/qi-interactive/matacms-carousel/zipball/3e0d700045fe302f90863c683d0154bd5b09783b",
+                "reference": "3e0d700045fe302f90863c683d0154bd5b09783b",
                 "shasum": ""
             },
             "type": "yii2-extension",
@@ -1615,7 +1615,7 @@
                 "matacms-carousel",
                 "yii2"
             ],
-            "time": "2015-03-10 17:22:58"
+            "time": "2015-03-11 10:23:43"
         },
         {
             "name": "matacms/matacms-content-block",
