@@ -18,7 +18,6 @@ class ModuleAsset extends AssetBundle
 	public $sourcePath = '@matacms/modules/deployer/web';
 
 	public $js = [
-		'js/deployer.js'
 	];
 
 	public $depends = [
