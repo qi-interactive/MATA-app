@@ -19,6 +19,10 @@ return [
                 'security' => 'matacms\controllers\user\SecurityController'
             ],
        ],
+
+       'admin' => [
+                  'class' => 'mdm\admin\Module',
+              ],
         'moduleMenu' => [
            'class' => 'mata\modulemenu\Module',
            'runBootstrap' => true,
@@ -50,10 +54,7 @@ return [
         ],
         'category' => [
             'class' => 'mata\category\Module'
- ],
-        'carousel' => [
-            'class' => 'matacms\carousel\Module'
-],
+         ],
         'tag' => [
             'class' => 'mata\tag\Module'
         ]
@@ -94,6 +95,7 @@ return [
         // 'errorHandler' => [
         //     'errorAction' => '/mata/site/error',
         // ],
+       
     ],
     'params' => $params,
 ];

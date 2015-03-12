@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0e692c11f8d583be464cde8312ae09db",
+    "hash": "85e7dec1057260c8f7c916a04f0a1434",
     "packages": [
         {
             "name": "asofter/yii2-imperavi-redactor",
@@ -1166,6 +1166,99 @@
             "time": "2015-02-05 04:55:55"
         },
         {
+            "name": "kartik-v/yii2-krajee-base",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-krajee-base.git",
+                "reference": "b03c272b138426e59b8e96b75647a5d7ae5e7589"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/b03c272b138426e59b8e96b75647a5d7ae5e7589",
+                "reference": "b03c272b138426e59b8e96b75647a5d7ae5e7589",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2-bootstrap": "@dev"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\base\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Base library and foundation components for all Yii2 Krajee extensions.",
+            "homepage": "https://github.com/kartik-v/yii2-krajee-base",
+            "keywords": [
+                "base",
+                "extension",
+                "foundation",
+                "krajee",
+                "widget",
+                "yii2"
+            ],
+            "time": "2015-03-02 13:00:04"
+        },
+        {
+            "name": "kartik-v/yii2-sortable",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-sortable.git",
+                "reference": "3da7bc6593cc40b8283b397a987b42421f2c825f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-sortable/zipball/3da7bc6593cc40b8283b397a987b42421f2c825f",
+                "reference": "3da7bc6593cc40b8283b397a987b42421f2c825f",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-krajee-base": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\sortable\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Create sortable lists and grids using HTML5 drag and drop API for Yii 2.0.",
+            "homepage": "https://github.com/kartik-v/yii2-sortable",
+            "keywords": [
+                "bootstrap",
+                "extension",
+                "jquery",
+                "range",
+                "sortable",
+                "widget",
+                "yii2"
+            ],
+            "time": "2015-02-26 15:20:36"
+        },
+        {
             "name": "mailchimp/mailchimp",
             "version": "dev-master",
             "source": {
@@ -1335,21 +1428,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/MATA-Framework.git",
-                "reference": "af400548b9dd9e029d12667a9330ec23a35646de"
+                "reference": "e343ff3e95fef7626ae7adcac40ba9ac434e429a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/MATA-Framework/zipball/af400548b9dd9e029d12667a9330ec23a35646de",
-                "reference": "af400548b9dd9e029d12667a9330ec23a35646de",
+                "url": "https://api.github.com/repos/qi-interactive/MATA-Framework/zipball/e343ff3e95fef7626ae7adcac40ba9ac434e429a",
+                "reference": "e343ff3e95fef7626ae7adcac40ba9ac434e429a",
                 "shasum": ""
             },
             "require": {
                 "codeception/codeception": "*",
+                "kartik-v/yii2-sortable": "*",
                 "php": ">=5.4.0",
                 "yiisoft/yii2": "*"
             },
             "require-dev": {
-                "kartik-v/yii2-sortable": "*",
                 "yiisoft/yii2-codeception": "*",
                 "yiisoft/yii2-faker": "*"
             },
@@ -1366,7 +1459,7 @@
                 "framework",
                 "mata"
             ],
-            "time": "2015-03-11 11:32:12"
+            "time": "2015-03-12 14:11:51"
         },
         {
             "name": "mata/mata-key-value",
@@ -1627,6 +1720,39 @@
             "time": "2015-03-10 15:59:44"
         },
         {
+            "name": "matacms/matacms-carousel",
+            "version": "dev-development",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/qi-interactive/matacms-carousel.git",
+                "reference": "6532e1030823c71e1fd0310aa71cc88d0e232fed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/qi-interactive/matacms-carousel/zipball/6532e1030823c71e1fd0310aa71cc88d0e232fed",
+                "reference": "6532e1030823c71e1fd0310aa71cc88d0e232fed",
+                "shasum": ""
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "matacms\\carousel\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Carousel management for MATA CMS",
+            "keywords": [
+                "carousel",
+                "mata",
+                "matacms-carousel",
+                "yii2"
+            ],
+            "time": "2015-03-11 16:16:33"
+        },
+        {
             "name": "matacms/matacms-content-block",
             "version": "dev-master",
             "source": {
@@ -1778,6 +1904,56 @@
                 "yii2"
             ],
             "time": "2015-03-02 19:20:43"
+        },
+        {
+            "name": "mdmsoft/yii2-admin",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mdmsoft/yii2-admin.git",
+                "reference": "78e661e9fd86153254e6f2cac979a2da949161a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mdmsoft/yii2-admin/zipball/78e661e9fd86153254e6f2cac979a2da949161a5",
+                "reference": "78e661e9fd86153254e6f2cac979a2da949161a5",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0",
+                "yiisoft/yii2-jui": "~2.0"
+            },
+            "suggest": {
+                "yiisoft/yii2-bootstrap": "Used when using layout 'left-menu', 'right-menu' or 'top-menu'"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "mdm\\admin\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Misbahul Munir",
+                    "email": "misbahuldmunir@gmail.com"
+                }
+            ],
+            "description": "Auth manager for Yii2 ",
+            "keywords": [
+                "admin",
+                "auth",
+                "yii"
+            ],
+            "time": "2015-02-22 14:48:53"
         },
         {
             "name": "milo/github-api",
@@ -3715,6 +3891,7 @@
         "matacms/matacms-simple-theme": 20,
         "matacms/matacms-settings": 20,
         "matacms/matacms-post": 20,
+        "matacms/matacms-carousel": 20,
         "mata/mata-media": 20,
         "mata/mata-category": 20,
         "yiidoc/yii2-selectize": 20,
