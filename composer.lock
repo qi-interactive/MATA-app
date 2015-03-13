@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "85e7dec1057260c8f7c916a04f0a1434",
+    "hash": "d137196b782dcc8867a2133f70f4d706",
     "packages": [
         {
             "name": "asofter/yii2-imperavi-redactor",
@@ -1792,6 +1792,49 @@
                 "yii2"
             ],
             "time": "2015-02-28 14:31:29"
+        },
+        {
+            "name": "matacms/matacms-environment",
+            "version": "dev-development",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/qi-interactive/matacms-environment.git",
+                "reference": "dbd1698e53ceb62bb67213faaefb8b691228f084"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/qi-interactive/matacms-environment/zipball/dbd1698e53ceb62bb67213faaefb8b691228f084",
+                "reference": "dbd1698e53ceb62bb67213faaefb8b691228f084",
+                "shasum": ""
+            },
+            "require": {
+                "codeception/codeception": "*",
+                "mata/mata-ar-history": "dev-development",
+                "yiisoft/yii2-codeception": "*",
+                "yiisoft/yii2-faker": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "matacms\\environment\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "matacms\\environment\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Media Management for MATA",
+            "keywords": [
+                "environment",
+                "mata",
+                "mata-environment",
+                "preview",
+                "yii2"
+            ],
+            "time": "2015-03-12 18:25:57"
         },
         {
             "name": "matacms/matacms-post",
@@ -3897,7 +3940,8 @@
         "yiidoc/yii2-selectize": 20,
         "zhuravljov/yii2-datetime-widgets": 20,
         "milo/github-api": 20,
-        "mata/mata-tag": 20
+        "mata/mata-tag": 20,
+        "matacms/matacms-environment": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

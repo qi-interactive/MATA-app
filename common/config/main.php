@@ -11,8 +11,14 @@ return [
                'admin/*', // add or remove allowed actions to this list
            ]
        ],
-        'cache' => [
-            'class' => 'yii\caching\FileCache',
-        ],
+        // 'cache' => [
+        //     'class' => 'yii\caching\FileCache',
+        // ],
     ],
+    'modules' => [
+      'environment' => [
+        "class" => 'matacms\environment\Module'
+      ]
+
+    ]
 ];

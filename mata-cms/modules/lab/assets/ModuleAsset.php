@@ -18,7 +18,6 @@ class ModuleAsset extends AssetBundle
 	public $sourcePath = '@matacms/modules/lab/web';
 
 	public $js = [
-		"js/form.js"
 	];
 
 	public $depends = [

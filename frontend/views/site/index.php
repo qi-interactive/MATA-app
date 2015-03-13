@@ -3,18 +3,24 @@
 use matacms\contentblock\clients\ContentBlockClient;
 use mata\form\clients\FormClient;
 use mata\helpers\MataDynamicModelHelper;
-
+use matacms\post\clients\PostClient;
 $this->title = 'My Yii Application';
 
 $cb = new ContentBlockClient();
-
-$form = new FormClient();
-
-echo $form->renderForm(MataDynamicModelHelper::generateFromTableName('form_contact'));
+$pc = new PostClient();
 
 ?>
 <div class="site-index">
 
+
+
+
+<?php $post = $pc->findByUri("qwdqwd");
+    if ($post)
+        echo $post->Title;
+
+
+ ?>
     <div class="jumbotron">
         <h1>Congratulations!</h1>
 
