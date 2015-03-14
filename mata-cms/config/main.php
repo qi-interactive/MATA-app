@@ -12,6 +12,9 @@ return [
     'controllerNamespace' => 'matacms\controllers',
     'name' => "MATA CMS",
     'bootstrap' => ['log'],
+    'modelMap' => [
+      'matacms\post\models\Post' => 'kasia\zosia\Post'
+    ],
     'modules' => [
         'user' => [
            'class' => 'mata\user\Module',
@@ -77,8 +80,8 @@ return [
         'view' => [
               'theme' => [
                   'pathMap' => [
-                        '@matacms/views' => '@vendor/matacms/matacms-simple-theme',
-                        '@mata/user/views/security' => '@matacms/views/user/security'
+                         '@matacms/views' => '@vendor/matacms/matacms-simple-theme',
+                        // '@mata/user/views/security' => '@matacms/views/user/security'
 
                   ],
               ],

@@ -14,7 +14,6 @@
         "mata/mata-framework": "dev-development",
         "mata/mata-user": "*",
         "mata/mata-module-menu" : "*",
-        "mata/mata-user": "*",
         "mata/mata-ar-history": "dev-development",
         "mata/mata-form": "dev-development",
         "asofter/yii2-imperavi-redactor": "dev-master",
@@ -45,6 +44,9 @@
     "config": {
         "process-timeout": 1800
     },
+    "autoload": {
+           "psr-4": { "matacms\\post\\models\\": "mata-cms/models/overwrites/post" }
+       },
     "extra": {
         "asset-installer-paths": {
             "npm-asset-library": "vendor/npm",
