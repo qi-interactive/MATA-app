@@ -60,6 +60,9 @@ return [
          ],
         'tag' => [
             'class' => 'mata\tag\Module'
+        ],
+        'carousel' => [
+            'class' => 'matacms\carousel\Module'
         ]
     ],
     'components' => [
