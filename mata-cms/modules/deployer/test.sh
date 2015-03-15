@@ -1,8 +1,6 @@
-#!/bin/sh
-exec 2>&1
-
-while true
+#!/bin/bash
+for i in `seq 1 25`;
 do
-   echo "hello"
-   sleep 2
-done
+	echo $i
+	sleep 1
+done    

@@ -12,6 +12,9 @@ return [
     'controllerNamespace' => 'matacms\controllers',
     'name' => "MATA CMS",
     'bootstrap' => ['log'],
+    'modelMap' => [
+      'matacms\post\models\Post' => 'kasia\zosia\Post'
+    ],
     'modules' => [
         'user' => [
            'class' => 'mata\user\Module',
@@ -19,6 +22,10 @@ return [
                 'security' => 'matacms\controllers\user\SecurityController'
             ],
        ],
+
+       'admin' => [
+                  'class' => 'mdm\admin\Module',
+              ],
         'moduleMenu' => [
            'class' => 'mata\modulemenu\Module',
            'runBootstrap' => true,
@@ -50,10 +57,7 @@ return [
         ],
         'category' => [
             'class' => 'mata\category\Module'
- ],
-        'carousel' => [
-            'class' => 'matacms\carousel\Module'
-],
+         ],
         'tag' => [
             'class' => 'mata\tag\Module'
         ]
@@ -76,8 +80,8 @@ return [
         'view' => [
               'theme' => [
                   'pathMap' => [
-                        '@matacms/views' => '@vendor/matacms/matacms-simple-theme',
-                        '@mata/user/views/security' => '@matacms/views/user/security'
+                         '@matacms/views' => '@vendor/matacms/matacms-simple-theme',
+                        // '@mata/user/views/security' => '@matacms/views/user/security'
 
                   ],
               ],
@@ -94,6 +98,7 @@ return [
         // 'errorHandler' => [
         //     'errorAction' => '/mata/site/error',
         // ],
+       
     ],
     'params' => $params,
 ];
