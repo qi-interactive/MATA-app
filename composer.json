@@ -20,9 +20,9 @@
         "matacms/matacms-cache": "dev-development",
         "matacms/matacms-content-block": "dev-master",
         "mata/mata-key-value": "dev-development",
-        "matacms/matacms-simple-theme": "dev-master",
+        "matacms/matacms-simple-theme": "dev-development",
         "matacms/matacms-settings": "dev-master",
-        "matacms/matacms-post": "dev-master",
+        "matacms/matacms-post": "dev-development",
         "matacms/matacms-carousel": "dev-development",
         "mata/mata-media": "dev-master",
         "mata/mata-category": "dev-master",
@@ -33,7 +33,8 @@
         "milo/github-api": "dev-master",
         "mata/mata-tag": "dev-master",
         "mdmsoft/yii2-admin": "~1.0",
-        "matacms/matacms-environment": "dev-development"
+        "matacms/matacms-environment": "dev-development",
+        "matacms/matacms-base": "dev-development"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

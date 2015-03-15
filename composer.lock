@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9089f27e2b338620b85c75f3abe4547a",
+    "hash": "0fec0391564a16056bbb135925725826",
     "packages": [
         {
             "name": "asofter/yii2-imperavi-redactor",
@@ -1678,6 +1678,64 @@
             "time": "2015-03-13 22:07:31"
         },
         {
+            "name": "matacms/matacms-base",
+            "version": "dev-development",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/qi-interactive/matacms-base.git",
+                "reference": "14282130729a1b8444988f10c1126634e1190914"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/qi-interactive/matacms-base/zipball/14282130729a1b8444988f10c1126634e1190914",
+                "reference": "14282130729a1b8444988f10c1126634e1190914",
+                "shasum": ""
+            },
+            "require": {
+                "asofter/yii2-imperavi-redactor": "dev-master",
+                "harrytang/yii2-fineuploader": "*",
+                "mata/mata-ar-history": "dev-development",
+                "mata/mata-category": "dev-master",
+                "mata/mata-form": "dev-development",
+                "mata/mata-framework": "dev-development",
+                "mata/mata-key-value": "dev-development",
+                "mata/mata-media": "dev-master",
+                "mata/mata-module-menu": "*",
+                "mata/mata-tag": "dev-master",
+                "mata/mata-user": "*",
+                "matacms/matacms-cache": "dev-development",
+                "matacms/matacms-carousel": "dev-development",
+                "matacms/matacms-content-block": "dev-master",
+                "matacms/matacms-environment": "dev-development",
+                "matacms/matacms-post": "dev-master",
+                "matacms/matacms-settings": "dev-master",
+                "matacms/matacms-simple-theme": "dev-development",
+                "mdmsoft/yii2-admin": "~1.0",
+                "php": ">=5.4.0",
+                "yiidoc/yii2-selectize": "dev-master",
+                "zhuravljov/yii2-datetime-widgets": "dev-master"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "matacms\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "MATA CMS Base",
+            "homepage": "http://www.qi-interactive.com/",
+            "keywords": [
+                "application template",
+                "framework",
+                "mata",
+                "mata cms"
+            ],
+            "time": "2015-03-14 18:00:55"
+        },
+        {
             "name": "matacms/matacms-cache",
             "version": "dev-development",
             "source": {
@@ -1915,16 +1973,16 @@
         },
         {
             "name": "matacms/matacms-simple-theme",
-            "version": "dev-master",
+            "version": "dev-development",
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/matacms-simple-theme.git",
-                "reference": "f354e2a06f1a7534cd042ae0dd1fe6eb87d19632"
+                "reference": "4c6c21ffd9c4e87e8313ff917bb08351d7af6b6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/matacms-simple-theme/zipball/f354e2a06f1a7534cd042ae0dd1fe6eb87d19632",
-                "reference": "f354e2a06f1a7534cd042ae0dd1fe6eb87d19632",
+                "url": "https://api.github.com/repos/qi-interactive/matacms-simple-theme/zipball/4c6c21ffd9c4e87e8313ff917bb08351d7af6b6e",
+                "reference": "4c6c21ffd9c4e87e8313ff917bb08351d7af6b6e",
                 "shasum": ""
             },
             "type": "yii2-extension",
@@ -1946,7 +2004,7 @@
                 "theme",
                 "yii2"
             ],
-            "time": "2015-03-13 11:15:23"
+            "time": "2015-03-14 15:59:49"
         },
         {
             "name": "mdmsoft/yii2-admin",
@@ -3941,7 +3999,8 @@
         "zhuravljov/yii2-datetime-widgets": 20,
         "milo/github-api": 20,
         "mata/mata-tag": 20,
-        "matacms/matacms-environment": 20
+        "matacms/matacms-environment": 20,
+        "matacms/matacms-base": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
