@@ -38,4 +38,21 @@ class VideoUrlHelper
 
         return false;
     }
+
+    public static function renderVideoPlayer($videoUrl) 
+    {
+        $videoProvider = self::getVideoServiceProvider($videoUrl);
+        $videoId = self::getVideoId($videoUrl);
+
+        $videoPlayerCode = '';
+
+        switch($videoProvider) {
+        	case 'vimeo':
+        		$videoPlayerCode = '<iframe id="video-player" src="//player.vimeo.com/video/' . $videoId . '?autoplay=0&api=1&player_id=video-player" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+        		break;
+        	default:
+        		break;
+        }
+        return $videoPlayerCode;
+    }
 }
