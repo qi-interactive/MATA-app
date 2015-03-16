@@ -23,9 +23,11 @@ class VideoUrl extends InputWidget {
 
     public $selector = null;
     public $htmlOptions = [];
-    public $options = array();
+    public $options = [
+        'showSubmitButton' => true
+    ];
     public $formModel;
-    public $onComplete = "$('<li role=\"option\" aria-grabbed=\"false\" draggable=\"true\"><a href=\"#\" class=\"edit-media\" data-url=\"update-carousel-item?Id='+data.Id+'\" data-source=\"\" data-toggle=\"modal\" data-target=\"#edit-media-modal\"><span class=\"glyphicon glyphicon-pencil\"></span></a><div class=\"grid-item\" data-item-id=\"'+data.Id+'\"></div></li>').insertBefore('.carousel-view ul.sortable li#add-media-container');
+    public $onComplete = "$('<li role=\"option\" aria-grabbed=\"false\" draggable=\"true\"><a href=\"#\" class=\"edit-media\" data-url=\"/mata-cms/carousel/carousel-item/update?id='+data.Id+'\" data-source=\"\" data-toggle=\"modal\" data-target=\"#edit-media-modal\"><span class=\"glyphicon glyphicon-pencil\"></span></a><div class=\"grid-item\" data-item-id=\"'+data.Id+'\"></div></li>').insertBefore('.carousel-view ul.sortable li#add-media-container');
                     $('ul.sortable').sortable('reload');
                     $('#add-media-modal').modal('hide');";
 

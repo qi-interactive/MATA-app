@@ -11,30 +11,9 @@
         "yiisoft/yii2": "*",
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
-        "mata/mata-framework": "dev-development",
-        "mata/mata-user": "*",
-        "mata/mata-module-menu" : "*",
-        "mata/mata-ar-history": "dev-development",
-        "mata/mata-form": "dev-development",
-        "asofter/yii2-imperavi-redactor": "dev-master",
-        "matacms/matacms-cache": "dev-development",
-        "matacms/matacms-content-block": "dev-master",
-        "mata/mata-key-value": "dev-development",
-        "matacms/matacms-simple-theme": "dev-development",
-        "matacms/matacms-settings": "dev-master",
-        "matacms/matacms-post": "dev-development",
-        "matacms/matacms-carousel": "dev-development",
-        "mata/mata-media": "dev-master",
-        "mata/mata-category": "dev-master",
-        "yiidoc/yii2-selectize": "dev-master",
-        "harrytang/yii2-fineuploader": "*",
-        "zhuravljov/yii2-datetime-widgets": "dev-master",
+        "matacms/matacms-base": "dev-development",
         "aws/aws-sdk-php": "*",
-        "milo/github-api": "dev-master",
-        "mata/mata-tag": "dev-master",
-        "mdmsoft/yii2-admin": "~1.0",
-        "matacms/matacms-environment": "dev-development",
-        "matacms/matacms-base": "dev-development"
+        "milo/github-api": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
@@ -45,9 +24,6 @@
     "config": {
         "process-timeout": 1800
     },
-    "autoload": {
-           "psr-4": { "matacms\\post\\models\\": "mata-cms/models/overwrites/post" }
-       },
     "extra": {
         "asset-installer-paths": {
             "npm-asset-library": "vendor/npm",

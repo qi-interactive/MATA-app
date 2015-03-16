@@ -14,10 +14,16 @@ use matacms\widgets\ActiveForm;
 	]); ?>
 
 	<?= $form->field($formModel, 'videoUrl'); ?>
-
+    
+    <?php
+    if($widget->options['showSubmitButton']):
+    ?>
     <div class="form-group">
         <?= Html::submitButton('Submit', ['class' => 'btn btn-success']) ?>
     </div>
+    <?php 
+    endif;
+    ?>
 
     <?php ActiveForm::end(); ?>
 	
