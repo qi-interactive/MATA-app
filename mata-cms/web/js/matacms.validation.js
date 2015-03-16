@@ -26,11 +26,13 @@ matacms.validation = (function ($) {
                 return;
             }
 
+            var isVimeo = value.match(options.vimeoPattern), 
+            isYoutube = value.match(options.youtubePattern);
+
             if (!value.match(options.vimeoPattern) && !value.match(options.youtubePattern)) {
                 pub.addMessage(messages, options.message, value);
             }
-        },
-
+        }
         
     };
 

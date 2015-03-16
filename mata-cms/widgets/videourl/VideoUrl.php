@@ -27,7 +27,7 @@ class VideoUrl extends InputWidget {
         'showSubmitButton' => true
     ];
     public $formModel;
-    public $onComplete = "$('<li role=\"option\" aria-grabbed=\"false\" draggable=\"true\"><a href=\"#\" class=\"edit-media\" data-url=\"/mata-cms/carousel/carousel-item/update?id='+data.Id+'\" data-source=\"\" data-toggle=\"modal\" data-target=\"#edit-media-modal\"><span class=\"glyphicon glyphicon-pencil\"></span></a><div class=\"grid-item\" data-item-id=\"'+data.Id+'\"></div></li>').insertBefore('.carousel-view ul.sortable li#add-media-container');
+    public $onComplete = "$('<li role=\"option\" aria-grabbed=\"false\" draggable=\"true\"><a href=\"#\" class=\"edit-media\" data-url=\"/mata-cms/carousel/carousel-item/update?id='+data.Id+'\" data-source=\"\" data-toggle=\"modal\" data-target=\"#edit-media-modal\"><span class=\"glyphicon glyphicon-pencil\"></span></a><div class=\"grid-item\" data-item-id=\"'+data.Id+'\"><div class=\"grid-item-centerer\"></div><img src=\"' + data.Extra.thumbnailUrl + '\" draggable=\"false\"></div></li>').insertBefore('.carousel-view ul.sortable li#add-media-container');
                     $('ul.sortable').sortable('reload');
                     $('#add-media-modal').modal('hide');";
 
