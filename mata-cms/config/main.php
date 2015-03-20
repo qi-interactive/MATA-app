@@ -41,7 +41,7 @@ return [
            'class' => 'matacms\modules\deployer\Module'
        ],
         'post' => [
-           'class' => 'matacms\post\Module'
+           'class' => 'matacms\post\Module',
        ],
         'news' => [
           'class' => 'matacms\modules\news\Module'
