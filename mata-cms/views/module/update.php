@@ -8,18 +8,16 @@ $this->params['breadcrumbs'][] = ['label' => 'Content Blocks', 'url' => ['index'
 $this->params['breadcrumbs'][] = ['label' => $model->getLabel(), 'url' => ['view', 'id' => $model->getPrimaryKey()]];
 $this->params['breadcrumbs'][] = 'Update';
 ?>
-
-
 <?php 
 
-echo Html::a("Versions", "history?documentId=" . $model->getDocumentId());
+echo Html::a("Versions", sprintf("history?documentId=%s&returnURI=%s", $model->getDocumentId(), Yii::$app->request->url) );
 
 ?>
 <div class="content-block-update">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <?= $this->render(\Yii::$app->controller->findView("_form"), [
+    <?= $this->render("_form", [
         'model' => $model,
     ]) ?>
 
