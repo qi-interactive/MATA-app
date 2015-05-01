@@ -14,7 +14,8 @@
         "yiisoft/yii2-swiftmailer": "*",
         "matacms/matacms-base": "dev-development",
         "aws/aws-sdk-php": "*",
-        "milo/github-api": "dev-master"
+        "milo/github-api": "dev-master",
+        "mata/mata-framework": "dev-development"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
