@@ -12,7 +12,7 @@ return [
     'name' => 'MATA',
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
-    'defaultRoute' => 'home',
+    'defaultRoute' => 'site',
     'components' => [
         'request' => [
             'baseUrl' => '',

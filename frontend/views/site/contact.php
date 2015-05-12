@@ -17,7 +17,7 @@ $formClient = new FormClient();
     <div class="body-content">
         <div class="row">
             <?php
-                echo $formClient->renderForm(SiteController::getModel(), 'processForm', [], ['submitButtonText' => 'Send']);
+                // echo $formClient->renderForm(SiteController::getModel(), 'processForm', [], ['submitButtonText' => 'Send']);
             ?>
         </div>
     </div>

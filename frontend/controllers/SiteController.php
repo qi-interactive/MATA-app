@@ -30,16 +30,16 @@ class SiteController extends Controller {
                 'class' => 'yii\captcha\CaptchaAction',
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
-            'processForm' => [
-                'class' => 'mata\form\actions\ProcessFormAction',
-                'model' => self::getModel(),
-                'notify' => ['michal@qi-interactive.com'],
-                // 'mailChimpOptions' => [
-                //     'listId' => '123',
-                //     'modelEmailAttributeName' => 'Email'
-                // ],
-                // 'redirect' => ['site/index']
-            ]
+            // 'processForm' => [
+            //     'class' => 'mata\form\actions\ProcessFormAction',
+            //     'model' => self::getModel(),
+            //     'notify' => ['michal@qi-interactive.com'],
+            //     // 'mailChimpOptions' => [
+            //     //     'listId' => '123',
+            //     //     'modelEmailAttributeName' => 'Email'
+            //     // ],
+            //     // 'redirect' => ['site/index']
+            // ]
         ];
     }
 
@@ -136,7 +136,7 @@ class SiteController extends Controller {
     }
 
 
-    public static function getModel() {
-        return new \mata\db\DynamicActiveRecord('form_contact');
-    }
+    // public static function getModel() {
+    //     return new \mata\db\DynamicActiveRecord('form_contact');
+    // }
 }
