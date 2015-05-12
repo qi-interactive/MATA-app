@@ -9,99 +9,63 @@ $params = array_merge(
 return [
     'id' => 'app-mata',
     'basePath' => dirname(__DIR__),
+    'name' => 'MATA CMS',
     'controllerNamespace' => 'matacms\controllers',
-    'name' => "MATA CMS",
     'bootstrap' => ['log'],
-    'modelMap' => [
-      'matacms\post\models\Post' => 'kasia\zosia\Post'
-    ],
     'modules' => [
         'user' => [
-           'class' => 'mata\user\Module',
-           'controllerMap' => [
+            'class' => 'mata\user\Module',
+            'controllerMap' => [
                 'security' => 'matacms\controllers\user\SecurityController'
             ],
-       ],
-
-       'admin' => [
-                  'class' => 'mdm\admin\Module',
-              ],
+        ],
+        'admin' => [
+            'class' => 'mata\rbac\Module',
+        ],
         'moduleMenu' => [
-           'class' => 'mata\modulemenu\Module',
-           'runBootstrap' => true,
-           'moduleFolders' => ['@vendor/mata', "@vendor/matacms", "@matacms/modules"]
-       ],
-        'settings' => [
-           'class' => 'matacms\settings\Module'
-       ],
-        'media' => [
-           'class' => 'mata\media\Module'
-       ],
-        'deployer' => [
-           'class' => 'matacms\modules\deployer\Module'
-       ],
-        'post' => [
-           'class' => 'matacms\post\Module',
-       ],
-        'news' => [
-          'class' => 'matacms\modules\news\Module'
-       ],
-        'lab' => [
-          'class' => 'matacms\modules\lab\Module'
-       ],
-        'contentBlock' => [
-            'class' => 'matacms\contentblock\Module'
+            'class' => 'mata\modulemenu\Module',
+            'runBootstrap' => true,
+            'moduleFolders' => ['@vendor/mata', "@vendor/matacms", "@matacms/modules"],
         ],
-        'form' => [
-            'class' => 'mata\form\Module'
-        ],
-        'category' => [
-            'class' => 'mata\category\Module'
-         ],
-        'tag' => [
-            'class' => 'mata\tag\Module'
-        ],
-        'carousel' => [
-            'class' => 'matacms\carousel\Module'
-        ]
     ],
     'components' => [
         'assetManager' => [
             'linkAssets' => true
         ],
         'cache' => [
-                'class' => 'yii\caching\FileCache',
-            ],
-            'request' => [
-              "csrfParam" => "_matacmscsrf",
-              "enableCsrfCookie" => false
-            ],
+            'class' => 'yii\caching\FileCache',
+        ],
+        'request' => [
+            'csrfParam' => '_matacmscsrf',
+            'enableCsrfCookie' => false
+        ],
         'urlManager' => [
-          'enablePrettyUrl' => true,
-          'showScriptName' => false,
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
         ],
         'view' => [
-              'theme' => [
-                  'pathMap' => [
-                         '@matacms/views' => '@vendor/matacms/matacms-simple-theme',
-                        // '@mata/user/views/security' => '@matacms/views/user/security'
-
-                  ],
-              ],
-          ],
+            'class' => 'matacms\web\View',
+            'theme' => [
+                'pathMap' => [
+                    '@mata/user/views' => '@vendor/matacms/matacms-simple-theme',
+                    '@mata/user/views/security' => '@vendor/matacms/matacms-simple-theme/security',
+                    '@matacms/views' => '@vendor/matacms/matacms-simple-theme',
+                    '@mata/user/views/security' => '@matacms/views/user/security'
+                ],
+            ],
+        ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
                 [
                     'class' => 'yii\log\FileTarget',
-                    'levels' => ['error', 'warning'],
+                    'levels' => ['error', 'warning', 'info'],
                 ],
             ],
         ],
-        // 'errorHandler' => [
-        //     'errorAction' => '/mata/site/error',
-        // ],
-       
+      // 'errorHandler' => [
+      //     'errorAction' => '/mata/site/error',
+      // ],
     ],
     'params' => $params,
 ];

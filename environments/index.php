@@ -33,6 +33,7 @@ return [
             'mata-cms/web/assets',
             'frontend/runtime',
             'frontend/web/assets',
+            'mata-cms\models'
         ],
         'setExecutable' => [
             'yii',

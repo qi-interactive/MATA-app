@@ -9,22 +9,32 @@ $params = array_merge(
 return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
+    'name' => 'MATA',
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
+    'defaultRoute' => 'home',
     'components' => [
         'request' => [
             'baseUrl' => '',
+            'csrfParam' => '_matacmscsrf',
+            'enableCsrfCookie' => false
+        ],
+        'assetManager' => [
+            'linkAssets' => true
+        ],
+        'cache' => [
+            'class' => 'yii\caching\FileCache',
         ],
         'urlManager' => [
-          'enablePrettyUrl' => true,
-          'showScriptName' => false,
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
                 [
                     'class' => 'yii\log\FileTarget',
-                    'levels' => ['error', 'warning'],
+                    'levels' => ['error', 'warning', 'trace', 'info'],
                 ],
             ],
         ],

@@ -26,15 +26,15 @@ gulp.task('less', function() {
 		plugins: [cleanCSS]
 	}))
 	.pipe(rename(function(filepath) {
-		filepath.dirname = "widgets/" + path.dirname(path.dirname(filepath.dirname));
+		filepath.dirname = "widgets/" + filepath.dirname.replace("less", "css");
 	}))
-	.pipe(gulp.dest("./web/css"))
+	.pipe(gulp.dest("."))
 	.pipe(livereload());
 
-	gulp.src(['assets/less/**/*.less', '!assets/less/inuit.css/**/*', '!assets/less/vars.less'])
+	gulp.src(['assets/less/**/*.less', '!assets/less/inuit.css/**/*'])
 	.pipe(plumber(handleError))
 	.pipe(less({
-		paths: [ path.join(__dirname, 'less', 'less/inuit.css', 'less/vars.less') ],
+		paths: [ path.join(__dirname, 'less', 'less/inuit.css', 'less/imports/**/*') ],
 		plugins: [cleanCSS]
 	}))
 	.pipe(gulp.dest("./web/css"))
@@ -45,12 +45,18 @@ gulp.task('watch', function() {
 
 	livereload.listen();
 
-	watch(['**/assets/less/*.less', '!assets/less/inuit.css/*.less'], {
+	watch(['**/assets/less/**/*.less', '!assets/less/inuit.css/*.less'], {
 		name: "Watcher",
 		verbose: true
 	}, function() {
 		gulp.start('less');
 	})
+
+	watch(['**/*.*', '!web/css/**/*', '!node_modules/**/*', '!**/assets/less/**/*', '!assets/less/inuit.css/*.less', '!runtime/**/*'], {
+		name: "Watcher",
+		verbose: true
+	})
+	.pipe(livereload());
 });
 
 function handleError(err) {

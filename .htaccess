@@ -2,11 +2,17 @@ Options +FollowSymLinks
 IndexIgnore */*
 RewriteEngine on
 
-RewriteCond %{REQUEST_URI} !^/(frontend/web|mata-cms/web|admin|mata-cms)
+RewriteCond %{REQUEST_URI} !^/(frontend/web|mata-cms/web)
 RewriteRule (.*) /frontend/web/$1
 
- 
+# if frontend request 
 RewriteCond %{REQUEST_URI} ^/frontend/web
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /frontend/web/index.php
+RewriteRule . /frontend/web/index.php 
+
+# if mata-cms request
+RewriteCond %{REQUEST_URI} ^/mata-cms/web
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /mata-cms/web/index.php 
