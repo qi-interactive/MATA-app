@@ -1,9 +1,14 @@
 @import "inuit.css/defaults"; // core framework defaults
-@import "vars";               // your custom variables
+@import "imports/variables";               // your custom variables
 @import "inuit.css/inuit";    // core framework
+@import "imports/base.less"; 
+@import "imports/typography.less";               
+@import "imports/extendableStyles.less"; 
 
 
 /*------------------------------------*\
     PAGE IMPORTS, 
     e.g. home.less, contacts.less
-\*------------------------------------*/
+    \*------------------------------------*/
+
+    @import "main/mainLayout.less";   

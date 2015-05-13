@@ -7,6 +7,8 @@ rename = require("gulp-rename"),
 plumber = require('gulp-plumber'),
 gutil = require('gulp-util'),
 lessPluginCleanCSS = require('less-plugin-clean-css');
+var postcss      = require('gulp-postcss');
+var autoprefixer = require('autoprefixer-core');
 
 var cleanCSS = new lessPluginCleanCSS({ 
 	advanced: true,
@@ -29,6 +31,7 @@ gulp.task('less', function() {
 		filepath.dirname = "widgets/" + filepath.dirname.replace("less", "css");
 	}))
 	.pipe(gulp.dest("."))
+	.pipe(postcss([ autoprefixer({ browsers: ['> 0%'] }) ]))
 	.pipe(livereload());
 
 	gulp.src(['assets/less/**/*.less', '!assets/less/inuit.css/**/*'])
@@ -37,6 +40,8 @@ gulp.task('less', function() {
 		paths: [ path.join(__dirname, 'less', 'less/inuit.css', 'less/imports/**/*') ],
 		plugins: [cleanCSS]
 	}))
+	.pipe(gulp.dest("./web/css"))
+	.pipe(postcss([ autoprefixer({ browsers: ['> 0%'] }) ]))
 	.pipe(gulp.dest("./web/css"))
 	.pipe(livereload());
 })
