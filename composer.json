@@ -14,13 +14,9 @@
         "yiisoft/yii2-swiftmailer": "*",
         "matacms/matacms-base": "~1.1.0-alpha",
         "matacms/matacms-calendar": "~1.0.0-alpha",
-        "mata/mata-rbac": "dev-development",
-        "mata/mata-imperavi-redactor": "dev-development",
-        "matacms/matacms-manager": "dev-development",
         "symfony/console": "2.4",
         "composer/composer": "1.0.*@dev",
-        "guzzlehttp/guzzle": "~5.0",
-        "mata/mata-key-value": "dev-development"
+        "guzzlehttp/guzzle": "~5.0"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
