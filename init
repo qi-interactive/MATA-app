@@ -81,6 +81,19 @@ foreach ($callbacks as $callback) {
 
 echo "\n  ... initialization completed.\n\n";
 
+echo "\n  Start migration ...\n\n";
+
+$migrationPaths = getMigrationFolders($root);
+
+if(!empty($migrationPaths)) {
+    foreach ($migrationPaths as $migrationPath) {
+        echo "       running migration for migrationPath $migrationPath\n";
+        runMigrationCommand($migrationPath, $root);
+    }
+}
+
+echo "\n  ... migration completed.\n\n";
+
 function getFileList($root, $basePath = '')
 {
     $files = [];
@@ -202,4 +215,49 @@ function createSymlink($links)
             symlink($target, $link);
         }
     }
+}
+
+function getMigrationFolders($rootDir)
+{
+    $migrationPaths = [];
+
+    // look in @vendor/mata
+    $dirs = new RecursiveDirectoryIterator($rootDir . '/vendor/mata', FilesystemIterator::SKIP_DOTS);
+    $objects = new RecursiveIteratorIterator($dirs, RecursiveIteratorIterator::SELF_FIRST);
+
+    foreach($objects as $name => $object){
+        if($object->isDir() && $object->getBasename() == 'migrations') {
+          $migrationPaths[] = $object->getPathName();
+        }
+    }
+
+    // look in @vendor/matacms
+    $dirs = new RecursiveDirectoryIterator($rootDir . '/vendor/matacms', FilesystemIterator::SKIP_DOTS);
+    $objects = new RecursiveIteratorIterator($dirs, RecursiveIteratorIterator::SELF_FIRST);
+
+    foreach($objects as $name => $object){
+        if($object->isDir() && $object->getBasename() == 'migrations') {
+          $migrationPaths[] = $object->getPathName();
+        }
+    }
+
+    // look in @mata-cms/mata
+    $dirs = new RecursiveDirectoryIterator($rootDir . '/mata-cms', FilesystemIterator::SKIP_DOTS);
+    $objects = new RecursiveIteratorIterator($dirs, RecursiveIteratorIterator::SELF_FIRST);
+
+    foreach($objects as $name => $object){
+        if($object->isDir() && $object->getBasename() == 'migrations') {
+          $migrationPaths[] = $object->getPathName();
+        }
+    }
+
+    return $migrationPaths;
+}
+
+function runMigrationCommand($migrationPath, $root)
+{
+
+    $cmd = PHP_BINDIR . '/php ' . $root . '/yii migrate/up --migrationPath=' . $migrationPath . ' --interactive=0';
+    pclose(popen($cmd, 'w'));
+
 }
