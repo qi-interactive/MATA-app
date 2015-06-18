@@ -27,6 +27,7 @@ class AppAsset extends AssetBundle
     'js/base/fastclick.js',
     'js/base/ajaxLoader.js',
     'js/base/modernizr.js',
+    'js/base/imagesloaded.pkgd.min.js'
     ];
     public $depends = [
     'yii\web\YiiAsset',
