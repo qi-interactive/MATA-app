@@ -6,10 +6,12 @@ and the images link must have class .gallery__img--main.
 Basic code structure:
 
 <div class="parent-wrapper" id="parent-wrapper">
+..........
 <a href="/path/to/img.jpg" data-size="640x426" data-med="/path/to/img.jpg" data-med-size="640x426" data-author="Samuel Rohl" class="gallery__img--main">
 	<img src="/path/to/img.jpg" alt="" />
 	<figure>This is dummy caption. It has been placed here solely to demonstrate the look and feel of finished, typeset text.</figure>
 </a>
+.............
 </div>
 
 Please refer to the original document for more details, http://photoswipe.com/documentation/getting-started.html
