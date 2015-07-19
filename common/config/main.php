@@ -29,7 +29,7 @@ return [
     ],
     'modules' => [
         'user' => [
-            'class' => 'mata\user\Module',
+            'class' => 'matacms\user\Module',
         ],
         'environment' => [
             'class' => 'matacms\environment\Module'

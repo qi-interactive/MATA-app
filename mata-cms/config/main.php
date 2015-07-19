@@ -14,7 +14,7 @@ return [
     'bootstrap' => ['log'],
     'modules' => [
         'user' => [
-            'class' => 'mata\user\Module',
+            'class' => 'matacms\user\Module',
             'controllerMap' => [
                 'security' => 'matacms\controllers\user\SecurityController'
             ],
@@ -47,10 +47,10 @@ return [
             'class' => 'matacms\web\View',
             'theme' => [
                 'pathMap' => [
-                    '@mata/user/views' => '@vendor/matacms/matacms-simple-theme',
-                    '@mata/user/views/security' => '@vendor/matacms/matacms-simple-theme/security',
+                    '@matacms/user/views' => '@vendor/matacms/matacms-simple-theme',
+                    '@matacms/user/views/security' => '@vendor/matacms/matacms-simple-theme/security',
                     '@matacms/views' => '@vendor/matacms/matacms-simple-theme',
-                    '@mata/user/views/security' => '@matacms/views/user/security'
+                    '@matacms/user/views/security' => '@matacms/views/user/security'
                 ],
             ],
         ],
