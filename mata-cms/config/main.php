@@ -25,7 +25,7 @@ return [
         'moduleMenu' => [
             'class' => 'mata\modulemenu\Module',
             'runBootstrap' => true,
-            'moduleFolders' => ['@vendor/mata', "@vendor/matacms", "@matacms/modules"],
+            'moduleFolders' => ["@vendor/matacms", "@matacms/modules"],
         ],
     ],
     'components' => [
