@@ -1252,16 +1252,16 @@
         },
         {
             "name": "mata/mata-framework",
-            "version": "1.1.1-alpha",
+            "version": "1.1.2-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/MATA-Framework.git",
-                "reference": "a83edc794d645ad8c1211cb3141cfc82b7dfd580"
+                "reference": "0fe5792608e7b3da53c91706e15c25bc872368bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/MATA-Framework/zipball/a83edc794d645ad8c1211cb3141cfc82b7dfd580",
-                "reference": "a83edc794d645ad8c1211cb3141cfc82b7dfd580",
+                "url": "https://api.github.com/repos/qi-interactive/MATA-Framework/zipball/0fe5792608e7b3da53c91706e15c25bc872368bd",
+                "reference": "0fe5792608e7b3da53c91706e15c25bc872368bd",
                 "shasum": ""
             },
             "require": {
@@ -1283,7 +1283,7 @@
                 "framework",
                 "mata"
             ],
-            "time": "2015-06-15 14:00:04"
+            "time": "2015-07-20 10:05:58"
         },
         {
             "name": "mata/mata-imperavi-redactor",
