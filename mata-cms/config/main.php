@@ -19,8 +19,8 @@ return [
                 'security' => 'matacms\controllers\user\SecurityController'
             ],
         ],
-        'admin' => [
-            'class' => 'mata\rbac\Module',
+        'rbac' => [
+            'class' => 'matacms\rbac\Module',
         ],
         'moduleMenu' => [
             'class' => 'mata\modulemenu\Module',
