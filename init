@@ -221,6 +221,16 @@ function getMigrationFolders($rootDir)
 {
     $migrationPaths = [];
 
+    // look in @vendor/yiisoft/yii2/rbac
+    $dirs = new RecursiveDirectoryIterator($rootDir . '/vendor/yiisoft/yii2/rbac', FilesystemIterator::SKIP_DOTS);
+    $objects = new RecursiveIteratorIterator($dirs, RecursiveIteratorIterator::SELF_FIRST);
+
+    foreach($objects as $name => $object){
+        if($object->isDir() && $object->getBasename() == 'migrations') {
+          $migrationPaths[] = $object->getPathName();
+        }
+    }
+
     // look in @vendor/mata
     $dirs = new RecursiveDirectoryIterator($rootDir . '/vendor/mata', FilesystemIterator::SKIP_DOTS);
     $objects = new RecursiveIteratorIterator($dirs, RecursiveIteratorIterator::SELF_FIRST);

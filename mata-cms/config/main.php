@@ -12,23 +12,30 @@ return [
     'name' => 'MATA CMS',
     'controllerNamespace' => 'matacms\controllers',
     'bootstrap' => ['log'],
+    'disabledModulesBootstraps' => ['mata\\user\\Bootstrap'],
     'modules' => [
         'user' => [
-            'class' => 'mata\user\Module',
-            'controllerMap' => [
-                'security' => 'matacms\controllers\user\SecurityController'
-            ],
+            'class' => 'matacms\user\Module',
+            'mailer' => [
+                'sender' => 'notifications@matacms.com'
+            ]
         ],
-        'admin' => [
-            'class' => 'mata\rbac\Module',
+        'rbac' => [
+            'class' => 'matacms\rbac\Module',
         ],
         'moduleMenu' => [
             'class' => 'mata\modulemenu\Module',
             'runBootstrap' => true,
-            'moduleFolders' => ['@vendor/mata', "@vendor/matacms", "@matacms/modules"],
+            'moduleFolders' => ["@vendor/matacms", "@matacms/modules"],
         ],
     ],
     'components' => [
+        'moduleMenuManager' => [
+            'class' => 'mata\modulemenu\components\ModuleMenuManager',
+        ],
+        'moduleAccessibilityManager' => [
+            'class' => 'matacms\user\components\ModuleAccessibilityManager'
+        ],
         'assetManager' => [
             'linkAssets' => true
         ],
@@ -47,10 +54,8 @@ return [
             'class' => 'matacms\web\View',
             'theme' => [
                 'pathMap' => [
-                    '@mata/user/views' => '@vendor/matacms/matacms-simple-theme',
-                    '@mata/user/views/security' => '@vendor/matacms/matacms-simple-theme/security',
+                    '@matacms/user/views' => '@vendor/matacms/matacms-simple-theme',
                     '@matacms/views' => '@vendor/matacms/matacms-simple-theme',
-                    '@mata/user/views/security' => '@matacms/views/user/security'
                 ],
             ],
         ],
@@ -63,9 +68,9 @@ return [
                 ],
             ],
         ],
-      // 'errorHandler' => [
-      //     'errorAction' => '/mata/site/error',
-      // ],
+        'errorHandler' => [
+            'errorAction' => 'site/error'
+        ],
     ],
     'params' => $params,
 ];

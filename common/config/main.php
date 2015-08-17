@@ -6,13 +6,7 @@ return [
             'class' => 'yii\caching\FileCache',
         ],
         'authManager' => [
-            'class' => 'yii\rbac\DbManager', // or use 'yii\rbac\DbManager'
-        ],
-        'as access' => [
-            'class' => 'mdm\admin\components\AccessControl',
-            'allowActions' => [
-                'admin/*', // add or remove allowed actions to this list
-            ]
+            'class' => 'matacms\rbac\components\DbManager',
         ],
         'assetManager' => [
             'bundles' => [
@@ -29,10 +23,19 @@ return [
     ],
     'modules' => [
         'user' => [
-            'class' => 'mata\user\Module',
+            'class' => 'matacms\user\Module',
+            'mailer' => [
+                'sender' => 'notifications@matacms.com'
+            ]
+        ],
+        'rbac' => [
+            'class' => 'matacms\rbac\Module',
         ],
         'environment' => [
             'class' => 'matacms\environment\Module'
-        ]
+        ],
+        'post' => [
+            'class' => 'matacms\post\Module'
+        ],
     ],
 ];
