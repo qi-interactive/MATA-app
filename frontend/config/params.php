@@ -1,4 +1,4 @@
 <?php
 return [
-    'adminEmail' => 'michal@qi-interactive.com',
+    'notificationEmail' => 'notifications@matacms.com',
 ];

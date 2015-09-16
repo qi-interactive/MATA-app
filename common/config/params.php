@@ -1,6 +1,6 @@
 <?php
 return [
-    'adminEmail' => 'michal@qi-interactive.com',
+    'notificationEmail' => 'notifications@matacms.com',
     'supportEmail' => 'support@example.com',
     'user.passwordResetTokenExpire' => 3600,
 ];
