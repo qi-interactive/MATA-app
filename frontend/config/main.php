@@ -9,10 +9,10 @@ $params = array_merge(
 return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
-    'name' => 'MATA',
+    'name' => 'Default Project',
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
-    'defaultRoute' => 'site',
+    'defaultRoute' => 'home',
     'components' => [
         'request' => [
             'baseUrl' => '',
@@ -39,7 +39,7 @@ return [
             ],
         ],
         'errorHandler' => [
-            'errorAction' => 'site/error',
+            'errorAction' => 'home/error',
         ],
     ],
     'params' => $params,

@@ -9,14 +9,14 @@ use frontend\models\SignupForm;
 use frontend\models\ContactForm;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
-use yii\web\Controller;
+use frontend\controllers\base\BaseController;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 
 /**
  * Site controller
  */
-class SiteController extends Controller {
+class HomeController extends BaseController {
     /**
      * @inheritdoc
      */
@@ -27,6 +27,9 @@ class SiteController extends Controller {
                 'class' => 'yii\captcha\CaptchaAction',
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
             ],
+            [
+                     'error' => ['class' => 'yii\web\ErrorAction'],
+               ]
             // 'processForm' => [
             //     'class' => 'mata\form\actions\ProcessFormAction',
             //     'model' => self::getModel(),

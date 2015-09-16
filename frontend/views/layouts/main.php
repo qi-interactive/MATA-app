@@ -22,13 +22,10 @@ AppAsset::register($this);
 </head>
 <body>
     <?php $this->beginBody() ?>
-    
+
     <?= $this->render('_header.php'); ?>
 
     <div id="main">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-            ]) ?>
             <?= $content ?>
         </div>
 
