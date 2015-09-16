@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "309d9002a48fa4bb223b91a2fa1715ef290b8656"
+                "reference": "e01825efad025dbe6d88997e02bd32ec80814381"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/309d9002a48fa4bb223b91a2fa1715ef290b8656",
-                "reference": "309d9002a48fa4bb223b91a2fa1715ef290b8656",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e01825efad025dbe6d88997e02bd32ec80814381",
+                "reference": "e01825efad025dbe6d88997e02bd32ec80814381",
                 "shasum": ""
             },
             "require": {
@@ -67,7 +67,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2015-07-14 22:45:00"
+            "time": "2015-09-03 22:25:15"
         },
         {
             "name": "bower-asset/bootstrap",
@@ -279,16 +279,16 @@
         },
         {
             "name": "bower-asset/moment",
-            "version": "2.10.3",
+            "version": "2.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moment/moment.git",
-                "reference": "25cc720fbaab7323a1016cd0beb6a36e349c41be"
+                "reference": "f3fbef9d9875bbff340b527dbe3f1c447a942f69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moment/moment/zipball/25cc720fbaab7323a1016cd0beb6a36e349c41be",
-                "reference": "25cc720fbaab7323a1016cd0beb6a36e349c41be",
+                "url": "https://api.github.com/repos/moment/moment/zipball/f3fbef9d9875bbff340b527dbe3f1c447a942f69",
+                "reference": "f3fbef9d9875bbff340b527dbe3f1c447a942f69",
                 "shasum": ""
             },
             "type": "bower-asset-library",
@@ -408,16 +408,16 @@
         },
         {
             "name": "bower-asset/sifter",
-            "version": "v0.4.1",
+            "version": "v0.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brianreavis/sifter.js.git",
-                "reference": "b5744683da97726265ce4d9ae42ce13d10efbf4d"
+                "reference": "bdd2badbce30396ed9a12951b13e8e23d2adf43a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brianreavis/sifter.js/zipball/b5744683da97726265ce4d9ae42ce13d10efbf4d",
-                "reference": "b5744683da97726265ce4d9ae42ce13d10efbf4d",
+                "url": "https://api.github.com/repos/brianreavis/sifter.js/zipball/bdd2badbce30396ed9a12951b13e8e23d2adf43a",
+                "reference": "bdd2badbce30396ed9a12951b13e8e23d2adf43a",
                 "shasum": ""
             },
             "type": "bower-asset-library",
@@ -787,12 +787,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "fd861570a9c3c28d98f418feea1f43f6268bdfa0"
+                "reference": "8e6f5732242fe833eb5fd553648924a200e50492"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/fd861570a9c3c28d98f418feea1f43f6268bdfa0",
-                "reference": "fd861570a9c3c28d98f418feea1f43f6268bdfa0",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/8e6f5732242fe833eb5fd553648924a200e50492",
+                "reference": "8e6f5732242fe833eb5fd553648924a200e50492",
                 "shasum": ""
             },
             "require": {
@@ -831,7 +831,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2015-06-03 05:11:42"
+            "time": "2015-08-15 20:00:28"
         },
         {
             "name": "guzzlehttp/ringphp",
@@ -936,16 +936,16 @@
         },
         {
             "name": "justinrainbow/json-schema",
-            "version": "dev-master",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/justinrainbow/json-schema.git",
-                "reference": "34ca930d9fbfb439ae8d3b87ca046b914e190295"
+                "reference": "a4bee9f4b344b66e0a0d96c7afae1e92edf385fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/34ca930d9fbfb439ae8d3b87ca046b914e190295",
-                "reference": "34ca930d9fbfb439ae8d3b87ca046b914e190295",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/a4bee9f4b344b66e0a0d96c7afae1e92edf385fe",
+                "reference": "a4bee9f4b344b66e0a0d96c7afae1e92edf385fe",
                 "shasum": ""
             },
             "require": {
@@ -998,7 +998,7 @@
                 "json",
                 "schema"
             ],
-            "time": "2015-07-14 16:34:54"
+            "time": "2015-09-08 22:28:04"
         },
         {
             "name": "kartik-v/yii2-krajee-base",
@@ -1177,16 +1177,16 @@
         },
         {
             "name": "mata/mata-category",
-            "version": "1.0.0-alpha",
+            "version": "1.0.1-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/mata-category.git",
-                "reference": "595eaa92c36ea45a8847ae667cf0bfa606bbcba8"
+                "reference": "7edf84eddd1939cf08a591841d6b7dfe58a7f26d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/mata-category/zipball/595eaa92c36ea45a8847ae667cf0bfa606bbcba8",
-                "reference": "595eaa92c36ea45a8847ae667cf0bfa606bbcba8",
+                "url": "https://api.github.com/repos/qi-interactive/mata-category/zipball/7edf84eddd1939cf08a591841d6b7dfe58a7f26d",
+                "reference": "7edf84eddd1939cf08a591841d6b7dfe58a7f26d",
                 "shasum": ""
             },
             "type": "yii2-extension",
@@ -1212,20 +1212,20 @@
                 "mata-category",
                 "yii2"
             ],
-            "time": "2015-05-18 12:07:36"
+            "time": "2015-08-21 09:23:31"
         },
         {
             "name": "mata/mata-form",
-            "version": "1.0.0-alpha",
+            "version": "1.0.1-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/mata-form.git",
-                "reference": "34d8672b7341827469a2fcbacf179c8865c71495"
+                "reference": "2c48942465354082e02250486450c04a755ff1a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/mata-form/zipball/34d8672b7341827469a2fcbacf179c8865c71495",
-                "reference": "34d8672b7341827469a2fcbacf179c8865c71495",
+                "url": "https://api.github.com/repos/qi-interactive/mata-form/zipball/2c48942465354082e02250486450c04a755ff1a5",
+                "reference": "2c48942465354082e02250486450c04a755ff1a5",
                 "shasum": ""
             },
             "require": {
@@ -1248,20 +1248,20 @@
                 "mata-form",
                 "yii2"
             ],
-            "time": "2015-05-18 12:19:49"
+            "time": "2015-09-16 12:59:38"
         },
         {
             "name": "mata/mata-framework",
-            "version": "1.1.2-alpha",
+            "version": "1.1.3.1-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/MATA-Framework.git",
-                "reference": "0fe5792608e7b3da53c91706e15c25bc872368bd"
+                "reference": "f6a096becea0e9fa6a57bda9ae2ec21c7e05f964"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/MATA-Framework/zipball/0fe5792608e7b3da53c91706e15c25bc872368bd",
-                "reference": "0fe5792608e7b3da53c91706e15c25bc872368bd",
+                "url": "https://api.github.com/repos/qi-interactive/MATA-Framework/zipball/f6a096becea0e9fa6a57bda9ae2ec21c7e05f964",
+                "reference": "f6a096becea0e9fa6a57bda9ae2ec21c7e05f964",
                 "shasum": ""
             },
             "require": {
@@ -1283,57 +1283,7 @@
                 "framework",
                 "mata"
             ],
-            "time": "2015-07-20 10:05:58"
-        },
-        {
-            "name": "mata/mata-imperavi-redactor",
-            "version": "1.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/qi-interactive/mata-imperavi-redactor.git",
-                "reference": "5987ee87c822edf75d5c11dc8829e5bb80578792"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/mata-imperavi-redactor/zipball/5987ee87c822edf75d5c11dc8829e5bb80578792",
-                "reference": "5987ee87c822edf75d5c11dc8829e5bb80578792",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": "*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "mata\\imperavi\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Alexander Yaremchuk",
-                    "email": "alwex10@gmail.com"
-                },
-                {
-                    "name": "Veaceslav Medvedev",
-                    "email": "slavcopost@gmail.com"
-                },
-                {
-                    "name": "Alexander Makarov",
-                    "email": "sam@rmcreative.ru",
-                    "homepage": "http://rmcreative.ru/"
-                }
-            ],
-            "description": "Imperavi Redactor WYSIWYG widget (OEM-licensed for Yii 2)",
-            "keywords": [
-                "imperavi",
-                "imperavi redactor",
-                "yii"
-            ],
-            "time": "2015-06-29 11:22:26"
+            "time": "2015-08-25 17:09:42"
         },
         {
             "name": "mata/mata-key-value",
@@ -1413,16 +1363,16 @@
         },
         {
             "name": "mata/mata-module-menu",
-            "version": "1.0.2-alpha",
+            "version": "1.0.3.2-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/MATA-module-menu.git",
-                "reference": "58e88c2cd31e689c7afd54594bcf64ef85325a3b"
+                "reference": "7e1b81a59ac816bf3be17fcc73d2ed2e3d53d0f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/MATA-module-menu/zipball/58e88c2cd31e689c7afd54594bcf64ef85325a3b",
-                "reference": "58e88c2cd31e689c7afd54594bcf64ef85325a3b",
+                "url": "https://api.github.com/repos/qi-interactive/MATA-module-menu/zipball/7e1b81a59ac816bf3be17fcc73d2ed2e3d53d0f1",
+                "reference": "7e1b81a59ac816bf3be17fcc73d2ed2e3d53d0f1",
                 "shasum": ""
             },
             "require": {
@@ -1449,20 +1399,20 @@
                 "navigation",
                 "yii2"
             ],
-            "time": "2015-07-20 09:28:43"
+            "time": "2015-09-16 13:34:51"
         },
         {
             "name": "mata/mata-tag",
-            "version": "1.0.2-alpha",
+            "version": "1.0.3-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/mata-tag.git",
-                "reference": "b4da4f0c4ed13258041482535e5168508901cba5"
+                "reference": "235f2f662f26abb9267476bf2a627da500aa19fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/mata-tag/zipball/b4da4f0c4ed13258041482535e5168508901cba5",
-                "reference": "b4da4f0c4ed13258041482535e5168508901cba5",
+                "url": "https://api.github.com/repos/qi-interactive/mata-tag/zipball/235f2f662f26abb9267476bf2a627da500aa19fb",
+                "reference": "235f2f662f26abb9267476bf2a627da500aa19fb",
                 "shasum": ""
             },
             "type": "yii2-extension",
@@ -1485,20 +1435,20 @@
                 "tags",
                 "yii2"
             ],
-            "time": "2015-05-19 16:59:05"
+            "time": "2015-08-21 09:09:08"
         },
         {
             "name": "mata/mata-user",
-            "version": "1.0.3-alpha",
+            "version": "1.0.4-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/MATA-user.git",
-                "reference": "f7139fd7e54aae07528be7cdace35f8b8bbc8be0"
+                "reference": "c6a06048e3c4b7816595580e56db812495cacab7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/MATA-user/zipball/f7139fd7e54aae07528be7cdace35f8b8bbc8be0",
-                "reference": "f7139fd7e54aae07528be7cdace35f8b8bbc8be0",
+                "url": "https://api.github.com/repos/qi-interactive/MATA-user/zipball/c6a06048e3c4b7816595580e56db812495cacab7",
+                "reference": "c6a06048e3c4b7816595580e56db812495cacab7",
                 "shasum": ""
             },
             "require": {
@@ -1535,20 +1485,20 @@
                 "mata-user",
                 "yii2"
             ],
-            "time": "2015-07-20 09:24:02"
+            "time": "2015-08-21 09:01:57"
         },
         {
             "name": "matacms/matacms-base",
-            "version": "1.1.3.3-alpha",
+            "version": "1.1.4.2-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/matacms-base.git",
-                "reference": "573df63454dca3827dc48346a992822e31d2d836"
+                "reference": "11df71f23d4ac4f47a7288c96beed59cfeaf8b4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/matacms-base/zipball/573df63454dca3827dc48346a992822e31d2d836",
-                "reference": "573df63454dca3827dc48346a992822e31d2d836",
+                "url": "https://api.github.com/repos/qi-interactive/matacms-base/zipball/11df71f23d4ac4f47a7288c96beed59cfeaf8b4d",
+                "reference": "11df71f23d4ac4f47a7288c96beed59cfeaf8b4d",
                 "shasum": ""
             },
             "require": {
@@ -1559,12 +1509,8 @@
                 "mata/mata-module-menu": "~1.0.0-alpha",
                 "mata/mata-tag": "~1.0.0-alpha",
                 "matacms/matacms-cache": "~1.0.0-alpha",
-                "matacms/matacms-carousel": "~1.0.0-alpha",
-                "matacms/matacms-content-block": "~1.0.0-alpha",
                 "matacms/matacms-environment": "~1.0-alpha",
                 "matacms/matacms-form": "~1.0.0-alpha",
-                "matacms/matacms-person": "~1.0.0-alpha",
-                "matacms/matacms-post": "~1.0.0-alpha",
                 "matacms/matacms-settings": "~1.0.0-alpha",
                 "matacms/matacms-simple-theme": "~1.0.0-alpha",
                 "matacms/matacms-user": "~1.0-alpha",
@@ -1589,20 +1535,20 @@
                 "mata",
                 "mata cms"
             ],
-            "time": "2015-07-20 12:06:13"
+            "time": "2015-09-16 13:08:46"
         },
         {
             "name": "matacms/matacms-cache",
-            "version": "1.0.1-alpha",
+            "version": "1.0.2-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/matacms-cache.git",
-                "reference": "24f6df4d9d60d71f272d2b612a41dded3cc936a4"
+                "reference": "fb6f9ca541bbee1090d3dcc78019d638c4125558"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/matacms-cache/zipball/24f6df4d9d60d71f272d2b612a41dded3cc936a4",
-                "reference": "24f6df4d9d60d71f272d2b612a41dded3cc936a4",
+                "url": "https://api.github.com/repos/qi-interactive/matacms-cache/zipball/fb6f9ca541bbee1090d3dcc78019d638c4125558",
+                "reference": "fb6f9ca541bbee1090d3dcc78019d638c4125558",
                 "shasum": ""
             },
             "require": {
@@ -1628,20 +1574,20 @@
                 "mata-cms-cache",
                 "yii2"
             ],
-            "time": "2015-06-03 17:52:59"
+            "time": "2015-08-21 09:54:29"
         },
         {
             "name": "matacms/matacms-calendar",
-            "version": "1.0.1-alpha",
+            "version": "1.0.2-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/matacms-calendar.git",
-                "reference": "2ac123421d2a107ff3a110beaf722209c6abe615"
+                "reference": "8f80e9f863e374ed5ea52369cf9a52dfb933c23d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/matacms-calendar/zipball/2ac123421d2a107ff3a110beaf722209c6abe615",
-                "reference": "2ac123421d2a107ff3a110beaf722209c6abe615",
+                "url": "https://api.github.com/repos/qi-interactive/matacms-calendar/zipball/8f80e9f863e374ed5ea52369cf9a52dfb933c23d",
+                "reference": "8f80e9f863e374ed5ea52369cf9a52dfb933c23d",
                 "shasum": ""
             },
             "type": "yii2-extension",
@@ -1664,97 +1610,20 @@
                 "matacms-calendar",
                 "yii2"
             ],
-            "time": "2015-07-23 13:22:11"
-        },
-        {
-            "name": "matacms/matacms-carousel",
-            "version": "1.0.5-alpha",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/qi-interactive/matacms-carousel.git",
-                "reference": "5ea1fd66a32b5ba8a58f2bf0bb9dc5e5e6f2b2b0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/matacms-carousel/zipball/5ea1fd66a32b5ba8a58f2bf0bb9dc5e5e6f2b2b0",
-                "reference": "5ea1fd66a32b5ba8a58f2bf0bb9dc5e5e6f2b2b0",
-                "shasum": ""
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "bootstrap": "matacms\\carousel\\Bootstrap"
-            },
-            "autoload": {
-                "psr-4": {
-                    "matacms\\carousel\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Carousel management for MATA CMS",
-            "keywords": [
-                "carousel",
-                "mata",
-                "matacms-carousel",
-                "yii2"
-            ],
-            "time": "2015-06-24 10:10:47"
-        },
-        {
-            "name": "matacms/matacms-content-block",
-            "version": "1.0.4-alpha",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/qi-interactive/matacms-content-block.git",
-                "reference": "8a22827bf81278a4c476889fc311173fd12ba7dc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/matacms-content-block/zipball/8a22827bf81278a4c476889fc311173fd12ba7dc",
-                "reference": "8a22827bf81278a4c476889fc311173fd12ba7dc",
-                "shasum": ""
-            },
-            "require": {
-                "mata/mata-imperavi-redactor": "~1.0.0"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "matacms\\contentblock\\": [
-                        "../../../mata-cms/modules/matacms/matacms-content-block",
-                        ""
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Manages blocks of HTML code for MATACMS",
-            "keywords": [
-                "cms",
-                "html",
-                "mata-cms",
-                "mata-content-block",
-                "wysiwyg",
-                "yii2"
-            ],
-            "time": "2015-06-11 08:20:37"
+            "time": "2015-08-21 10:10:43"
         },
         {
             "name": "matacms/matacms-environment",
-            "version": "1.0.5.1-alpha",
+            "version": "1.0.6-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/matacms-environment.git",
-                "reference": "0cb46ff7983f3f744eada9d737030e66eaae03d3"
+                "reference": "362038b0e4761bad28ebb3240dd7380d93ef0695"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/matacms-environment/zipball/0cb46ff7983f3f744eada9d737030e66eaae03d3",
-                "reference": "0cb46ff7983f3f744eada9d737030e66eaae03d3",
+                "url": "https://api.github.com/repos/qi-interactive/matacms-environment/zipball/362038b0e4761bad28ebb3240dd7380d93ef0695",
+                "reference": "362038b0e4761bad28ebb3240dd7380d93ef0695",
                 "shasum": ""
             },
             "require": {
@@ -1782,20 +1651,20 @@
                 "matacms-environment",
                 "yii2"
             ],
-            "time": "2015-07-20 13:26:38"
+            "time": "2015-08-21 09:45:36"
         },
         {
             "name": "matacms/matacms-form",
-            "version": "1.0.0-alpha",
+            "version": "1.0.2-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/matacms-form.git",
-                "reference": "2fe22b6fda4ecf1a4353f54aec7c006e82952cfe"
+                "reference": "76ee08bb1a788f9993298d0d817abc534fe54409"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/matacms-form/zipball/2fe22b6fda4ecf1a4353f54aec7c006e82952cfe",
-                "reference": "2fe22b6fda4ecf1a4353f54aec7c006e82952cfe",
+                "url": "https://api.github.com/repos/qi-interactive/matacms-form/zipball/76ee08bb1a788f9993298d0d817abc534fe54409",
+                "reference": "76ee08bb1a788f9993298d0d817abc534fe54409",
                 "shasum": ""
             },
             "require": {
@@ -1818,7 +1687,7 @@
                 "matacms-form",
                 "yii2"
             ],
-            "time": "2015-05-18 16:16:28"
+            "time": "2015-08-21 10:24:45"
         },
         {
             "name": "matacms/matacms-gii",
@@ -1859,94 +1728,17 @@
             "time": "2015-05-18 16:27:05"
         },
         {
-            "name": "matacms/matacms-person",
-            "version": "1.0.0-alpha",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/qi-interactive/matacms-person.git",
-                "reference": "62d9d74a96d118128a47897beab6b2f32d406868"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/matacms-person/zipball/62d9d74a96d118128a47897beab6b2f32d406868",
-                "reference": "62d9d74a96d118128a47897beab6b2f32d406868",
-                "shasum": ""
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "matacms\\person\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Manages persons for MATACMS",
-            "keywords": [
-                "Person",
-                "cms",
-                "mata-cms",
-                "matacms-person",
-                "yii2"
-            ],
-            "time": "2015-05-18 16:35:15"
-        },
-        {
-            "name": "matacms/matacms-post",
-            "version": "1.0.2-alpha",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/qi-interactive/matacms-post.git",
-                "reference": "3009955a407d67442f6107ba982ccc860b8dcb9f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/matacms-post/zipball/3009955a407d67442f6107ba982ccc860b8dcb9f",
-                "reference": "3009955a407d67442f6107ba982ccc860b8dcb9f",
-                "shasum": ""
-            },
-            "require": {
-                "zelenin/yii2-rss": "0.0.4"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "matacms\\post\\": [
-                        "../../../frontend/modules/matacms/post",
-                        "../../../mata-cms/modules/matacms/matacms-post",
-                        ""
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Post management for MATA CMS",
-            "keywords": [
-                "blog",
-                "mata",
-                "matacms-post",
-                "news",
-                "post",
-                "rss",
-                "yii2"
-            ],
-            "time": "2015-05-22 08:52:00"
-        },
-        {
             "name": "matacms/matacms-rbac",
-            "version": "1.0.2.1-alpha",
+            "version": "1.0.3.1-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/matacms-rbac.git",
-                "reference": "f6490095ad152b3570751cba91cbb24c4692c50d"
+                "reference": "f273de201006a127b95c332e53f31de02c559130"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/matacms-rbac/zipball/f6490095ad152b3570751cba91cbb24c4692c50d",
-                "reference": "f6490095ad152b3570751cba91cbb24c4692c50d",
+                "url": "https://api.github.com/repos/qi-interactive/matacms-rbac/zipball/f273de201006a127b95c332e53f31de02c559130",
+                "reference": "f273de201006a127b95c332e53f31de02c559130",
                 "shasum": ""
             },
             "require": {
@@ -1973,7 +1765,7 @@
                 "rbac management",
                 "yii2"
             ],
-            "time": "2015-07-22 15:35:16"
+            "time": "2015-08-24 09:00:27"
         },
         {
             "name": "matacms/matacms-settings",
@@ -2016,16 +1808,16 @@
         },
         {
             "name": "matacms/matacms-simple-theme",
-            "version": "1.0.8.4-alpha",
+            "version": "1.0.9-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/matacms-simple-theme.git",
-                "reference": "516ee9175b95d51680331c5cd5a8c437fd2a7391"
+                "reference": "e06ebe1bfb99578250129dba7355fcdec52e73c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/matacms-simple-theme/zipball/516ee9175b95d51680331c5cd5a8c437fd2a7391",
-                "reference": "516ee9175b95d51680331c5cd5a8c437fd2a7391",
+                "url": "https://api.github.com/repos/qi-interactive/matacms-simple-theme/zipball/e06ebe1bfb99578250129dba7355fcdec52e73c7",
+                "reference": "e06ebe1bfb99578250129dba7355fcdec52e73c7",
                 "shasum": ""
             },
             "type": "yii2-extension",
@@ -2047,20 +1839,20 @@
                 "theme",
                 "yii2"
             ],
-            "time": "2015-07-09 10:52:59"
+            "time": "2015-08-21 11:22:43"
         },
         {
             "name": "matacms/matacms-user",
-            "version": "1.0.1.8-alpha",
+            "version": "1.0.2.2-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/matacms-user.git",
-                "reference": "e120fd9d98f93f9e58efb53f67f3bfb4480948cf"
+                "reference": "a42506888284a52ae58bc8f50293df4fec7cb3d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/matacms-user/zipball/e120fd9d98f93f9e58efb53f67f3bfb4480948cf",
-                "reference": "e120fd9d98f93f9e58efb53f67f3bfb4480948cf",
+                "url": "https://api.github.com/repos/qi-interactive/matacms-user/zipball/a42506888284a52ae58bc8f50293df4fec7cb3d6",
+                "reference": "a42506888284a52ae58bc8f50293df4fec7cb3d6",
                 "shasum": ""
             },
             "require": {
@@ -2097,7 +1889,7 @@
                 "matacms-user",
                 "yii2"
             ],
-            "time": "2015-07-23 12:52:50"
+            "time": "2015-08-24 08:58:28"
         },
         {
             "name": "phpspec/php-diff",
@@ -2229,12 +2021,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "caf94ee2473ba6503e411ce3bcbd33b080f1d903"
+                "reference": "6522539daf0a7bdada1cc2dccb7ec37dc0712136"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/caf94ee2473ba6503e411ce3bcbd33b080f1d903",
-                "reference": "caf94ee2473ba6503e411ce3bcbd33b080f1d903",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/6522539daf0a7bdada1cc2dccb7ec37dc0712136",
+                "reference": "6522539daf0a7bdada1cc2dccb7ec37dc0712136",
                 "shasum": ""
             },
             "require": {
@@ -2274,7 +2066,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2015-07-15 23:24:06"
+            "time": "2015-09-04 05:47:20"
         },
         {
             "name": "symfony/console",
@@ -2337,12 +2129,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "d7246885b7fe4cb5a2786bda34362d2f0e40b730"
+                "reference": "e79162fa079bb559ddad17c58cf8b7ecbaffd9b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/d7246885b7fe4cb5a2786bda34362d2f0e40b730",
-                "reference": "d7246885b7fe4cb5a2786bda34362d2f0e40b730",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/e79162fa079bb559ddad17c58cf8b7ecbaffd9b6",
+                "reference": "e79162fa079bb559ddad17c58cf8b7ecbaffd9b6",
                 "shasum": ""
             },
             "require": {
@@ -2387,7 +2179,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2015-06-24 15:32:32"
+            "time": "2015-09-14 06:10:06"
         },
         {
             "name": "symfony/finder",
@@ -2395,12 +2187,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "8712d5e8c4ad65e6b936ed9b6a581e5e6a87fddf"
+                "reference": "142440d48e10fd4b4f2ffb2d72fa0aad6f03cacf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/8712d5e8c4ad65e6b936ed9b6a581e5e6a87fddf",
-                "reference": "8712d5e8c4ad65e6b936ed9b6a581e5e6a87fddf",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/142440d48e10fd4b4f2ffb2d72fa0aad6f03cacf",
+                "reference": "142440d48e10fd4b4f2ffb2d72fa0aad6f03cacf",
                 "shasum": ""
             },
             "require": {
@@ -2436,7 +2228,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-09 16:11:14"
+            "time": "2015-08-27 06:53:13"
         },
         {
             "name": "symfony/process",
@@ -2444,12 +2236,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "25d74c90d79e66905013714d8d188e4ccb5ff466"
+                "reference": "fc18e378d05c6b81bcac39338bf334e053186efa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/25d74c90d79e66905013714d8d188e4ccb5ff466",
-                "reference": "25d74c90d79e66905013714d8d188e4ccb5ff466",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/fc18e378d05c6b81bcac39338bf334e053186efa",
+                "reference": "fc18e378d05c6b81bcac39338bf334e053186efa",
                 "shasum": ""
             },
             "require": {
@@ -2485,7 +2277,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-01 14:16:54"
+            "time": "2015-08-27 06:53:13"
         },
         {
             "name": "yiidoc/yii2-selectize",
@@ -2531,12 +2323,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "411853896833a4c48388d64e159067be9ccf4e56"
+                "reference": "42749cbc9e36cbdd4b7659a0055f15598619decb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/411853896833a4c48388d64e159067be9ccf4e56",
-                "reference": "411853896833a4c48388d64e159067be9ccf4e56",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/42749cbc9e36cbdd4b7659a0055f15598619decb",
+                "reference": "42749cbc9e36cbdd4b7659a0055f15598619decb",
                 "shasum": ""
             },
             "require": {
@@ -2545,6 +2337,7 @@
                 "bower-asset/punycode": "1.3.*",
                 "bower-asset/yii2-pjax": ">=2.0.1",
                 "cebe/markdown": "~1.0.0 | ~1.1.0",
+                "ext-ctype": "*",
                 "ext-mbstring": "*",
                 "ezyang/htmlpurifier": "4.6.*",
                 "lib-pcre": "*",
@@ -2611,7 +2404,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-07-23 11:57:59"
+            "time": "2015-09-13 23:12:35"
         },
         {
             "name": "yiisoft/yii2-authclient",
@@ -2619,12 +2412,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-authclient.git",
-                "reference": "9c56e2a7bcc00b0eafe336904156f4882266186e"
+                "reference": "e8c639af26be6ce38b0bbf5113882345fe25de3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-authclient/zipball/9c56e2a7bcc00b0eafe336904156f4882266186e",
-                "reference": "9c56e2a7bcc00b0eafe336904156f4882266186e",
+                "url": "https://api.github.com/repos/yiisoft/yii2-authclient/zipball/e8c639af26be6ce38b0bbf5113882345fe25de3d",
+                "reference": "e8c639af26be6ce38b0bbf5113882345fe25de3d",
                 "shasum": ""
             },
             "require": {
@@ -2659,7 +2452,7 @@
                 "oauth",
                 "yii2"
             ],
-            "time": "2015-07-21 06:51:08"
+            "time": "2015-08-31 07:56:21"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -2667,17 +2460,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-bootstrap.git",
-                "reference": "6787348a3622720ed4b6a61998ff71988454fc53"
+                "reference": "5ae12770c69b1b42f1be742ca16d97dc63371eb8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/6787348a3622720ed4b6a61998ff71988454fc53",
-                "reference": "6787348a3622720ed4b6a61998ff71988454fc53",
+                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/5ae12770c69b1b42f1be742ca16d97dc63371eb8",
+                "reference": "5ae12770c69b1b42f1be742ca16d97dc63371eb8",
                 "shasum": ""
             },
             "require": {
                 "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",
-                "yiisoft/yii2": ">=2.0.x-dev"
+                "yiisoft/yii2": ">=2.0.6"
             },
             "type": "yii2-extension",
             "extra": {
@@ -2709,7 +2502,7 @@
                 "bootstrap",
                 "yii2"
             ],
-            "time": "2015-07-22 08:59:37"
+            "time": "2015-08-27 12:55:38"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -2764,12 +2557,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-gii.git",
-                "reference": "391aa2343cd1b0e48bfc99c9061999b0d0be93cb"
+                "reference": "6519954dc8dd16050d886d1266d6248cbae2d14f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/391aa2343cd1b0e48bfc99c9061999b0d0be93cb",
-                "reference": "391aa2343cd1b0e48bfc99c9061999b0d0be93cb",
+                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/6519954dc8dd16050d886d1266d6248cbae2d14f",
+                "reference": "6519954dc8dd16050d886d1266d6248cbae2d14f",
                 "shasum": ""
             },
             "require": {
@@ -2809,7 +2602,7 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2015-07-20 21:58:11"
+            "time": "2015-08-31 23:04:33"
         },
         {
             "name": "yiisoft/yii2-jui",
@@ -2817,12 +2610,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-jui.git",
-                "reference": "3d4f3d7d0e86af0e0b051a3660517f3041623ffa"
+                "reference": "7b71a0389e5aa2bfa8a3ac605705a286908b14e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-jui/zipball/3d4f3d7d0e86af0e0b051a3660517f3041623ffa",
-                "reference": "3d4f3d7d0e86af0e0b051a3660517f3041623ffa",
+                "url": "https://api.github.com/repos/yiisoft/yii2-jui/zipball/7b71a0389e5aa2bfa8a3ac605705a286908b14e8",
+                "reference": "7b71a0389e5aa2bfa8a3ac605705a286908b14e8",
                 "shasum": ""
             },
             "require": {
@@ -2859,7 +2652,7 @@
                 "jQuery UI",
                 "yii2"
             ],
-            "time": "2015-05-30 10:39:17"
+            "time": "2015-08-06 19:32:06"
         },
         {
             "name": "yiisoft/yii2-swiftmailer",
@@ -2910,95 +2703,6 @@
                 "yii2"
             ],
             "time": "2015-06-18 08:31:25"
-        },
-        {
-            "name": "zelenin/rss-generator",
-            "version": "2.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zelenin/RSS-Generator.git",
-                "reference": "c32e22a61e529fdb0363ea6c3d98d1071f082eee"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zelenin/RSS-Generator/zipball/c32e22a61e529fdb0363ea6c3d98d1071f082eee",
-                "reference": "c32e22a61e529fdb0363ea6c3d98d1071f082eee",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Zelenin\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Aleksandr Zelenin",
-                    "email": "aleksandr@zelenin.me",
-                    "homepage": "http://zelenin.me",
-                    "role": "Developer"
-                }
-            ],
-            "description": "PHP class for generating of RSS feeds. Full support of [RSSboard specification](http://www.rssboard.org/rss-specification)",
-            "homepage": "https://github.com/zelenin/RSS-Generator",
-            "keywords": [
-                "feed",
-                "generator",
-                "rss"
-            ],
-            "time": "2014-11-15 00:00:00"
-        },
-        {
-            "name": "zelenin/yii2-rss",
-            "version": "0.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zelenin/yii2-rss.git",
-                "reference": "0e78c95e4665eaaf5a5b4ac7315e8c0111451a17"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zelenin/yii2-rss/zipball/0e78c95e4665eaaf5a5b4ac7315e8c0111451a17",
-                "reference": "0e78c95e4665eaaf5a5b4ac7315e8c0111451a17",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": "~2",
-                "zelenin/rss-generator": "~2.1@stable"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "Zelenin\\yii\\extensions\\Rss\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Aleksandr Zelenin",
-                    "email": "aleksandr@zelenin.me",
-                    "homepage": "http://zelenin.me",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Yii2 RSS extension adds RSS-feed to your site",
-            "homepage": "https://github.com/zelenin/yii2-rss",
-            "keywords": [
-                "feed",
-                "rss",
-                "yii2"
-            ],
-            "time": "2014-12-07 00:00:00"
         }
     ],
     "packages-dev": [
@@ -3008,23 +2712,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "5594929b5d9d31871cace6d3d7cb940a0010161c"
+                "reference": "46a25cb87fe630550e99b2a26d6fa7cce3b4143d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/5594929b5d9d31871cace6d3d7cb940a0010161c",
-                "reference": "5594929b5d9d31871cace6d3d7cb940a0010161c",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/46a25cb87fe630550e99b2a26d6fa7cce3b4143d",
+                "reference": "46a25cb87fe630550e99b2a26d6fa7cce3b4143d",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
+                "ext-intl": "*",
                 "phpunit/phpunit": "~4.0",
                 "squizlabs/php_codesniffer": "~1.5"
-            },
-            "suggest": {
-                "ext-intl": "*"
             },
             "type": "library",
             "extra": {
@@ -3052,7 +2754,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2015-07-21 12:25:36"
+            "time": "2015-09-16 06:57:55"
         },
         {
             "name": "yiisoft/yii2-codeception",
@@ -3060,12 +2762,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-codeception.git",
-                "reference": "b3407b0c8614c1d614c5c58287816027ba98418b"
+                "reference": "4428504253562c3de6643776d1bda273088bdeb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-codeception/zipball/b3407b0c8614c1d614c5c58287816027ba98418b",
-                "reference": "b3407b0c8614c1d614c5c58287816027ba98418b",
+                "url": "https://api.github.com/repos/yiisoft/yii2-codeception/zipball/4428504253562c3de6643776d1bda273088bdeb4",
+                "reference": "4428504253562c3de6643776d1bda273088bdeb4",
                 "shasum": ""
             },
             "require": {
@@ -3097,7 +2799,7 @@
                 "codeception",
                 "yii2"
             ],
-            "time": "2015-05-10 22:28:02"
+            "time": "2015-07-28 06:25:07"
         },
         {
             "name": "yiisoft/yii2-debug",
@@ -3105,12 +2807,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-debug.git",
-                "reference": "744db5ce956ce8de4b4b982ba0cbaa4ae5fdd2f7"
+                "reference": "daf79cf6f6e32c474c9a476293d199cae64254fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/744db5ce956ce8de4b4b982ba0cbaa4ae5fdd2f7",
-                "reference": "744db5ce956ce8de4b4b982ba0cbaa4ae5fdd2f7",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/daf79cf6f6e32c474c9a476293d199cae64254fb",
+                "reference": "daf79cf6f6e32c474c9a476293d199cae64254fb",
                 "shasum": ""
             },
             "require": {
@@ -3144,7 +2846,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2015-07-20 21:57:53"
+            "time": "2015-09-06 19:58:00"
         },
         {
             "name": "yiisoft/yii2-faker",
@@ -3152,12 +2854,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-faker.git",
-                "reference": "66432de272e5795435dc7da49381ea7bea2a2a67"
+                "reference": "091bc3c5db9e53031817c6e155c0bd518f3606de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-faker/zipball/66432de272e5795435dc7da49381ea7bea2a2a67",
-                "reference": "66432de272e5795435dc7da49381ea7bea2a2a67",
+                "url": "https://api.github.com/repos/yiisoft/yii2-faker/zipball/091bc3c5db9e53031817c6e155c0bd518f3606de",
+                "reference": "091bc3c5db9e53031817c6e155c0bd518f3606de",
                 "shasum": ""
             },
             "require": {
@@ -3191,7 +2893,7 @@
                 "faker",
                 "yii2"
             ],
-            "time": "2015-05-10 19:14:39"
+            "time": "2015-07-28 06:25:23"
         }
     ],
     "aliases": [],

@@ -22,14 +22,11 @@ class HomeController extends BaseController {
      */
     public function actions()
     {
-        return [
+        return array_merge([
             'captcha' => [
                 'class' => 'yii\captcha\CaptchaAction',
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
-            ],
-            [
-                     'error' => ['class' => 'yii\web\ErrorAction'],
-               ]
+            ]], parent::actions());
             // 'processForm' => [
             //     'class' => 'mata\form\actions\ProcessFormAction',
             //     'model' => self::getModel(),
@@ -40,7 +37,6 @@ class HomeController extends BaseController {
             //     // ],
             //     // 'redirect' => ['site/index']
             // ]
-        ];
     }
 
     public function actionIndex()
