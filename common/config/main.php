@@ -34,8 +34,5 @@ return [
         'environment' => [
             'class' => 'matacms\environment\Module'
         ],
-        'post' => [
-            'class' => 'matacms\post\Module'
-        ],
     ],
 ];

@@ -94,6 +94,8 @@ if(!empty($migrationPaths)) {
 
 echo "\n  ... migration completed.\n\n";
 
+runCreateAdminUserCommand($root);
+
 function getFileList($root, $basePath = '')
 {
     $files = [];
@@ -270,4 +272,21 @@ function runMigrationCommand($migrationPath, $root)
     $cmd = PHP_BINDIR . '/php ' . $root . '/yii migrate/up --migrationPath=' . $migrationPath . ' --interactive=0';
     pclose(popen($cmd, 'w'));
 
+}
+
+function runCreateAdminUserCommand($root)
+{
+    echo "\n  Creating MATACMS admin user:\n";
+
+    echo "\n  Email: ";
+    $email = trim(fgets(STDIN));
+
+    echo "\n  Username: ";
+    $username = trim(fgets(STDIN));
+
+    echo "\n  Password: ";
+    $password = trim(fgets(STDIN));
+
+    $cmd = PHP_BINDIR . '/php ' . $root . '/yii user/create/admin ' . $email . ' ' . $username . ' ' . $password;
+    pclose(popen($cmd, 'w'));
 }

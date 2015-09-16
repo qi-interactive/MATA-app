@@ -11,6 +11,7 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log', 'gii'],
     'controllerNamespace' => 'console\controllers',
+    'disabledModulesBootstraps' => ['mata\\user\\Bootstrap'],
     'modules' => [
         'gii' => 'yii\gii\Module',
     ],
