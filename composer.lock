@@ -1489,16 +1489,16 @@
         },
         {
             "name": "matacms/matacms-base",
-            "version": "1.1.4.2-alpha",
+            "version": "1.1.4.3-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/matacms-base.git",
-                "reference": "11df71f23d4ac4f47a7288c96beed59cfeaf8b4d"
+                "reference": "09575c1413b211520226f0ab7a55a1959df6fc9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/matacms-base/zipball/11df71f23d4ac4f47a7288c96beed59cfeaf8b4d",
-                "reference": "11df71f23d4ac4f47a7288c96beed59cfeaf8b4d",
+                "url": "https://api.github.com/repos/qi-interactive/matacms-base/zipball/09575c1413b211520226f0ab7a55a1959df6fc9f",
+                "reference": "09575c1413b211520226f0ab7a55a1959df6fc9f",
                 "shasum": ""
             },
             "require": {
@@ -1535,7 +1535,7 @@
                 "mata",
                 "mata cms"
             ],
-            "time": "2015-09-16 13:08:46"
+            "time": "2015-09-16 15:49:18"
         },
         {
             "name": "matacms/matacms-cache",
@@ -1843,16 +1843,16 @@
         },
         {
             "name": "matacms/matacms-user",
-            "version": "1.0.2.2-alpha",
+            "version": "1.0.2.3-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/qi-interactive/matacms-user.git",
-                "reference": "a42506888284a52ae58bc8f50293df4fec7cb3d6"
+                "reference": "c96de74e9d0ad17a12b52d11f0a6d38a067ed040"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/qi-interactive/matacms-user/zipball/a42506888284a52ae58bc8f50293df4fec7cb3d6",
-                "reference": "a42506888284a52ae58bc8f50293df4fec7cb3d6",
+                "url": "https://api.github.com/repos/qi-interactive/matacms-user/zipball/c96de74e9d0ad17a12b52d11f0a6d38a067ed040",
+                "reference": "c96de74e9d0ad17a12b52d11f0a6d38a067ed040",
                 "shasum": ""
             },
             "require": {
@@ -1889,7 +1889,7 @@
                 "matacms-user",
                 "yii2"
             ],
-            "time": "2015-08-24 08:58:28"
+            "time": "2015-09-16 15:55:15"
         },
         {
             "name": "phpspec/php-diff",
@@ -2323,12 +2323,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "42749cbc9e36cbdd4b7659a0055f15598619decb"
+                "reference": "b4b13a0b901d16f37cb9a9bc4453c3f7c70da3f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/42749cbc9e36cbdd4b7659a0055f15598619decb",
-                "reference": "42749cbc9e36cbdd4b7659a0055f15598619decb",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/b4b13a0b901d16f37cb9a9bc4453c3f7c70da3f6",
+                "reference": "b4b13a0b901d16f37cb9a9bc4453c3f7c70da3f6",
                 "shasum": ""
             },
             "require": {
@@ -2404,7 +2404,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-09-13 23:12:35"
+            "time": "2015-09-16 14:38:02"
         },
         {
             "name": "yiisoft/yii2-authclient",
