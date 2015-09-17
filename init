@@ -19,6 +19,7 @@ if (!extension_loaded('mcrypt')) {
 }
 
 $params = getParams();
+
 $root = str_replace('\\', '/', __DIR__);
 $envs = require("$root/environments/index.php");
 $envNames = array_keys($envs);
@@ -94,7 +95,7 @@ if(!empty($migrationPaths)) {
 
 echo "\n  ... migration completed.\n\n";
 
-runCreateAdminUserCommand($root);
+runCreateAdminUserCommand($root, $params);
 
 function getFileList($root, $basePath = '')
 {
@@ -274,19 +275,23 @@ function runMigrationCommand($migrationPath, $root)
 
 }
 
-function runCreateAdminUserCommand($root)
+function runCreateAdminUserCommand($root, $params)
 {
-    echo "\n  Creating MATACMS admin user:\n";
+    $shouldCreateUser = !empty($params['overwrite']) ? $params['overwrite'] : 'y';
+    if ($shouldCreateUser == 'y') {
+        echo "\n  Creating MATACMS admin user:\n";
 
-    echo "\n  Email: ";
-    $email = trim(fgets(STDIN));
+        echo "\n  Email: ";
+        $email = trim(fgets(STDIN));
 
-    echo "\n  Username: ";
-    $username = trim(fgets(STDIN));
+        echo "\n  Username: ";
+        $username = trim(fgets(STDIN));
 
-    echo "\n  Password: ";
-    $password = trim(fgets(STDIN));
+        echo "\n  Password: ";
+        $password = trim(fgets(STDIN));
 
-    $cmd = PHP_BINDIR . '/php ' . $root . '/yii user/create/admin ' . $email . ' ' . $username . ' ' . $password;
-    pclose(popen($cmd, 'w'));
+        $cmd = PHP_BINDIR . '/php ' . $root . '/yii user/create/admin ' . $email . ' ' . $username . ' ' . $password;
+        pclose(popen($cmd, 'w'));
+    }
+
 }
