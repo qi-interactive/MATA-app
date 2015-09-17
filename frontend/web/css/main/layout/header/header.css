@@ -1,0 +1,4 @@
+#header,#header #main-menu li a{color:#fff}
+#header{background:#000;height:70px}
+#header #main-menu{width:100%;text-align:center}
+#header #main-menu li{display:inline-block}

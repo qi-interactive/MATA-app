@@ -9,14 +9,14 @@ use frontend\models\SignupForm;
 use frontend\models\ContactForm;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
-use frontend\controllers\base\BaseController;
+use frontend\controllers\base\AppController;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 
 /**
  * Site controller
  */
-class HomeController extends BaseController {
+class HomeController extends AppController {
     /**
      * @inheritdoc
      */

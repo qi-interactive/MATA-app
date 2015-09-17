@@ -1,0 +1,6 @@
+#footer,#header{background:#000;color:#fff}
+#footer,#header,#header #main-menu li a{color:#fff}
+#header{height:70px}
+#header #main-menu{width:100%;text-align:center}
+#header #main-menu li{display:inline-block}
+#footer{text-align:center}
