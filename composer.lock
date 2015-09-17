@@ -5,6 +5,7 @@
         "This file is @generated automatically"
     ],
     "hash": "b1a96ee77086ec6a83bf8137321cba2c",
+    "content-hash": "59c96739841a20790fba1c2f7ab15d06",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -348,12 +349,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/brianreavis/selectize.js.git",
-                "reference": "3dc07d40047cd98de8a8f8beacca06a73970139d"
+                "reference": "043420284064ad998b07e1abd9720f56c86d6614"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brianreavis/selectize.js/zipball/3dc07d40047cd98de8a8f8beacca06a73970139d",
-                "reference": "3dc07d40047cd98de8a8f8beacca06a73970139d",
+                "url": "https://api.github.com/repos/brianreavis/selectize.js/zipball/043420284064ad998b07e1abd9720f56c86d6614",
+                "reference": "043420284064ad998b07e1abd9720f56c86d6614",
                 "shasum": ""
             },
             "require": {
@@ -404,7 +405,7 @@
                 "tagging",
                 "ui"
             ],
-            "time": "2015-04-16 08:27:13"
+            "time": "2015-09-09 17:10:58"
         },
         {
             "name": "bower-asset/sifter",
@@ -2109,14 +2110,12 @@
             ],
             "authors": [
                 {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                },
-                {
                     "name": "Symfony Community",
                     "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
             "description": "Symfony Console Component",
