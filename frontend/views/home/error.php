@@ -7,21 +7,28 @@ use yii\helpers\Html;
 /* @var $message string */
 /* @var $exception Exception */
 
-$this->title = $name;
+
+$this->title = Yii::$app->name.' - Error';
+
 ?>
-<div class="site-error">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+<style>
 
-    <div class="alert alert-danger">
-        <?= nl2br(Html::encode($message)) ?>
-    </div>
+  #site-error {
+    text-align: center;
+  }
 
-    <p>
-        The above error occurred while the Web server was processing your request.
-    </p>
-    <p>
-        Please contact us if you think this is a server error. Thank you.
-    </p>
+  #site-error h2, #site-error a {
+    color: red;
+  }
 
-</div>
+</style>
+
+<div class="site-error" id="site-error">
+
+  <h2>
+    Sorry we can't locate that page <br/>
+
+    Please visit our <a href="\"> HOMEPAGE </a> </h2>
+
+  </div>

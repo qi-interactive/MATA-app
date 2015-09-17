@@ -1,0 +1,18 @@
+.text-primary,.text-primary:hover,.text-secondary,.text-secondary:hover,p{color:#000}
+p,ul{margin:0}
+.h1,.h2,h1,h2{font-weight:400}
+.h2,.h3,h2,h3{text-transform:uppercase;font-family:Montserrat,sans-serif}
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font-family:Montserrat,sans-serif}
+@font-face{font-family:Montserrat,sans-serif;font-weight:400;font-style:normal}
+@font-face{font-family:Enriqueta,serif;font-style:normal}
+@font-face{font-family:Montserrat,sans-serif;font-weight:700;font-style:normal}
+p{line-height:normal;font-size:12px}
+.small,small{font-size:85%}
+.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{color:#000;line-height:normal;margin:0;padding:0}
+.h1 .small,.h1 small,.h2 .small,.h2 small,.h3 .small,.h3 small,.h4 .small,.h4 small,.h5 .small,.h5 small,.h6 .small,.h6 small,h1 .small,h1 small,h2 .small,h2 small,h3 .small,h3 small,h4 .small,h4 small,h5 .small,h5 small,h6 .small,h6 small{font-weight:400;line-height:normal}
+.h1,h1{font-size:12px}
+.h2,h2{line-height:30px;color:#fff}
+.h3,h3{font-weight:700;color:#000;padding-bottom:50px}
+.h4,h4{text-transform:inherit;font-weight:400;color:#000}
+.h2,.h3,h2,h3{font-size:24px}
+.h4,.h5,.h6,h4,h5,h6{font-size:12px}

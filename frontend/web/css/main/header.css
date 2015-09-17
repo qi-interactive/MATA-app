@@ -1,0 +1,11 @@
+#header,#header #main-menu li a{color:#fff}
+.none-floated-columns{float:none;margin-left:0;width:100%;margin-bottom:20px}
+.close-character{width:25px;height:25px;position:absolute;z-index:102;background:url(http://placehold.it/25x25);-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;top:0;right:0;-webkit-transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-o-transition:all .3s ease-in-out;transition:all .3s ease-in-out}
+.close-character:hover{-webkit-transform:rotate(-190deg) translatez(0);-moz-transform:rotate(-190deg) translatez(0);-ms-transform:rotate(-190deg) translatez(0);-o-transform:rotate(-190deg) translatez(0);transform:rotate(-190deg) translatez(0)}
+.social-media-links{cursor:default;height:20px;position:relative;display:block;padding:0;margin:0}
+.social-media-links a{display:inline-block;margin-right:10px;height:100%;width:24px;background-position:center;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}
+.social-media-links a:last-child{margin-right:0}
+.social-media-links a.facebook,.social-media-links a.instagram,.social-media-links a.twitter{background-image:url(http://placehold.it/17x15)}
+#header{background:#000;height:70px}
+#header #main-menu{width:100%;text-align:center}
+#header #main-menu li{display:inline-block}

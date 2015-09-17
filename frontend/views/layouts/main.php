@@ -18,6 +18,7 @@ AppAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
+    <link rel="shortcut icon" href="/images/layout/favicon.ico"/>
     <?php $this->head() ?>
 </head>
 <body>
@@ -26,12 +27,12 @@ AppAsset::register($this);
     <?= $this->render('_header.php'); ?>
 
     <div id="main">
-            <?= $content ?>
-        </div>
+        <?= $content ?>
+    </div>
 
-        <?= $this->render('_footer.php'); ?>
+    <?= $this->render('_footer.php'); ?>
 
-        <?php $this->endBody() ?>
-    </body>
-    </html>
-    <?php $this->endPage() ?>
+    <?php $this->endBody() ?>
+</body>
+</html>
+<?php $this->endPage() ?>
