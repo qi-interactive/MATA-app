@@ -1,0 +1,47 @@
+@import "header/_header.less";
+@import "footer/_footer.less";
+@import "_forms.less";
+@import "_buttons.less";
+@import "_links.less";
+@import "ie/_ie.less";
+
+@import (reference) "../common/_extendableStyles.less";
+
+
+
+*,
+*:after,
+*::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-smoothing: antialiased;
+	font-smooth:always;
+	-webkit-font-smoothing: antialiased;
+	-webkit-tap-highlight-color: transparent;
+}
+
+html {
+	height: 100%;
+}
+
+html, body {
+	-webkit-tap-highlight-color: transparent;
+	min-height: 100%;
+	background: @white;
+	font-family: @font-family-base;
+}
+
+#main {
+	margin: 0 auto;
+	width: 100%;
+	padding-top: @header-height;
+	padding-bottom: @header-height * 2;
+	.padded-container;
+
+}
+
+
+
+@import "layout_tablet.less";
+@import "layout_mobile.less";

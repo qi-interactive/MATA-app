@@ -1,0 +1,133 @@
+@import (reference) "_variables.less";
+
+
+.font-base-normal {
+	font-family: @font-family-base;
+	font-weight: 500;
+}
+
+.font-base-bold {
+	font-family: @font-family-base;
+	font-weight: 700;
+}
+
+.horizontally-centered-block-element {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.font(@string) {
+	font-size: @string * 1px;
+	line-height: @string * 1.5px;
+}
+
+
+// Sizing shortcuts
+.size(@width; @height) {
+	width: @width;
+	height: @height;
+}
+
+.user-select() {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.rounded-corners(@radius) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	-ms-border-radius: @radius;
+	-o-border-radius: @radius;
+	border-radius: @radius;
+}
+
+
+.box-sizing(@type: border-box) {
+	-webkit-box-sizing: @type;
+	-moz-box-sizing:    @type;
+	box-sizing:         @type;
+}
+
+.animation(@name, @duration: 300ms, @delay: 0, @ease: ease) {
+	-webkit-animation: @name @duration @delay @ease;
+	-moz-animation:    @name @duration @delay @ease;
+	-ms-animation:     @name @duration @delay @ease;
+}
+
+.transform(@string) {
+	-webkit-transform:   @string;
+	-moz-transform: 	 @string;
+	-ms-transform: 		 @string;
+	-o-transform: 		 @string;
+	transform:           @string;
+}
+
+.transition(@arguement1;) {
+	-webkit-transition:   @arguement1;
+	-moz-transition:      @arguement1;
+	-ms-transition:       @arguement1;
+	-o-transition:        @arguement1;
+	transition:           @arguement1;
+}
+
+.scale(@factor) {
+	-webkit-transform:   scale(@factor);
+	-moz-transform: 	 scale(@factor);
+	-ms-transform: 		 scale(@factor);
+	-o-transform: 		 scale(@factor);
+	transform:           scale(@factor);
+}
+.rotate(@deg) {
+	-webkit-transform:   rotate(@deg) translatez(0);
+	-moz-transform: 	 rotate(@deg) translatez(0);
+	-ms-transform: 		 rotate(@deg) translatez(0);
+	-o-transform: 		 rotate(@deg) translatez(0);
+	transform:           rotate(@deg) translatez(0);
+}
+.skew(@deg, @deg2) {
+	-webkit-transform:   skew(@deg, @deg2);
+	-moz-transform: 	 skew(@deg, @deg2);
+	-ms-transform: 		 skew(@deg, @deg2);
+	-o-transform: 		 skew(@deg, @deg2);
+	transform:           skew(@deg, @deg2);
+}
+.translate(@x, @y:0) {
+	-webkit-transform:   translate(@x, @y);
+	-moz-transform: 	 translate(@x, @y);
+	-ms-transform: 		 translate(@x, @y);
+	-o-transform: 		 translate(@x, @y);
+	transform:           translate(@x, @y);
+}
+
+.translate3d(@x, @y: 0, @z: 0) {
+	-webkit-transform:   translate3d(@x, @y, @z);
+	-moz-transform: 	 translate3d(@x, @y, @z);
+	-ms-transform: 		 translate3d(@x, @y, @z);
+	-o-transform: 		 translate3d(@x, @y, @z);
+	transform:           translate3d(@x, @y, @z);
+}
+
+.linear-gradient-left-to-right(@color1; @color2) {
+	/* IE10+ */ 
+	background-image: -ms-linear-gradient(left, @color1 0%, @color2 100%);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(left, @color1 0%, @color2 100%);
+
+	/* Opera */ 
+	background-image: -o-linear-gradient(left, @color1 0%, @color2 100%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0, @color1), color-stop(100, @color2));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(left, @color1 0%, @color2 100%);
+
+	/* W3C Markup */ 
+	background-image: linear-gradient(to right, @color1 0%, @color2 100%);
+}

@@ -1,0 +1,52 @@
+@import (reference) "_variables.less";
+@import (reference) "_mixins.less";
+
+@font-face {
+	font-family: @font-family-base;
+	font-weight: 400; 
+	font-style: normal;
+}
+
+p {
+	line-height: normal;
+	font-size: @font-size-base;
+	margin: 0px;
+}
+
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	margin: 0px;
+	padding: 0px;
+	font-weight: 700;
+}
+
+
+h1, .h1 {
+	.font(@font-size-h1);
+}
+
+h2, .h2 {
+	.font(@font-size-h2);
+}
+
+
+h3, .h3 {
+	.font(@font-size-h3);
+}
+
+h4, .h4 {
+	.font(@font-size-h4);
+}
+
+h5, .h5 {
+	.font(@font-size-h5);
+}
+
+h6, .h6 {
+	.font(@font-size-h6);
+}
+

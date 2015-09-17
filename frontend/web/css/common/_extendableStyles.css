@@ -1,0 +1,4 @@
+.padded-container{padding-left:15px;padding-right:15px}
+.none-floated-columns{float:none;margin-left:0;width:100%;margin-bottom:20px;padding-left:0}
+.close-character{width:25px;height:25px;position:absolute;z-index:102;background:url(http://placehold.it/25x25);-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;top:0;right:0;-webkit-transition:.3s all ease-in-out;-moz-transition:.3s all ease-in-out;-o-transition:.3s all ease-in-out;transition:.3s all ease-in-out}
+.close-character:hover{-webkit-transform:rotate(-190deg) translatez(0);-moz-transform:rotate(-190deg) translatez(0);-ms-transform:rotate(-190deg) translatez(0);-o-transform:rotate(-190deg) translatez(0);transform:rotate(-190deg) translatez(0)}

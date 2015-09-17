@@ -1,0 +1,4 @@
+.font-base-bold,.font-base-normal{font-family:Arial,Helvetica,sans-serif}
+.font-base-normal{font-weight:500}
+.font-base-bold{font-weight:700}
+.horizontally-centered-block-element{display:block;margin-left:auto;margin-right:auto}

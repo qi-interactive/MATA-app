@@ -1,0 +1,80 @@
+
+@import (reference) "../common/_extendableStyles.less";
+@import (reference) "_buttons.less";
+
+
+.has-error
+{
+	input, input[type=email], input[type=password], input[type=text], textarea,
+	{
+		border-color: @red;
+	}
+}
+
+.has-error .help-block
+{
+	margin-bottom: 8px;
+	.font(@font-size-base);
+	text-align: left;
+	color: @red;
+}
+
+input,
+button,
+textarea
+{
+	display: inline-block;
+	-webkit-appearance:none;
+	width: 100%;
+	margin-bottom: 25px;
+	outline: none;
+	box-shadow: none;
+	border: 1px solid @grey;
+	.padded-container;
+
+	&::-webkit-input-placeholder
+	{
+		color: @grey;
+	}
+
+	&:-moz-placeholder
+	{
+		/* Firefox 18- */
+		color: @grey;
+	}
+
+	&::-moz-placeholder
+	{
+		/* Firefox 19+ */
+		color: @grey;
+	}
+
+	&:-ms-input-placeholder
+	{
+		color: @grey;
+	}
+
+	&[type=text]:focus
+	{
+		border-color: transparent;
+	}
+
+	&:focus
+	{
+		outline: none;
+	}
+
+}
+
+button, input, select, textarea, a {
+	-webkit-tap-highlight-color: transparent;
+}
+
+textarea {
+	resize: none;
+	min-height: 60px;
+}
+
+input[type="submit"], button[type="submit"] {
+	.btn;
+}

@@ -1,0 +1,26 @@
+@import (reference) "../../common/_extendableStyles.less";
+
+#header {
+	background: @black;
+	color: @white;
+	height: @header-height;
+	.padded-container;
+	
+	#main-menu {
+		width: 100%;
+		text-align: center;
+
+		li {
+			display: inline-block;
+
+			a {
+				color: @white;
+			}
+		}
+	}
+}
+
+@import "states/states.less";
+@import "_header_tablet.less";
+@import "_mobileMenu.less";
+@import "_header_mobile.less";

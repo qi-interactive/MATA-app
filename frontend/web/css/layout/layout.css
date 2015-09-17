@@ -1,0 +1,26 @@
+#footer,#header{background:#000;color:#fff}
+#footer,#header,#header #main-menu li a{color:#fff}
+#footer,#header,button,input,textarea{padding-left:15px;padding-right:15px}
+*,::before,:after,a,body,button,html,input,select,textarea{-webkit-tap-highlight-color:transparent}
+#header{height:70px}
+#header #main-menu{width:100%;text-align:center}
+#header #main-menu li{display:inline-block}
+#footer{text-align:center}
+.has-error input,.has-error input[type=email],.has-error input[type=password],.has-error input[type=text],.has-error textarea{border-color:#a41d37}
+.has-error .help-block{margin-bottom:8px;font-size:12px;line-height:18px;text-align:left;color:#a41d37}
+button,input,textarea{display:inline-block;-webkit-appearance:none;width:100%;margin-bottom:25px;outline:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;border:1px solid #4d4d4d}
+button::-webkit-input-placeholder,input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#4d4d4d}
+button:-moz-placeholder,input:-moz-placeholder,textarea:-moz-placeholder{color:#4d4d4d}
+button::-moz-placeholder,input::-moz-placeholder,textarea::-moz-placeholder{color:#4d4d4d}
+button:-ms-input-placeholder,input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#4d4d4d}
+button[type=text]:focus,input[type=text]:focus,textarea[type=text]:focus{border-color:transparent}
+button:focus,input:focus,textarea:focus{outline:0}
+textarea{resize:none;min-height:60px}
+.btn,a.btn,button,button[type=submit],input[type=submit]{background:#4d4d4d;color:#fff;font-size:10px;line-height:15px;text-transform:uppercase;vertical-align:middle;-webkit-transition:background ease .4s,border ease .4s;-moz-transition:background ease .4s,border ease .4s;-o-transition:background ease .4s,border ease .4s;transition:background ease .4s,border ease .4s;cursor:pointer;padding:10px 30px;font-family:Arial,Helvetica,sans-serif;font-weight:700;border:0;height:50px;min-width:132px;display:inline-block;width:auto;-webkit-appearance:none;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}
+*,::before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font-smoothing:antialiased;font-smooth:always;-webkit-font-smoothing:antialiased}
+html{height:100%}
+body,html{min-height:100%;background:#fff;font-family:Arial,Helvetica,sans-serif}
+#main{margin:0 auto;width:100%;padding:70px 15px 140px}
+@media (max-width:480px){#header{height:50px}
+#main{padding-top:50px}
+}

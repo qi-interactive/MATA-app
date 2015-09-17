@@ -1,0 +1,39 @@
+@import (reference) "../base/_mixins.less";
+@import (reference) "../base/_variables.less";
+
+
+.padded-container {
+	padding-left: @small-spacing;
+	padding-right: @small-spacing;
+}
+
+.none-floated-columns {
+	float: none;
+	margin-left: 0%;
+	width: 100%;
+	margin-bottom: 20px;
+	padding-left: 0px;
+}
+
+.close-character {
+	.size(25px, 25px);
+	position: absolute;
+	z-index: 102;
+	background: url(http://placehold.it/25x25);
+	background-size: cover;
+	top: 0px;
+	right: 0px;
+	.transition(0.3s all ease-in-out);
+
+	&:hover {
+		.rotate(-190deg);
+	}
+}
+
+
+
+
+
+
+
+

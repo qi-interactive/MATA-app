@@ -1,0 +1,6 @@
+#header,#header #main-menu li a{color:#fff}
+#header{background:#000;height:70px;padding-left:15px;padding-right:15px}
+#header #main-menu{width:100%;text-align:center}
+#header #main-menu li{display:inline-block}
+@media (max-width:480px){#header{height:50px}
+}
