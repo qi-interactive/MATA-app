@@ -13,15 +13,15 @@ use yii\web\AssetBundle;
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @since 2.0
  */
-class UikitAsset extends AssetBundle
+class UiKitAsset extends AssetBundle
 {
-    public $basePath = '@webroot';
-    public $baseUrl = '@web/uikit-2.22.0';
-    public $css = [
-        'css/uikit.css',
-    ];
-    public $js = [
-    ];
-    public $depends = [
-    ];
+	public $basePath = '@webroot';
+	public $baseUrl = '@web/uikit-2.22.0';
+	public $css = [
+	'css/uikit.css',
+	];
+	public $js = [
+	];
+	public $depends = [
+	];
 }
