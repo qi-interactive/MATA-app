@@ -16,8 +16,7 @@
         "matacms/matacms-calendar": "~1.0.0-alpha",
         "symfony/console": "2.4",
         "composer/composer": "1.0.*@dev",
-        "guzzlehttp/guzzle": "~5.0",
-        "intelligent/yii2-uikit": "*"
+        "guzzlehttp/guzzle": "~5.0"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
