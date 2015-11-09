@@ -34,5 +34,8 @@ return [
         'environment' => [
             'class' => 'matacms\environment\Module'
         ],
+        'language' => [
+            'class' => 'matacms\language\Module'
+        ],
     ],
 ];
