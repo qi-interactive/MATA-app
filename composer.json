@@ -12,6 +12,7 @@
         "yiisoft/yii2-composer": "*",
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
+        "fxp/composer-asset-plugin": "*",
         "matacms/matacms-base": "~1.1.0-alpha",
         "symfony/console": "2.4",
         "guzzlehttp/guzzle": "~5.0"
