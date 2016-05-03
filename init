@@ -277,8 +277,8 @@ function runMigrationCommand($migrationPath, $root)
 
 function runCreateAdminUserCommand($root, $params)
 {
-    $shouldCreateUser = !empty($params['overwrite']) ? $params['overwrite'] : 'y';
-    if ($shouldCreateUser == 'y') {
+    $shouldCreateUser = !empty($params['env']) ? $params['env'] : 'Development';
+    if ($shouldCreateUser == 'Development') {
         echo "\n  Creating MATACMS admin user:\n";
 
         echo "\n  Email: ";

@@ -28,6 +28,9 @@ return [
             'runBootstrap' => true,
             'moduleFolders' => ["@vendor/matacms", "@matacms/modules"],
         ],
+        'media' => [
+            'class' => 'mata\media\Module',
+        ],
     ],
     'components' => [
         'moduleMenuManager' => [
