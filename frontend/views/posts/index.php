@@ -23,7 +23,12 @@ $this->title = Yii::$app->name.' - Home';
         ],
         'Author',
         'PublicationDate:date',
-        'PublicationDateEnd:date',
+        [
+            "label" => 'Wydarzenie do:',
+            "value" => function($model) {
+                return $model->PublicationDateEnd ? date("d M Y", strtotime( $model->PublicationDateEnd)) : "";
+            }          
+],
         'Priority',
         'Category_One',
         'Category_Two',

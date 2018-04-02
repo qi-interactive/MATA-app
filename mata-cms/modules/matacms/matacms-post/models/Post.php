@@ -106,7 +106,7 @@ class Post extends \matacms\db\ActiveRecord implements CalendarInterface
     }
 
     public function filterableAttributes() {
-        return ["Title", "PublicationDate"];
+        return ["Category_Two"];
     }
 
 }
