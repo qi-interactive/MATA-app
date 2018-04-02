@@ -28,11 +28,15 @@ use matacms\widgets\ActiveForm;
         ]); ?>
 
         <?= $form->field($model, 'Category_One')->dropDownList(["Zapowiedź" => "Zapowiedź", "Relacja" => "Relacja"],["clientOptions" => ["allowEmptyOption" => true]]) ?>
-        <?= $form->field($model, 'Category_Two')->dropDownList(["Parafia" => "Parafia", "Dekanat" => "Dekanat", "Diecezja" => "Diecezja", "Polska" => "Polska"],["clientOptions" => ["allowEmptyOption" => true]]) ?>
-        <?= $form->field($model, 'Priority')->dropDownList(["Duża" => "Duża", "Średnia" => "Średnia", "Mała" => "Mała"], ["clientOptions" => ["allowEmptyOption" => true]]) ?>
+        <?= $form->field($model, 'Category_Two')->dropDownList(["Parafia" => "Parafia", "Diecezja" => "Diecezja", "Polska" => "Polska", "Kalendarium Biskupa" => "Kalendarium Biskupa"],["clientOptions" => ["allowEmptyOption" => true]]) ?>
+        <?= $form->field($model, 'Priority')->dropDownList(["Duża" => "Duża", "Średnia" => "Średnia", "Mała" => "Mała"], ["options" => ["placeholder" => "sss"], "clientOptions" => ["allowEmptyOption" => true, "placeholder" => "sss"]]) ?>
 
         <div style="position: relative">
-        <?= $form->field($model, 'PublicationDate')->datetime() ?>
+        <?= $form->field($model, 'PublicationDate')->datetime(["clientOptions" => ["minDate" => false,  'format' => 'YYYY-MM-DD', 'locale' => 'pl']]) ?>
+        </div>
+
+        <div style="position: relative">
+            <?= $form->field($model, 'PublicationDateEnd')->datetime(["clientOptions" => ["minDate" => false,  'format' => 'YYYY-MM-DD', 'locale' => 'pl']]) ?>
         </div>
 
         <?= $form->field($model, 'Title') ?>
@@ -57,4 +61,15 @@ use matacms\widgets\ActiveForm;
             control.clear();
         })
     }
+
+
 </script>
+
+<?php
+$script = <<< JS
+$(".selectize-input.items .item").html('Wybierz..');
+
+
+JS;
+
+$this->registerJs($script);

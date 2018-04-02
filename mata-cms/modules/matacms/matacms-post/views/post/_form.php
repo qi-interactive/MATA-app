@@ -3,6 +3,8 @@
 use yii\helpers\Html;
 use matacms\widgets\ActiveForm;
 
+
+
 ?>
 <div class="post">
 
@@ -11,9 +13,9 @@ use matacms\widgets\ActiveForm;
     ]);
     ?>
 
+
     <?= $form->field($model, 'Title') ?>
     <?= $form->field($model, 'Lead') ?>
-    <?= $form->field($model, 'Author') ?>
 
     <?= $form->field($model, 'Body')->wysiwyg([
     ]) ?>
@@ -22,10 +24,10 @@ use matacms\widgets\ActiveForm;
 
     <?=  $form->field($model, 'Category_One')->dropDownList(["Zapowiedź" => "Zapowiedź", "Relacja" => "Relacja"], ['prompt' => 'Kategoria 1', 'clientOptions' => ['create' => false]]); ?>
 
-    <?=  $form->field($model, 'Category_Two')->dropDownList(["Parafia" => "Parafia", "Dekanat" => "Dekanat", "Diecezja" => "Diecezja", "Polska" => "Polska"], ['prompt' => 'Kategoria 2', 'clientOptions' => ['create' => false]]); ?>
+    <?=  $form->field($model, 'Category_Two')->dropDownList(["Parafia" => "Parafia", "Diecezja" => "Diecezja", "Polska" => "Polska", "Kalendarium Biskupa" => "Kalendarium Biskupa"], ['prompt' => 'Kategoria 2', 'clientOptions' => ['create' => false]]); ?>
 
     <?= $form->field($model, 'Carousel')->carousel() ?>
-    <?= $form->field($model, 'URI')->slug('Title') ?>
+
     <div class="form-row">
 
         <div class="form-group">
@@ -46,6 +48,7 @@ use matacms\widgets\ActiveForm;
     ]) ?>
 
 
+    <?= $form->field($model, 'URI')->slug('Title') ?>
 
     <?= $form->submitButton($model) ?>
 

@@ -1,5 +1,5 @@
 <style>
-    img {
+    img, iframe {
         height: 400px;
     }
 </style>
@@ -36,7 +36,25 @@ $carouselItems = $model->getCarouselItems();
 if ($carouselItems != null):
     foreach($carouselItems as $item):
         ?>
-        <img src="<?= $item->getMedia()->URI ?>" />
+
+
+    <?php
+$isVideoUrlMedia = in_array($item->getMedia()->MimeType, ['video/youtube', 'video/vimeo']);
+if($isVideoUrlMedia):
+
+    ?>
+    <iframe  width="560" height="315" src="<?= $item->getMedia()->URI ?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+
+
+
+<?php else: ?>
+
+    <img src="<?= $item->getMedia()->URI ?>" />
+
+<?php endif; ?>
+
     <?php endforeach; endif; ?>
 
 </div>

@@ -18,13 +18,32 @@ use matacms\post\models\Post;
  */
 class PostSearch extends Post {
 
+    public $PublicationDateFrom;
 
     public function rules() {
         return [
-            [['Title', 'Body', 'URI', 'Priority', 'Category_One', 'Category_Two', 'PublicationDate'], 'safe'],
+            [['Title', 'Body', 'URI', 'Priority', 'Category_One', 'Category_Two', 'PublicationDate', 'PublicationDateFrom', 'PublicationDateEnd'], 'safe'],
             [['Title', 'Lead', 'Body'], 'string'],
             [['Author'], 'string', 'max' => 128],
             [['URI'], 'string', 'max' => 255]
+        ];
+    }
+
+    public function attributeLabels()
+    {
+        return [
+            'Id' => 'ID',
+            'Title' => 'Tytuł',
+            'Lead' => 'Lead',
+            'Body' => 'Tekst',
+            'Author' => 'Autor',
+            'PublicationDateEnd' => 'Wydarzenie do:',
+            'PublicationDate' => 'Wydarzenie od:',
+            'URI' => 'URI',
+            'Category_One' => 'Kategoria pierwsza',
+            'Category_Two' => 'Kategoria druga',
+            'Priority' => 'Priorytet',
+            'Carousel' => 'Media'
         ];
     }
 
@@ -65,9 +84,20 @@ class PostSearch extends Post {
             ->andFilterWhere(['like', 'Body', $this->Body])
             ->andFilterWhere(['like', 'Category_One', $this->Category_One])
             ->andFilterWhere(['like', 'Category_Two', $this->Category_Two])
-            ->andFilterWhere(['like', 'Priority', $this->Priority])
-            ->andFilterWhere(['<=', 'PublicationDate', $this->PublicationDate])
-            ->andFilterWhere(['>=', 'PublicationDateEnd', $this->PublicationDate]);
+            ->andFilterWhere(['like', 'Priority', $this->Priority]);
+
+        if ($this->PublicationDate && !$this->PublicationDateEnd) {
+            $query->andFilterWhere(['>=', 'PublicationDate', $this->PublicationDate . " 00:00:00"])
+                ->andFilterWhere(['<=', 'PublicationDate', $this->PublicationDate . " 23:59:59"]);
+        }
+
+        if ($this->PublicationDate && $this->PublicationDateEnd) {
+            $query->andFilterWhere(['>=', 'PublicationDate', $this->PublicationDate . " 00:00:00"])
+                ->andFilterWhere(['<=', 'PublicationDate', $this->PublicationDateEnd . " 23:59:59"]);
+        }
+
+
+        $query->orderBy("PublicationDate DESC");
 
         return $dataProvider;
     }
