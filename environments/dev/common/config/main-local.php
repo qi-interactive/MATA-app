@@ -3,9 +3,9 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=yii2advanced',
-            'username' => 'root',
-            'password' => '',
+            'dsn' => 'mysql:host=qi-db-01.cgaiktlnv4ep.eu-west-1.rds.amazonaws.com;dbname=baza-medialna-dev',
+            'username' => 'baza-medialna',
+            'password' => 'p&pGC9t#3cW7FdUo',
             'charset' => 'utf8',
         ],
         'mailer' => [

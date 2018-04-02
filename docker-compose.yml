@@ -1,0 +1,11 @@
+version: '2'
+services:
+    httpd:
+        privileged: true
+        build: ./docker/httpd/
+        container_name: portal2
+        ports:
+            - "80:80"
+        volumes:
+            - ".:/var/www/html/"
+        restart: always

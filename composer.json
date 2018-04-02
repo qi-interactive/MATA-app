@@ -14,7 +14,14 @@
         "yiisoft/yii2-swiftmailer": "*",
         "fxp/composer-asset-plugin": "*",
         "matacms/matacms-base": "~1.1.0-alpha",
+        "matacms/matacms-content-block": "~1.0-alpha",
+        "matacms/matacms-carousel": "~1.0.0-alpha",
+        "matacms/matacms-post": "~1.0-alpha",
+        "matacms/matacms-faq": "~1.0.0-alpha",
         "symfony/console": "2.4",
+        "guzzlehttp/guzzle": "~5.0",
+        "matacms/matacms-social": "~1.0.1.9-alpha",
+        "mata/mata-ar-history": "1.0.3.0-alpha",
         "guzzlehttp/guzzle": "~5.0"
     },
     "require-dev": {
@@ -31,3 +38,4 @@
         }
     }
 }
+

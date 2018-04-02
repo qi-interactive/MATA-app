@@ -16,7 +16,7 @@ use yii\web\AssetBundle;
 class UiKitAsset extends AssetBundle
 {
 	public $basePath = '@webroot';
-	public $baseUrl = '@web/uikit-2.22.0';
+	public $baseUrl = '@web/uikit-3.0.0';
 	public $css = [
 	'css/uikit.css',
 	];
