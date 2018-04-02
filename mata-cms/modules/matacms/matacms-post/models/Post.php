@@ -45,7 +45,7 @@ class Post extends \matacms\db\ActiveRecord implements CalendarInterface
     public function rules()
     {
         return [
-            [['Title', 'Body', 'URI', 'Priority', 'Category_One', 'Category_Two', 'PublicationDate'], 'required'],
+            [['Title', 'URI', 'Priority', 'Category_One', 'Category_Two', 'PublicationDate'], 'required'],
             [['Title', 'Lead', 'Body'], 'string'],
             [['Author'], 'string', 'max' => 128],
             [['URI'], 'string', 'max' => 255],

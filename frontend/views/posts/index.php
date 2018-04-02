@@ -22,8 +22,8 @@ $this->title = Yii::$app->name.' - Home';
             }
         ],
         'Author',
-        'PublicationDate:datetime',
-        'PublicationDateEnd:datetime',
+        'PublicationDate:date',
+        'PublicationDateEnd:date',
         'Priority',
         'Category_One',
         'Category_Two',

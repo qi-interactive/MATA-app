@@ -39,13 +39,19 @@ use matacms\widgets\ActiveForm;
     </div>
 
     <?= $form->field($model, 'PublicationDate')->datetime([
-        "minDate" => "2017-01-01 12:00:00"
-    ]) ?>
+            "clientOptions" => [
+        "minDate" => "2017-01-01 12:00:00",
+        'format' => 'YYYY-MM-DD',
+        'locale' => 'pl'
+    ]]) ?>
 
 
     <?= $form->field($model, 'PublicationDateEnd')->datetime([
-        "minDate" => "2017-01-01 12:00:00"
-    ]) ?>
+        "clientOptions" => [
+        "minDate" => "2017-01-01 12:00:00",
+        'format' => 'YYYY-MM-DD',
+        'locale' => 'pl'
+    ]]) ?>
 
 
     <?= $form->field($model, 'URI')->slug('Title') ?>
